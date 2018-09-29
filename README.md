@@ -1,4 +1,4 @@
-# WDi-0 ([General Assembly, Riyadh](https://generalassemb.ly/riyadh))
+# WDi-1 ([General Assembly, Riyadh](https://generalassemb.ly/riyadh))
 ## Homework Repository
 
 1. Git Config
@@ -27,14 +27,14 @@ You only need to do this part once, not every time you're submitting homework!
     + Hit the **Fork** button in the top right-hand corner of this page.
 - **Clone your forked repository to your computer**
     + *'Cloning' takes your 'forked' repository on GitHub and creates a local copy (aka 'clone') on your computer.*
-    + Make sure you're browser is open to **your** forked version of this repository on Github (e.g. [http://github.com/{{YOUR_USERNAME}}/WDi0-Homework](http://github.com/{{YOUR_USERNAME}}/WDi0-Homework)).
+    + Make sure you're browser is open to **your** forked version of this repository on Github (e.g. [http://github.com/{{YOUR_USERNAME}}/wdi-oryx-homework](http://github.com/{{YOUR_USERNAME}}/wdi-oryx-homework)).
     + Hit the **Clone or Download** button in the top right-hand corner of the page and copy the URL to your clipboard.
     + Open Terminal/iTerm2 to the directory in which you intend to store your homework.
     + `git clone url_of_your_fork_on_github` (where `url_of_your_fork_on_github` is the URL you copied after hitting 'Clone or Download', above).
 - **Add an upstream remote repository**
     +  *Creating an upstream remote links the local repository on your computer to this repository on Github*
-    + `cd WDi0-Homework`
-    + `git remote add upstream https://github.com/mfalthaw/WDi0-Homework`
+    + `cd wdi-oryx-homework`
+    + `git remote add upstream https://github.com/mfalthaw/wdi-oryx-homework`
     + `git pull upstream master`
 
 ### 3. Do your Homework
@@ -42,7 +42,7 @@ You only need to do this part once, not every time you're submitting homework!
 You should put each night's homework in a new folder within the appropriate directory of your homework repo. So, for day two, where you have two tasks ("Calculator" and "Strings"), you might do something like this:
 
 1. Open Terminal/iTerm2;
-2. Go to your local homework repo (e.g., `cd Projects/general-assembly/WDi0-Homework`, or wherever your local repo is);
+2. Go to your local homework repo (e.g., `cd Projects/general-assembly/wdi-oryx-homework`, or wherever your local repo is);
 3. From here, go to the folder matching your name within that repo, and the appropriate week (e.g., `Groucho_Marx/week_01`);
 4. Create new folders for each of the day's homework tasks: (e.g. `mkdir calculator` and `mkdir strings`);
 5. Create the files necessary to complete the homework in their respective directories;
@@ -60,7 +60,7 @@ You need to do this every time you're submitting homework.
 - **Push the changes in your local repository to your forked repository**
     + `git push origin master`
 - **Once you're finished, submit a pull request for me to accept your homework**
-    + Navigate to your forked version of this repository on Github (e.g. [https://github.com/{{YOUR_USERNAME_HERE}}/WDi0-Homework](https://github.com/{{YOUR_USERNAME_HERE}}/WDi0-Homework)).
+    + Navigate to your forked version of this repository on Github (e.g. [https://github.com/{{YOUR_USERNAME_HERE}}/wdi-oryx-homework](https://github.com/{{YOUR_USERNAME_HERE}}/wdi-oryx-homework)).
     + Hit the **Pull request** button.
     + Make sure the destination for the pull request is set to my repository, not your own or anyone else's.
     - In the pull request comment, tell me the following:

@@ -12,14 +12,11 @@
 ## Background - Watch the Intro!
 [Simpsons Intro](https://www.youtube.com/watch?v=XNzoJqzA6zM).
 
-## Part 1 - Set Up our Directories for this class!
-1. Open your terminal, in the root directory create a directory called `code`.  This is where you can put all your code for any projects, in and out of this class.
-2. In the `code` directory create another directory called `wdi`, this will be where we put all content for this class.
-3. In the `WDI` directory create 4 more directories called `labs`, `lessons`, `projects`, `misc`.  Your file structure is complete! We'll continue to use these directories to stay organized throughout the class.  Now that we're ready, let's create a directory for this lab:
-4. Navigate to the path `~/code/wdi/labs` and create a new directory called `simpsons` where we will do all of the following work:
+## Setup - Create Directory for Lab:
+Navigate to the path `~/code/wdi/` and create a new directory called `simpsons` where we will do all of the following work:
 
 
-## Part 2 - Simpsons Activity
+## Simpsons Activity
 The more practice you have working in the terminal manipulating files and directories the better!
 
 #### Creating the scene
@@ -40,6 +37,3 @@ The Simpsons are your average American family living in Springfield. Let's creat
 6. We then find the family making their way home through the streets of springfield; Homer in his pink car, Marge and Maggie in the red car, and Bart on his skateboard. Traverse back to the `springfield` directory and create the directories for the each mode of transportation, and then place each respective party in that directory.<br><br>
 7. The family finally makes their way back home and the hilarious couch gag ensues. Create a `home` directory inside of `springfield` and then create a `couch` directory within `home`. Then Move ALL of the family members to `couch`. BONUS - can you move the family members without going into any of the springfield sub-directories? (HINT - use relative paths! If in `springfield` directory, what does ` ls ` return? How about `ls power-plant `?)
 
-
-## OPTIONAL BONUS - Grit (Ted Talk)
-Please watch this [TED Talk about Grit](https://www.ted.com/talks/angela_lee_duckworth_the_key_to_success_grit?language=en). It's a great talk and something we want you all to be mindful of as you embark on your journey into learning web development.

@@ -10,8 +10,6 @@ Fundamentals, class, or that you find on your own.
 ## Set the Scene
 
 1. Open the **Terminal app**
-1. Git Clone this Repo
-1. Change directories to this assignment
 1. Create a new directory called "**galaxy_far_far_away**" and enter it.
 1. Create a directory called "**death_star**", and make the following files inside of it:
 

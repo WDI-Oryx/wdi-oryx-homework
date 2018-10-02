@@ -40,6 +40,7 @@ if(suburb === "Haworth"){
 }else if(suburb === "Englewood"){
 console.log("It's only 9 miles from downtown Manhattan");
 }
+
 //The Grade Assigner
 var score = 85;
 if(score >= 90){
@@ -53,6 +54,7 @@ console.log("Your score is A");
 }else {
     console.log("Your score is F");
 }
+
 //Air Conditioning
 var desiredTemp = 50;
 var currentTemp = 30;
@@ -64,7 +66,25 @@ console.log("Turn on the A/C please");
 }else if(currentTemp < desiredTemp && !functionalAirconditioner){
     console.log("Fix the A/C whenever you have the chance. It's cool");
 }
+
 //Golf
+var par=5;
+var score=3;
+if(score ===1){
+console.log("Hole in one");
+}else if(score <=par-2){
+    console.log("Eagle");
+}else if(score <par -1){
+    console.log("Birdie");
+}else if(score === par){
+    console.log("Par");
+}else if(score < par +1){
+    console.log("Bogey");
+}else if(score <par +2){
+    console.log("Double Bogey");
+}else if(score >=par+3){
+    console.log("Not sure");
+}
 
 //Serge Says
 var message = "";
@@ -77,8 +97,21 @@ console.log("Fine. Be that way!");
 }else{ 
     console.log("Whatever");
 }
-//The Pluralizer
 
+//The Pluralizer
+var number =1;
+var word="dog";
+if(number > 1){
+    if(word.endsWith("y")){
+        var newWord=word.replace("y","ies" );
+        console.log("You have " + number + newWord);
+    }else{
+        word+="s";
+        console.log("You have " + number + word);
+    }
+}else{
+console.log("You have " + number + word);
+}
 
 //The Rest
 var rock = true;

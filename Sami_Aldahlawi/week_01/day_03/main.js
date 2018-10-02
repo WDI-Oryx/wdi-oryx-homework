@@ -48,12 +48,8 @@ function areaOfCircle(radius){
 //Part 2
 
 function fun(number){
-    debugger;
    var hNumber =  halfNumber(number);
-   debugger;
    var Sqresult = squareNumber(hNumber);
-   debugger;
    var areaCircle = areaOfCircle(Sqresult);
-   debugger;
    return percentOf(areaCircle,Sqresult);
 }

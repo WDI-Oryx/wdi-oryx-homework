@@ -92,7 +92,7 @@ if(message.endsWith("?")){
 console.log("Sure");
 }else if(message.toUpperCase() === true){
 console.log("Woah, chill out");
-}else if(" " || message.indexOf(' ') !== -1){
+}else if(" "||message.indexOf(' ') !== -1){
 console.log("Fine. Be that way!");
 }else{ 
     console.log("Whatever");

@@ -88,4 +88,4 @@ Create a function called `fahrenheitToCelsius`:
 
 ## The Rest
 
-Turn any of the other exercises [here](../Conditionals_LAB.md) into functions!
+Turn any of the other exercises [here](../day_02/Conditionals_LAB.md) into functions!

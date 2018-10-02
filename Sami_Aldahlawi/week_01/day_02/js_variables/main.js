@@ -39,3 +39,11 @@ console.log(celsiusT+" °C is "+calCtoF+"°F");
 console.log(fahrenheit+" °F is "+calFtoC+"°C");
 
 
+a = 20;
+var a;
+console.log(a);
+function area(nu1 , nu2){
+    return nu1*nu2;
+}
+console.log("the area of rectangle is " + area(4,7));
+

@@ -55,11 +55,11 @@ percentOf(2 , 4);
   Calculate the area of a circle with the result of #2 as the radius.
   Calculate what percentage that area is of the squared result (#3). */
 function partTwo(number){
-    var halfNumber = number / 2;
-    var squareNumber = halfNumber * halfNumber;
-    var areaOfCircle = Math.PI * squareNumber(squareNumber);
-    var percent = percentOf(squareNumber,areaOfCircle);
-    var result=  console.log(halfNumber,squareNumber,areaOfCircle,percent);
+   var halfNumber = console.log( number / 2);
+    var squareNumber = console.log(halfNumber * halfNumber);
+    var areaOfCircle = console.log(Math.PI * squareNumber(squareNumber));
+    var percent = console.log(percentOf(squareNumber,areaOfCircle));
+   // var result=  console.log(halfNumber,squareNumber,areaOfCircle,percent);
     return result;
 }
 // partTwo(number);

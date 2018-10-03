@@ -24,3 +24,15 @@ function part2(num) {
     result = percentOf(result,squareNumber(result));
     return result;
 }
+//******************/
+
+function cl(text) {
+    console.log(text);
+}
+function canDrive(userAge) {
+    if (userAge <18) {
+        cl("Sorry, you can't drive yet remaining "+(18-userAge));
+    } else {
+        cl("Drive away!")
+    }
+}

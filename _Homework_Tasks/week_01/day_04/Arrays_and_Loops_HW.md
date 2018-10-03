@@ -28,7 +28,12 @@ var fortunes = [
 ];
 ```
 
-Return a fortune to the user using their name, job title, location, the question they ask, and a random element in fortunes. For example: "The IA, Moath of Demmam, asks 'will I win the lottery this week?' ... Without a doubt"
+Return a fortune to the user using their name, job title, location, the question they ask, and a random element in fortunes. For example: 
+  ```javascript
+  tellFortune('Moath', 'IA', 'Demman', 'will I win the lottery this week?')
+  ``` 
+ returns
+ `"The IA, Moath of Demmam, asks 'will I win the lottery this week?' ... Without a doubt"`
 
 ## Part 3: BONUS - House of Cards:
 

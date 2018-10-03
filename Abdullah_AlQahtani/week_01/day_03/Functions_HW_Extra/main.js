@@ -57,6 +57,7 @@ console.log("\n == The Lifetime Supply Calculator ==")
 function calculateSupply (age,amount) {
 var maxAge = 100;
 var calculate = (amount * 365) * ( maxAge - age );
+
 console.log("You will need " + calculate +" to last you until the ripe old age of " + maxAge);
 }
 

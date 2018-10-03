@@ -34,4 +34,5 @@ function allFunction(num){
 
 var num = prompt("Please, Enter any number : ");
 console.log("The number is: " + num);
+
 allFunction(num);

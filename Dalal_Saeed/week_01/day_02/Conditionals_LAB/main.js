@@ -127,8 +127,8 @@ else {
 }
 
 //The Pluralizer
-var num = o;
-var noun = "Apple";
+var num = 20;
+var noun = "day";
 if (num === 1){
     console.log("You have "+ num +" "+ noun );
 }
@@ -139,7 +139,7 @@ else if (num > 1 ){
         if (noun.endsWith("ay")||noun.endsWith("ey")||noun.endsWith("oy")||noun.endsWith("iy")){
         console.log("You have "+ num +" "+noun+"s");}
         else {
-            console.log("You have "+ num +" "+noun+"eis");}
+            console.log("You have "+ num +" "+noun+"ies");}
         }
     }
 

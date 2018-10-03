@@ -1,7 +1,7 @@
 # Homework - Arrays and Loops
 
 
-## Part 1: Array Algorithms
+## Part 1: Array Algorithms:
 
 1. Define a function sumArray and a function multiplyArray that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sumArray([1,2,3,4]) should return 10, and multiplyArray([1,2,3,4]) should return 24.
 2. Define a function reverseString that reverses a string. For example, reverseString("jag testar") should return the string "ratset gaj".

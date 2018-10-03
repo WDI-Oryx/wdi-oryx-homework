@@ -42,10 +42,9 @@ var arr=["mada","alanoud","salma"];
 findLongestWord(arr);
 function filterLongWords(arr,i){
 var arr2=[];
-var num=0;
 for(j=0;j<arr.length;j++){
     if(arr[j].length>i){
-    arr2[num++]=arr[j];
+    arr2.push(arr[j]);
     }   
  }  
  console.log(arr2);

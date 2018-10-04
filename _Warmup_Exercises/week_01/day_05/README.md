@@ -32,6 +32,4 @@ Go to the store and buy some more, 99 bottles of coke on the wall.
 ```
 
 #### Bonus:
-
--  Count through any number of bottles.
 - Be able to count between a range of numbers (ie, 20 to 10).

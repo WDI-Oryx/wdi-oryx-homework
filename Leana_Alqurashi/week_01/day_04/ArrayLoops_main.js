@@ -38,7 +38,7 @@ function reverseString(str){
         reversed += stringArray[y];
        }
 
-    console.log(reversed);
+    return reversed;
 }
 document.write("when we reverse the sentence 'hello good evening' we get: "+reverseString("hello good evening"));
 
@@ -115,9 +115,10 @@ for(var a=0; a<suits.length;a++){
        
 } 
 }
-console.log(fullDeck[2].endsWith('A'));
 document.write("Here is our full Deck with "+fullDeck.length+"52 cards: "+fullDeck);
 //2
+document.write("<h3> 2:</h3>");
+
 function randomDeck(allCards){
     var randCard = Math.floor(Math.random()*52);
     var value;
@@ -125,4 +126,8 @@ function randomDeck(allCards){
     if(allCards[randCard].endsWith('A')){
         value= 10;
 } else if(allCards[randCard].endsWith('J')||allCards[randCard].endsWith('Q')|allCards[randCard].endsWith('K'))
-{value = 11;}}}
+{value = 11;}
+else value = allCards[randCard].substr(1);}
+document.write(allCards[randCard]+"'s value is: "+value);}
+randomDeck(fullDeck);
+ 

@@ -26,7 +26,7 @@ return string; }
 
 function findLongestWord(arr){
     var wLength="";
-    for(i=0;i<=arr.length-2;i++){
+    for(i=0;i<arr.length-1;i++){
         if(arr[i].length>arr[i+1].length){
         wLength=arr[i].length;
         } 
@@ -42,10 +42,10 @@ var arr=["mada","alanoud","salma"];
 findLongestWord(arr);
 function filterLongWords(arr,i){
 var arr2=[];
-var num=0;
+//var num=0;
 for(j=0;j<arr.length;j++){
     if(arr[j].length>i){
-    arr2[num++]=arr[j];
+    arr2.push(arr[j]);
     }   
  }  
  console.log(arr2);

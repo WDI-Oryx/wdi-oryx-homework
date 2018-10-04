@@ -79,7 +79,8 @@ var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 var newArray = [];
 for (var i = 0; i < values.length; i++) {
     for (var j = 0; j < suits.length; j++) {
-        newArray = values[i] + suits[j];
+        var newValues = values[i] + suits[j];
+        newArray.push(newValues);
         console.log(newArray);
     }
 

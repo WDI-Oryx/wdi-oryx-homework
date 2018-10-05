@@ -40,7 +40,7 @@ function indexof(name) {
         }
     }
 }
-function compere(arr, num1, num2) {
+function compare(arr, num1, num2) {
     str = "";
     if (num1 > num2) {
         arr1 = arr.slice(num2, num1);
@@ -62,19 +62,19 @@ function planTrip(lineIn, stopIn, lineOut, stopOut) {
     var crossStop1 = lines[indexof(lineIn)].stops.indexOf("Union Square");
     var crossStop2 = lines[indexof(lineOut)].stops.indexOf("Union Square");
     if (lineIn === lineOut) {
-        compere(lines[indexof(lineIn)].stops, source, destnation);
+        compare(lines[indexof(lineIn)].stops, source, destnation);
 
         console.log("You must travel through the following stops on the " +
             lineIn + " line: " + str);
         console.log(arr1.length + " stops in total.");
     }
     else {
-        compere(lines[indexof(lineIn)].stops, source, crossStop1);
+        compare(lines[indexof(lineIn)].stops, source, crossStop1);
         console.log("You must travel through the following stops on the " +
             lineIn + " line: " + str);
         console.log("Change at Union Square.");
         num1 = arr1.length;
-        compere(lines[indexof(lineOut)].stops, crossStop2, destnation);
+        compare(lines[indexof(lineOut)].stops, crossStop2, destnation);
         console.log("Your journey continues through the following stops: " + str);
         num1 += arr1.length
         console.log(num1 + " stops in total.");

@@ -4,6 +4,7 @@ var line6 = ["GC", "33", "28line6", "23line6", "US", "AP"];
 var stringLine = "";
 var secStringline = "";
 var mainPoint = "US";
+var total=0;
 function trip(line, startingPoint, lineTwo, stopingPoint) {
     // console.log(line.indexOf(startingPoint) +" "+ lineTwo.indexOf(stopingPoint));
     if (line.indexOf(startingPoint) > lineTwo.indexOf(stopingPoint)) {
@@ -16,7 +17,7 @@ trip(lineN, "TS", line6, "33");
 
 function forward(L, SP, LT, SOP) {
     // console.log(L + " "+SP +" "+ LT + " "+SOP + " TESTING");
-    // debugger;
+    debugger;
     var fIndex = L.indexOf(SP) + 1;
     for (var i = fIndex; i < L.length; i++) {
         if (L !== LT && stringLine.endsWith(mainPoint)) {
@@ -25,9 +26,11 @@ function forward(L, SP, LT, SOP) {
             for (var i = secIndex; i >= LT.indexOf(SOP); i--) {
                 secStringline += " " + LT[i];
                 // console.log(secStringline);
+                total++;
             }
             for (var i = secIndex; i <= LT.indexOf(SOP); i++) {
                 secStringline += " " + LT[i];
+                total++;
             }
             break;
         } else if (stringLine.endsWith(mainPoint)) {
@@ -37,29 +40,37 @@ function forward(L, SP, LT, SOP) {
             }
             if (SOP === L[i]) {
                 stringLine += " " + L[i];
+                total++;
                 break;
             }
         }
         stringLine += " " + L[i];
+        total++;
     }
     console.log("You must travel through the following stops on the line: " + stringLine);
     console.log("Change at " + mainPoint);
     console.log("Your journey continues through the following stops: " + secStringline);
+    console.log("Your total is " + total);
+
 }
 function backward(L, SP, LT, SOP) {
     // debugger;
     var bIndex = L.indexOf(SP) -1;
     for (var i = bIndex; i >= L.indexOf(SOP); i--) {
+        total++;
         if (stringLine.endsWith(mainPoint)) {
             // console.log("US POINT");
             var baIndex = LT.indexOf(mainPoint) -1;
             for (var i = baIndex; i >= LT.indexOf(SOP); i--) {
                 secStringline += " " + LT[i];
+                total++;
             }
         }
         stringLine += " " + L[i];
+       
     }
     console.log("You must travel through the following stops on the line: " + stringLine);
     console.log("Change at " + mainPoint);
     console.log("Your journey continues through the following stops: " + secStringline);
+    console.log("Your total is " + total);
 }

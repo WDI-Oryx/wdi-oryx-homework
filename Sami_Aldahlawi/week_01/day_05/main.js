@@ -127,5 +127,9 @@ function planTrip(lineOne,source,lineTwo,destination){//,lineTwo,destination
 
 
 
+var line1 = prompt("Enter the name of line 1");
+var lSource = prompt("Enter the source of line 1");
+var line2 = prompt("Enter the name of line2");
+var lDestination = prompt("Enter the destination");
 
-
+planTrip(line1,lSource,line2,lDestination);

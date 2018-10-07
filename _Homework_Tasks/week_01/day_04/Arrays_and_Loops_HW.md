@@ -8,6 +8,23 @@
 3. Write a function findLongestWord that takes an array of words and returns the length of the longest word in the array.
 4. Write a function filterLongWords that takes an array of words and a number i and returns a new array of words that are longer than i characters long.
 
+for example:
+```javascript
+var classArray = [
+  "student",
+  "student",
+  "student",
+  "lead instructor",
+  "student",
+  "lead instructor",
+  "associate instructor",
+  "student"
+];
+
+filterLongWords(classArray, 7)
+// ['lead intructor', 'lead instructor', 'associate instructor']
+```
+
 ## Part 2: Zoltair:
 
 Build a function called `tellFortune` that takes four inputs: `name, job title, location, question`.

@@ -39,14 +39,79 @@ function count2(word) {
   return sum;
 }
 
-// Solution 3 - Thanks Wafa!
+// Soltuion 3 - Thanks Abdullah!
+var score = {
+  A: 1,
+  B: 3,
+  C: 3,
+  D: 2,
+  E: 1,
+  F: 4,
+  G: 2,
+  H: 4,
+  I: 1,
+  J: 8,
+  K: 5,
+  L: 1,
+  M: 3,
+  N: 1,
+  O: 1,
+  P: 3,
+  Q: 10,
+  R: 1,
+  S: 1,
+  T: 1,
+  U: 1,
+  V: 4,
+  W: 4,
+  X: 8,
+  Y: 4
+};
+
+function count3(word) {
+  word = word.toUpperCase();
+  var sum = 0;
+
+  for (let i = 0; i < word.length; i++) {
+    var letter = word[i];
+    sum += score[letter] || 0;
+
+  }
+
+  return sum;
+}
+
+// Solution 4 - Thanks Alanoud!
+var letter = {
+  A: 1, E: 1, I: 1, O: 1, U: 1, L: 1, N: 1, R: 1, S: 1, T: 1,
+  D: 2, G: 2,
+  B: 3, C: 3, M: 3, P: 3,
+  F: 4, H: 4, V: 4, W: 4, Y: 4,
+  K: 5,
+  J: 8, X: 8,
+  Q: 10, Z: 10
+};
+
+function count4(word) {
+  word = word.toUpperCase();
+  var counter = 0;
+  for (var i = 0; i < word.length; i++) {
+    if (letter[word.charAt(i)] === undefined) {
+      console.log("Please insert letters only!");
+    }
+    counter += letter[word.charAt(i)] || 0;
+  }
+  return counter;
+}
+
+// Solution 5 - Thanks Wafa!
 var letters = {
   'A': 1, 'E': 1, 'I': 1, 'O': 1, 'U': 1, 'L': 1,
   'N': 1, 'R': 1, 'S': 1, 'T': 1, 'D': 2, 'G': 2,
   'B': 3, 'C': 3, 'M': 3, 'P': 3, 'F': 4, 'H': 4, 'V': 4,
   'W': 4, 'Y': 4, 'K': 5, 'J': 8, 'X': 8, 'Q': 10, 'Z': 10
 };
-function count3(word) {
+function count5(word) {
   word = word.toUpperCase();
   var sum = 0;
   for (var i = 0; i < word.length; ++i) {
@@ -61,3 +126,5 @@ function count3(word) {
 console.log(count1("Hello there!"));
 console.log(count2("Hello there!"));
 console.log(count3("Hello there!"));
+console.log(count4("Hello there!"));
+console.log(count5("Hello there!"));

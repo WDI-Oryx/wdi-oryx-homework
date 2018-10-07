@@ -12,7 +12,9 @@ function subwaySystem(stops){
         if (stops === subway.theNLine){
             console.log("You must travel through the following stops on the N Line:"+subway.theNLine+".");
             if (subway.theNLine.includes("Union Square")){
-                console.log("Change at Union Square.");
+                // for(var i =0;i>"Union Square";i+=1){
+                //     console.log
+                // }
                  }  
         } 
     else if (stops === subway.theLLine) {

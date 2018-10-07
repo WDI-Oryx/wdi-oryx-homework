@@ -9,6 +9,7 @@ var letterScores = {
 };
 
 // Solution 1
+// To find out more about for..in loops: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
 function count1(word) {
   word = word.toUpperCase();
   var sum = 0;
@@ -39,7 +40,7 @@ function count2(word) {
 }
 
 // Solution 3 - Thanks Wafa!
-var latters = {
+var letters = {
   'A': 1, 'E': 1, 'I': 1, 'O': 1, 'U': 1, 'L': 1,
   'N': 1, 'R': 1, 'S': 1, 'T': 1, 'D': 2, 'G': 2,
   'B': 3, 'C': 3, 'M': 3, 'P': 3, 'F': 4, 'H': 4, 'V': 4,
@@ -49,7 +50,8 @@ function count3(word) {
   word = word.toUpperCase();
   var sum = 0;
   for (var i = 0; i < word.length; ++i) {
-    sum += latters[word.charAt(i)] || 0;
+    // if score doesn't exist for this charecter, add 0
+    sum += letters[word.charAt(i)] || 0;
   }
   return sum;
 }

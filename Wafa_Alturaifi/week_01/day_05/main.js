@@ -6,6 +6,8 @@ var Metrolines = {
 
 };
 
+// planTrip("N34", "NLine", "N8", "NLine")
+
  function TripPathNline( startstation , endstation) {
     var path =Metrolines.Nline;
      if(startstation < endstation){//dissgion any path will take
@@ -24,6 +26,7 @@ var Metrolines = {
  TripPathNline(1,4);//patt will going forword
 
 
+ 
  function TripPathLline( startstation , endstation) {
     var path =Metrolines.Lline;
      if(startstation < endstation){

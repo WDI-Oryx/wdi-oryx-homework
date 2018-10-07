@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: #d6d6d6;
+    color:#000000;
+   
+}
+img.background{
+    width:"auto";
+ 
+}
+section.card{
+background: white;
+    width: auto; 
+}

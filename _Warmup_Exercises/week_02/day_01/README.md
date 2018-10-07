@@ -35,5 +35,5 @@ And to total:
 - = `5 + 9`
 - = 14
 
-## Dobule Check
+## Double Check
 http://www.dvorkin.com/scrabscor.php

@@ -35,6 +35,8 @@ for (var i = startingIndex; i <= endingIndex; i++) {
 
 
 
+
+
 // this is what i got after jack's help .. hh just trying to solve 
 
 

@@ -60,7 +60,8 @@ nav {
   background-color: white;
   box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
   transition: all 300ms ease-out;
-
+  position: fixed;   /* when you scroll the page down the navigation bar will be fixed */
+  z-index: 99; /* to make nav move above the bug pic */
   /* Step 1: Add styles for fixed nav */
 
 }
@@ -106,19 +107,29 @@ nav .active {
 /* Step 2: Position the labels within the .bug-wrapper. */
 
 .bug-wrapper {
+  position: relative;
  /* Hint: add code here */
   display: inline-block;
 }
 
 .diag-1 {
   /* Hint: add code here */
-
+ position: absolute;
+ bottom: 430px;
+ left: 350px;
 }
 
 .diag-2 {
   /* Hint: add code here */
+  position: absolute;
+  bottom: 290px;
+  right: 350px;
+  
 }
 
 .diag-3 {
   /* Hint: add code here */
+  position: absolute;
+  bottom: 160px;
+  left: 390px;
 }

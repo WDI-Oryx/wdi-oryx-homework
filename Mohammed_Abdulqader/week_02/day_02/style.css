@@ -1,0 +1,44 @@
+*{
+    text-align: center ;
+    display: inline;
+    margin: 1px solid black;
+    padding: 100px;
+}
+h1{
+    text-align: left;
+    color: gray;
+    display: block;
+    margin: 10px;
+    padding-left: 150px;
+    
+}
+h2{
+    text-align: left;
+    display: block;
+    margin: 20px;
+    padding-left: 150px;
+}
+p{
+    text-align: inherit;
+    display: inline;
+    padding-left: 10px;
+    padding-inline-end: 50px;
+    
+}
+a{
+    padding-left: 150px;
+}
+
+body{
+    text-align: center;
+}
+div{
+    display: block;
+
+}
+img{
+    padding: 10px;
+    display: inline-block;
+    margin: 7px;
+
+}

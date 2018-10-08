@@ -8,7 +8,6 @@
     display: table;
     clear: both;
 }```
-- 
 
 ## Imgage Links
 - https://www.w3schools.com/w3images/mountains.jpg

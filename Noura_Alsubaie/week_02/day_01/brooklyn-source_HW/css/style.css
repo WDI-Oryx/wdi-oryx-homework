@@ -1,0 +1,36 @@
+
+
+Body{
+	 Font-Size: 14px;
+	 Line-Height: 17px;
+	 Font-Family: "Times New Roman", serif;
+	 Color: #656565;
+margin: auto;
+margin-left: 15px;
+margin-top: 10px;
+}
+.main img{
+	height: 900; 
+    width: 460; 
+	display:inline-block ;
+	margin-top: 10px;   
+}
+.logo {
+height: 20px;
+width:10;
+}
+.date{color: lightskyblue;}
+
+a {color: lightskyblue; }
+
+img:hover{ Color: #20222a;}
+.four img{
+	float: left;
+	margin: 1px;
+	border: solid  #a7a7a784 5px; 	
+} 
+footer p {
+text-align: left;
+padding-top: 15%;
+  opacity: 0.5;
+}

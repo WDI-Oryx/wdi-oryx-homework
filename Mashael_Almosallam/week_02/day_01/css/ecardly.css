@@ -1,0 +1,32 @@
+* {
+    
+        box-sizing: border-box; /* IE */
+   
+   
+}
+    body{
+    background-color: #d6d6d6;
+    color:#000000;
+   
+}
+.logo {
+    position: absolute;
+    margin: 0 auto;
+}
+    .background{
+   
+        width: 284px;
+        float: left;
+        position: relative;
+}
+        .card {
+            background-color: white;
+            margin: 0 auto;
+            width: 80%;
+            padding: 20px;
+        }
+
+section.card{
+background: white;
+    width: auto; 
+}

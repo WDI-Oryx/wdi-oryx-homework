@@ -60,9 +60,10 @@ nav {
   background-color: white;
   box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
   transition: all 300ms ease-out;
+  z-index: 99;
 
   /* Step 1: Add styles for fixed nav */
-
+  position: fixed;
 }
 
 nav ul {
@@ -112,7 +113,7 @@ nav .active {
  /* Hint: add code here */
  position: relative;
   display: inline-block;
-  z-index: -1;
+  position: relative;
 }
 
 .diag-1 {
@@ -121,7 +122,6 @@ nav .active {
   position: absolute;
   left: 350px;
   top: 150px;
-  
 }
 
 .diag-2 {
@@ -130,7 +130,6 @@ nav .active {
   position: absolute;
   top: 300px;
   right: 350px;
-
 }
 
 

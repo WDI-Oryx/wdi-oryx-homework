@@ -1,0 +1,38 @@
+#container
+{
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1000px;
+}
+
+header img
+{
+	margin-top:20px;
+}
+
+main 
+{
+	color:lightslategray;
+}
+main h5
+{
+	color:lightskyblue;
+}
+span
+{
+	color:lightskyblue;
+}
+
+
+footer{
+	width: 100%;
+}
+footer img
+{
+	border:5px solid rgba(99, 110, 121, 0.448);
+}
+
+#container h4
+{
+	color:lightslategray;
+}

@@ -120,8 +120,6 @@ nav .active {
 }
 
 .diag-2 {
-  position: absolute;
-
   /* Hint: add code here */
   position: absolute;
   top: 300px;
@@ -129,8 +127,6 @@ nav .active {
 }
 
 .diag-3 {
-  position: absolute;
-
   /* Hint: add code here */
   position: absolute;
   left: 380px;

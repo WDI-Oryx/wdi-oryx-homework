@@ -1,0 +1,38 @@
+.center{
+       display: block;
+        margin: auto;
+        
+        
+    
+}
+
+img.inline{
+    
+    height: 10.44px;
+    width: 44px;
+    border: 5px  solid darkgray;
+    margin:auto ;
+    padding-left: 100px;
+    display: inline-block;
+   
+   
+   
+    }
+
+
+h1{
+    color: gray;
+    text-align: left;
+    padding-left: 1em;
+}
+
+h5{
+    color: dodgerblue;
+}
+
+p{
+    font-family: "open sans", arial, sans-serif;
+    font-style: italic;
+    font-size: 24;
+    color: gray;
+}

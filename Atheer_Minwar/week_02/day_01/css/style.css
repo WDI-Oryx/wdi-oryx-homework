@@ -63,27 +63,31 @@ a {
 
 }
 
-.four {
+/* .four {
 	
 	/* height: 50px;
     width: 20.1%; */
-	display: inline-block;
-	border: 5px solid#c5c5c5;
-	margin: auto;
+	
 	/* background: #ece9e9; */
 	/* padding-left: 50px; */
-}
-.four :first-child {
+/* } */
+/* .four :first-child {
 	padding-left: 0;
-}
+} */ */
 .logos {
-	margin-left: 10	px;
-	border: 1px solid whitesmoke;
+	display: inline-block;
+	border: 5px solid#c5c5c5;
+	/* margin: auto; */
+	padding: 2px;
+	/* margin-left: 10	px; */
+	/* border: 1px solid whitesmoke; */
 }
 
 #container {
-	margin-left: 2px;
-	width :960px;
+	margin: 0 auto;
+	width :1000px;
+	text-align: left;
+	
 	/* 40% */
 }
 

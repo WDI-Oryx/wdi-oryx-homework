@@ -25,11 +25,11 @@ return (result);
   //Percent of
 
   function percentOf (numberOne ,numberTwo) {
-      var result = numberOne % numberTwo
-      console.log(numberOne + " is " +result+ "% of " +numberTwo);
+      var result = ((numberOne / numberTwo) * 100); 
+      console.log(numberOne + " is " + Math.round(result)+ "% of " +numberTwo);
       return(result);
   }
-percentOf(19,7);
+percentOf(2,4);
 
 
 

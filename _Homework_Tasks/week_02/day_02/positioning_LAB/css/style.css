@@ -92,9 +92,7 @@ nav .active {
 /* ---------------------------------------------------------
     M A I N   N A V   S T Y L E S
   ---------------------------------------------------------- */
-.main-nav{
-  position: fixed;
-}
+
 
 .bug-wrapper img:not(:first-child) {
   height: 27px;
@@ -104,20 +102,17 @@ nav .active {
   width: 400px;
   display: block;
   margin: 50px auto 30px;
-  /* or we can wrtie z-index:+1;*/
 }
 
 /* Step 2: Position the labels within the .bug-wrapper. */
 
 .bug-wrapper {
  /* Hint: add code here */
- position: relative;
   display: inline-block;
   position: relative;
 }
 
 .diag-1 {
-  
   /* Hint: add code here */
   position: absolute;
   left: 350px;
@@ -125,13 +120,11 @@ nav .active {
 }
 
 .diag-2 {
-  
   /* Hint: add code here */
   position: absolute;
   top: 300px;
   right: 350px;
 }
-
 
 .diag-3 {
   /* Hint: add code here */

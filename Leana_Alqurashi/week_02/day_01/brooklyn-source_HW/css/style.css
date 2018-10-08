@@ -10,3 +10,9 @@ Body Font Size = 12px
 Link Hover Color = #20222a
 
 */
+body{background-color:white;
+margin:2% 10% 2% 10%;}
+div{
+	background-color: aquamarine;
+	padding: 0.5%;
+}

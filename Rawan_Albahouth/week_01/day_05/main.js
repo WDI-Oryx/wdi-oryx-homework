@@ -35,7 +35,7 @@ for (var i = startingIndex; i <= endingIndex; i++) {
 
 
 
-
+// put back main.js
 
 // this is what i got after jack's help .. hh just trying to solve 
 

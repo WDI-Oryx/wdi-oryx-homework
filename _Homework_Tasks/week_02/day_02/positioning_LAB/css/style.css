@@ -60,12 +60,7 @@ nav {
   background-color: white;
   box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
   transition: all 300ms ease-out;
-<<<<<<< HEAD
-  position: fixed;
-  z-index: 100;
-=======
   z-index: 99;
->>>>>>> 2329554f75bb3b58a64f80e940d6609c4de65199
 
   /* Step 1: Add styles for fixed nav */
   position: fixed;
@@ -107,37 +102,17 @@ nav .active {
   width: 400px;
   display: block;
   margin: 50px auto 30px;
-
 }
 
 /* Step 2: Position the labels within the .bug-wrapper. */
 
 .bug-wrapper {
- position: relative;
+ /* Hint: add code here */
   display: inline-block;
   position: relative;
 }
 
 .diag-1 {
-<<<<<<< HEAD
-  position: absolute;
-  top: 150px;
-  right: -106px;
-
-
-}
-
-.diag-2 {
-  position: absolute;
-  bottom: 260px;
-  left: -135px;
-}
-
-.diag-3 {
-  position: absolute;
-  right: -160px;
-  bottom: 140px;
-=======
   /* Hint: add code here */
   position: absolute;
   left: 350px;
@@ -156,5 +131,4 @@ nav .active {
   position: absolute;
   left: 380px;
   bottom: 160px;
->>>>>>> 2329554f75bb3b58a64f80e940d6609c4de65199
 }

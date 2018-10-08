@@ -1,0 +1,62 @@
+#container{
+width: 1000px; margin: 0 auto; text-align: left; 
+}
+
+#logo{
+	margin: 30px 0px;
+}
+.home-images{
+	display: inline-block;
+}
+
+.footer-images{
+	display: inline-block;
+	padding: 2px;
+	border: 6px solid rgba(128, 128, 128, 0.507);
+}
+
+body{
+	margin: 10px 40px;
+}
+
+h3{
+	color: rgb(99, 95, 95);
+	font-family: serif;
+	font-weight: 200;
+}
+
+a{
+	text-decoration: unset;
+	font-family: serif;
+	color: rgb(15, 145, 206);
+}
+
+time{
+	font-family: serif;
+	font-size: 15px;
+	color: rgb(15, 145, 206);
+	margin-bottom: 0px; 
+}
+p, footer{
+	color: grey;
+	font-family: serif;
+	font-weight: normal;
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+/* ## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/ 

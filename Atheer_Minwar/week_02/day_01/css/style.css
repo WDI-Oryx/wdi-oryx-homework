@@ -10,51 +10,6 @@ Body Font Size = 12px
 Link Hover Color = #20222a
 
 */
-<<<<<<< HEAD
-body {
-	margin-top: 30px;
-	margin-left: 60px;
-}
-
-#container {
-	font-size: 12px;
-	line-height: 17px;
-	font-family: 'Times New Roman', 'serif';
-	color: #656565;
-}
-
-h1:hover {
-	color: #20222a;
-}
-
-p {
-	margin-right: 70px;
-}
-
-.date, a {
-	margin-bottom: 0px;
-	color: #55AFFF;
-	text-decoration: none;
-}
-
-.space {
-	margin-top: 0px;
-	margin-bottom: 30px;
-}
-
-.four-images {
-	border: 5px solid #656565;
-	margin-top: 10px;
-}
-
-footer p {
-	margin-top: 0px;
-	margin-bottom: 30px;
-	color: #656565;
-}
-
-
-=======
 
 
 
@@ -108,27 +63,31 @@ a {
 
 }
 
-.four {
+/* .four {
 	
 	/* height: 50px;
     width: 20.1%; */
-	display: inline-block;
-	border: 5px solid#c5c5c5;
-	margin: auto;
+	
 	/* background: #ece9e9; */
 	/* padding-left: 50px; */
-}
-.four :first-child {
+/* } */
+/* .four :first-child {
 	padding-left: 0;
-}
+} */ */
 .logos {
-	margin-left: 10	px;
-	border: 1px solid whitesmoke;
+	display: inline-block;
+	border: 5px solid#c5c5c5;
+	/* margin: auto; */
+	padding: 2px;
+	/* margin-left: 10	px; */
+	/* border: 1px solid whitesmoke; */
 }
 
 #container {
-	margin-left: 2px;
-	width :960px;
+	margin: 0 auto;
+	width :1000px;
+	text-align: left;
+	
 	/* 40% */
 }
 
@@ -141,4 +100,3 @@ footer {
 	color : #b4b4b4;
 	font-size: 7px;
 }
->>>>>>> 170d667dc7caaf1ce9fa3d44cfb9730bbaf54169

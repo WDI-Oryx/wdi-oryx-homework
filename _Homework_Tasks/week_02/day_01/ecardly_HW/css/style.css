@@ -39,11 +39,13 @@ h3 {
 }
 
 .fleft {
-    float: left;
+    /*float: left;*/
+    display: inline;
 }
 
 .fright {
-    float: right;
+   /* float: right;*/
+   display: inline;
 }
 
 p {

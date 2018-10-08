@@ -64,8 +64,9 @@ function planTrip(sLine, sStop, eLine, eStop){
     // Printing the output of the line and stops
     console.log(`You must travel through the following stops on the ${sLine} line: ${fromTo(line, sStop, communStop)}`)
 
-    // Changing the line
-    console.log(`Change at Union Square from the ${sLine} line to the ${eLine} line.`);
+    // Changing the line if it's not the same line for the whole trip
+    if(sLine !== eLine)
+        console.log(`Change at Union Square from the ${sLine} line to the ${eLine} line.`);
 
     // Getting the selected end line
     line = getLine(eLine);
@@ -88,3 +89,6 @@ planTrip("N", "8th", "L", "8th");
 console.log("");
 console.log("Here is your trip from 1st (L) to Grand Centeral (6): ");
 planTrip("L", "1st", "6", "Grand Central");
+console.log("");
+console.log("Here is your trip from 8th (L) to 1st (L): ");
+planTrip("L", "8th", "L", "1st");

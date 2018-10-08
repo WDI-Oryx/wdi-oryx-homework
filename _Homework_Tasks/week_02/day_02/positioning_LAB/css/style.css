@@ -18,7 +18,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 header h1 {
@@ -60,6 +59,7 @@ nav {
   background-color: white;
   box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
   transition: all 300ms ease-out;
+  position: fixed;
 
   /* Step 1: Add styles for fixed nav */
 
@@ -108,17 +108,21 @@ nav .active {
 .bug-wrapper {
  /* Hint: add code here */
   display: inline-block;
+  position: relative;
 }
 
 .diag-1 {
   /* Hint: add code here */
+  position: absolute;
 
 }
 
 .diag-2 {
   /* Hint: add code here */
+  position: absolute;
 }
 
 .diag-3 {
   /* Hint: add code here */
+  position: absolute;
 }

@@ -1,0 +1,61 @@
+
+
+.pc{
+    height: 50%;
+    width:23%;
+    display: inline-flex;
+ float: inherit;
+} 
+
+
+
+body{
+    background: rgb(214, 214, 214);
+    color: #000000
+   
+}
+
+.half{
+    height: 300px;
+    width: 25%;
+    background: white;
+    display:inline-flex;
+   float: left;
+
+  
+}
+.pp{
+    font-size: 12px;
+   float: right;
+   width: 100%;
+   margin:10px;
+   padding: 10px;
+}
+
+html{
+    float: inherit;
+    margin: 10px;
+    padding: 10px;
+}
+.hh{
+    padding-left: 1%;
+    display:inline-flex;
+}
+.ii{
+    float: right;
+    width: 100%;
+    margin:10px;
+    padding: 10px;
+}
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+  }
+
+  .n{
+      margin-top: -11%;
+     padding-bottom: 10%;
+   float:50%;
+
+  }

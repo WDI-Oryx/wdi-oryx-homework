@@ -1,15 +1,50 @@
 var stops = 0; // Stops Counter
 var index = 0, index2 = 0; // keep track of index
-var Trip = ["6", "Astor Place", "N", "Times Square"]; //user's input saved in an array
+debugger;
+var Trip = []; //user's input saved in an array
 var path = []; // trip path saved in array
 var uS = "Union Square";
 //lines
 var LineN = ["Times Square", "34th", "28th", "23rd", uS, "N-8th"];
 var LineL = ["L-8th", "6th", uS, "L-3rd", "1st"];
-var LineSix = ["Grand Central", "33rd", "8th", "6-3rd", uS, "Astor Place"];
+var LineSix = ["Grand Central", "33rd", "6-8th", "6-3rd", uS, "Astor Place"];
+function FunctionOne() {
+    var a = document.getElementById("first").value;
+    Trip.push(a);
+
+
+}
+
+function FunctionTwo() {
+    var b = document.getElementById("second").value;
+    Trip.push(b);
+}
+function FunctionThree() {
+    var c = document.getElementById("third").value;
+    Trip.push(c);
+}
+function FunctionFour() {
+    var d = document.getElementById("fourth").value;
+
+    Trip.push(d);
+    search(Trip);
+
+}
+document.getElementById("first").onchange = FunctionOne;
+document.getElementById("second").onchange = FunctionTwo;
+document.getElementById("third").onchange = FunctionThree;
+document.getElementById("fourth").onchange = FunctionFour;
+
+//document.getElementById("showStop").innerHTML = "<br>" + "you will stop " + stops + " times" + "<br>";
+//document.getElementById("showPath").innerHTML = "Your path is: " + path + "<br>";
+
+
+
+
 function search(input) {
     if (input[0] === "N") {
         if (LineN.includes(input[1])) {
+            console.log("hllll")
             index = LineN.indexOf(input[1]);
             stops = stops + (index + 1);
             for (var i = 0; i <= index; i++) {
@@ -127,9 +162,9 @@ function search(input) {
             }
         }
     }
+    document.getElementById("showStop").innerHTML = "<br>" + "you will stop " + stops + " times" + "<br>";
+    document.getElementById("showPath").innerHTML = "Your path is: " + path + "<br>";
 
-    document.write(stops + "<br>");
-    document.write(path);
 }
 
 function lookupN(input) {
@@ -344,5 +379,5 @@ function lookupSix(input) {
     }
 }
 
-search(Trip);
+//search(Trip);
 

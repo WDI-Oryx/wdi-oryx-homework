@@ -10,47 +10,99 @@
 
 header {
   /* 1 property */
+  height: 60px;
 }
 
-header .logo, header nav {
+header .logo, header nav li{
   /* 1 property */
+  float: left;
+  list-style-type: none;
+   margin: 5px 5px 5px 100px; 
 }
 
+.aboutbtn 
+{
+  width: 100px;
+  margin: -20px auto 20px auto;
+  text-align: center;
+}
 
 .container .aboutrow {
   /* 1 property */
-}
+  display: flex;
 
+}
+.aboutcol h4
+{
+  margin: 0 auto;
+  text-align: center;
+}
+.aboutcol p
+{
+  margin: 0 auto;
+  text-align: left;
+}
 
 /* feature */
 
 .feature {
   /* 1 property */
+display: flex;
+width: 100%;
+
+}
+.feat-left {
+  width: 50%; 
+}
+.feat-right{
+  width: 50%;
+}
+.feat-right h3 {
+  width: 50%;
+  margin: 0 ; 
 }
 
 /* cta */
 
 .cta .container {
   /* 1 property */
+  display: flex;
+
+}
+ .contactbtn
+{
+  margin: 15px 15px 15px 44px;
+  width:100px;
+  height: 30px;
+  text-align: center;
 }
 
 
 /* footer */
 
-footer {
+footer  {
   /* 1 property */
+  display: flex;
+  
 }
 
 .footer-left {
   /* 3 properties */
+  width: 50%;
+  display: flex;
+  margin: 5px;
 }
 
 .footer-left .footer-col {
   /* 1 property */
+  width: 50%;
+
 }
 
 .footer-right {
   /* 1 property */
+  width: 40%;
+  margin-left: 20px;
 }
 
 /* ======+++++======++++=====+++=== */

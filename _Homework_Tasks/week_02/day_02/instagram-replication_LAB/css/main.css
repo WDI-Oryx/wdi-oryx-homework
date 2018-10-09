@@ -3,6 +3,9 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -51,4 +54,30 @@ body {
   color: #e1e1e1;
   padding: 5px .5em;
   vertical-align: top;
+}
+
+body { background: #064166;
+  height: 100%;
+  background: linear-gradient(180deg, #1c5380 40%, #FFFFFF 0%); }
+#wrapper {
+    background: url(1px.png) repeat-y;
+    background-size: 50% auto;
+    width: 100%;
+}
+
+ 
+
+#logo{
+  display: block;
+}
+
+footer{
+  text-align: center;
+}
+
+a{
+  color: #1c5380;
+  text-decoration: unset;
+  font-weight: 600;
+  padding: 5px
 }

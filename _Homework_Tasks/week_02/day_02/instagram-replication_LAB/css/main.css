@@ -8,7 +8,19 @@ body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
 }
+header{
+  background-color: #064166;
+}
 
+.frame{
+  position: relative;
+  left: 400px;
+}
+
+.container{
+  background-image: url('../images/frame.png');
+  background-repeat: no-repeat;
+}
 .btn_login {
   border: none;
   padding: 5px;

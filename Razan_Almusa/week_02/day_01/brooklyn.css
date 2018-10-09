@@ -1,0 +1,31 @@
+body {padding: 0px 70px 0px 60px;
+margin-right: 300px;}
+h1{
+color : darkgray;
+
+}
+
+ h3{
+     color: grey;
+    
+ }
+
+ .date, .r{
+   color:rgb(77, 166, 255);
+ }
+ 
+ .paragraph{
+color: darkgray;
+ }
+
+.images{
+     display: inline;
+     border: 5px solid darkgrey;
+ }
+ 
+ footer{
+     color: darkgrey;
+ }
+
+
+ 

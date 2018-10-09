@@ -13,7 +13,7 @@ function trip(line, startingPoint, lineTwo, stopingPoint) {
         forward(line, startingPoint, lineTwo, stopingPoint);
     }
 }
-trip(lineN, "TS", line6, "33");
+trip(lineN, "34", lineL, "1");
 
 function forward(L, SP, LT, SOP) {
     // console.log(L + " "+SP +" "+ LT + " "+SOP + " TESTING");
@@ -41,9 +41,11 @@ function forward(L, SP, LT, SOP) {
             if (SOP === L[i]) {
                 stringLine += " " + L[i];
                 total++;
+                // console.log("You must travel through the following stops on the line: " + stringLine);
                 break;
             }
         }
+       
         stringLine += " " + L[i];
         total++;
     }
@@ -51,10 +53,9 @@ function forward(L, SP, LT, SOP) {
     console.log("Change at " + mainPoint);
     console.log("Your journey continues through the following stops: " + secStringline);
     console.log("Your total is " + total);
-
 }
 function backward(L, SP, LT, SOP) {
-    // debugger;
+    debugger;
     var bIndex = L.indexOf(SP) -1;
     for (var i = bIndex; i >= L.indexOf(SOP); i--) {
         total++;

@@ -8,8 +8,7 @@ body {
   margin: 0;
 }
 .navigation {
-  margin: 0;
-  padding: 0;
+  
   list-style: none;
   display: flex;
   justify-content: space-around;
@@ -17,7 +16,7 @@ body {
 
 .aboutbtn{
   margin: auto;
-  max-width: 100px;
+  width: 100px;
   text-align: center;
 }
 
@@ -41,7 +40,6 @@ header nav {
 
 .aboutcol h4, .aboutcol p{
   margin: 0;
-  padding: 0;
 }
 
 /* feature */
@@ -80,7 +78,7 @@ footer ul{
 .footer-left {
   /* 3 properties */
   display: flex;
-  flex-grow: 6;
+  flex-grow: 5;
 }
 
 .footer-left .footer-col {

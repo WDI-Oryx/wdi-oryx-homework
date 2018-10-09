@@ -4,24 +4,18 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 100px;
 }
-
-h1:hover {
+ h1:hover {
     color: #20222a;
-
-
-}
-
-div.main{
+ }
+ div.main{
     padding-left: 100px;
 }
-
-h2{
+ h2{
     font-size: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-left: 100px;
 }
-
-p{
+ p{
      Font-Size : 12px;
 	 Line-Height : 17px;
 	 Font-Family :"Times New Roman", "serif";
@@ -29,16 +23,17 @@ p{
      padding-left: 100px;
 }
 
-p.date:hover { 
+ p.date:hover { 
    color: #20222a;
 }
 
-.image{
+ .image{
     padding-left: 100px;
     border: 5px solid grey;
     margin: 0 auto;
    
 }
+
 footer{
     Font-Size : 10px;
     Line-Height : 17px;

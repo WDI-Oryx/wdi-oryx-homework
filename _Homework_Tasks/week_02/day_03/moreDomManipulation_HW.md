@@ -24,9 +24,9 @@ Start with this HTML and save it as "aboutme.html":
   <div class="profilePicture"></div>
 
   <ul>
-    <li>Nickname: <span id="nickname"></span>
-    <li>Favorite Animal: <span id="favorite"></span>
-    <li>Hometown: <span id="hometown"></span>
+    <li>Nickname: <span id="nickname"></span></li>
+    <li>Favorite Animal: <span id="favorite"></span></li>
+    <li>Hometown: <span id="hometown"></span></li>
   </ul>
 
   <div class="favoriteBooks"></div>

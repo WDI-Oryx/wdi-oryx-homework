@@ -44,6 +44,10 @@ Start of with the following HTML:
 
 ### Bonus 1
 
+Allow the user to select the width and the height!
+
+### Bonus 2
+
 Allow the user to select where their image comes from using a dropdown
 
 Suggested options:

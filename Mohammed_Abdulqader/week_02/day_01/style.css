@@ -4,6 +4,7 @@
     margin: 1px solid black;
     padding: 100px;
 }
+
 h1{
     text-align: left;
     color: gray;
@@ -24,6 +25,8 @@ p{
     padding-left: 10px;
     padding-inline-end: 50px;
     
+    
+    
 }
 a{
     padding-left: 150px;
@@ -31,6 +34,7 @@ a{
 
 body{
     text-align: center;
+    justify-content: center;
 }
 div{
     display: block;

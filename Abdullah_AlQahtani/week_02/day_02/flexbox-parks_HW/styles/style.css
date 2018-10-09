@@ -5,20 +5,39 @@
 /* ======+++++======++++=====+++=== */
 
 /* desktop rules go here */
+body {
+  margin: 0;
+}
+.navigation {
+  
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutbtn{
+  margin: auto;
+  width: 100px;
+  text-align: center;
+}
 
 /* header & nav */
 
 header {
   /* 1 property */
+  display: flex;
 }
 
 header .logo, header nav {
   /* 1 property */
+  flex: 1;
+  
 }
 
 
 .container .aboutrow {
   /* 1 property */
+  display: flex;
 }
 
 
@@ -26,12 +45,16 @@ header .logo, header nav {
 
 .feature {
   /* 1 property */
+  display: flex;
 }
 
 /* cta */
 
 .cta .container {
   /* 1 property */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
@@ -39,18 +62,22 @@ header .logo, header nav {
 
 footer {
   /* 1 property */
+  display: flex;
 }
 
 .footer-left {
   /* 3 properties */
+  list-style: none;
 }
 
 .footer-left .footer-col {
   /* 1 property */
+  flex-grow: 9;
 }
 
 .footer-right {
   /* 1 property */
+  flex-grow: 3;
 }
 
 /* ======+++++======++++=====+++=== */

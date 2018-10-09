@@ -1,0 +1,41 @@
+
+h1{
+    font-size: 40px;
+    color: darkgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 100px;
+}
+div.main{
+    padding-left: 100px;
+}
+h2{
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 100px;
+}
+p{
+     Font-Size : 12px;
+	 Line-Height : 17px;
+	 Font-Family :"Times New Roman", "serif";
+     color: #656565;
+     padding-left: 100px;
+}
+p.date:hover { 
+   color: #20222a;/* NOT sure if it's correct */
+}
+.four{
+    padding-left: 100px;
+    height: 10px;
+    width: 10.99%;
+    display:inline-block;
+    margin: auto;
+    
+   
+}
+footer{
+    Font-Size : 10px;
+    Line-Height : 17px;
+    Font-Family :"Times New Roman", "serif";
+    color: #656565;
+    padding-left: 100px;
+}

@@ -1,0 +1,343 @@
+
+
+/* ======+++++======++++=====+++=== */
+/* ============ DESKTOP RULES ===== */
+/* ======+++++======++++=====+++=== */
+
+/* desktop rules go here */
+
+/* header & nav */
+
+header {
+  /* 1 property */
+  text-align: right;
+
+}
+
+header .logo, header nav {
+  /* 1 property */
+  display: inline-block;
+}
+/* MY MODIFICATION */
+.hero h1 {
+  position: relative;
+  bottom: 50px;
+}
+
+.aboutbtn {
+  width: 85px;
+  text-align: center;
+  margin: 0px auto;
+  position: relative;
+  bottom: 80px;
+}
+
+.top h3 {
+  font-weight: normal;
+}
+
+.container .aboutrow .aboutcol{
+  flex: 1;
+  padding: 0px;
+}
+.container .aboutrow p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.cta .container h3 {
+  font-size: 10px;
+  display: inline;
+}
+
+.contactbtn {
+  width: 85px;
+  text-align: center;
+  margin: 0px auto;
+  position: relative;
+  bottom: 30px;
+  left: 300px;
+}
+
+.footer-sub button{
+  display: inline;
+}
+
+/*****************************/
+.container .aboutrow{
+  /* 1 property */
+  display: flex;
+}
+
+/* feature */
+
+.feature {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* cta */
+
+.cta .container {
+  /* 1 property */
+  padding: 50px;
+}
+
+
+/* footer */
+
+footer {
+  /* 1 property */
+  display: flex;
+}
+.footer-left {
+  /* 3 properties */
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+}
+
+.footer-left .footer-col {
+  /* 1 property */
+  margin-right: 50px;
+
+}
+
+.footer-right {
+  /* 1 property */
+  margin-left: 50px;
+}
+
+/* ======+++++======++++=====+++=== */
+/* ========= DON'T TOUCH!!! ======= */
+/* ======+++++======++++=====+++=== */
+
+.container {
+  width: 80vw;
+  max-width: 1000px;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4em;
+  font-size: 13px;
+  margin: 0px;
+}
+
+header {
+  border-bottom: 3px solid #d0a064;
+  background-color: #167C80;
+  height: 50px;
+}
+
+.logo {
+  padding: 15px;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 200px;
+}
+
+nav ul li {
+  padding: 15px;
+  display: inline;
+  margin-right: 40px;
+  font-size: 15px;
+
+}
+
+.navigation a {
+  color: white;
+  transition: all 0.2s;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+
+.navigation li:hover a {
+  color: #d0a064;
+  transition: all 0.2s;
+}
+
+.hero-cont {
+  background-image: url('../assets/hero.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: #555555;
+  background-blend-mode: multiply;
+  padding: 2em;
+}
+
+.hero h2, .hero h1 {
+  color: white;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 4em;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.hero h1 {
+  font-size: 2em;
+  font-style: italic;
+  padding: 0.8em 0; 
+}
+
+.aboutbtn, .contactbtn {
+  display: block;
+  color: #167C80;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  text-decoration:none;
+  transition: all 0.2s;
+}
+
+.aboutbtn:hover, .contactbtn:hover {
+  background-color: #167C80;
+  color: white;
+  transition:all 0.2s;
+}
+
+.container .top {
+  padding: 1.5em 0;
+}
+
+.top h3 {
+  font-size: 2em;
+  line-height: 1.4em;
+  padding: 1em;
+  font-style: italic;
+}
+
+.top p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
+.aboutrow {
+  background-color: #d0a064;
+  padding: 15px;
+}
+
+.aboutcol {
+  border: 1px solid #fff;
+  padding: 15px;
+  margin: 5px;
+  background-color: #ffe5c5;
+}
+
+.aboutcol h4 {
+  font-size: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #167C80;
+  padding: 0.8em 0;
+}
+
+.feature {
+  background-color: #167C80;
+}
+
+.feat-left {
+  background-image: url('../assets/glacier.jpg');
+  background-size:cover;
+  background-position:center center;
+}
+
+.feat-right {
+  padding: 50px;
+}
+
+.feat-right p {
+  color: white;
+  margin: 1em 0;
+}
+
+.feat-intro {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ffe5c5;
+}
+
+.feat-right h3 {
+  font-size: 2em;
+  line-height: 1.4em;
+  color: white;
+  font-weight: bold;
+}
+
+.cta {
+  background-color: #d0a064;
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer-col {
+  padding: 15px 0;
+}
+
+.footer-col .footernav {
+  list-style: none;
+}
+
+footer a {
+  color: #d0a064;
+  text-decoration: none;
+
+}
+
+input {
+  border: 0px;
+  background-color: #555;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  color: #555;
+  background-color: white;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 5px 15px;
+}
+
+footer h5 {
+  padding: 15px 0;
+}
+
+.cta .container h3 {
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+
+  footer {
+    text-align: left;
+    padding: 50px 15px 50px 200px;
+  }
+
+}

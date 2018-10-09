@@ -22,7 +22,6 @@ header .logo, header nav {
   
   display: flex;
   align-content: space-around;
-  margin: 0px 50px;
   align-items: left;
   
  
@@ -31,10 +30,22 @@ header .logo, header nav {
 
 .container .aboutrow {
   display: flex;
-  justify-content:center;
-  
+  justify-content:flex-end;
 
 }
+.feat-left
+{
+  display: flex;
+  width: 50%;
+  justify-content:flex-end;
+}
+.feat-right
+{
+  width: 50%;
+  justify-content:flex-start;
+}
+
+
 
 
 /* feature */
@@ -43,8 +54,7 @@ header .logo, header nav {
   /* 1 property */
   display: flex;
   /* flex-direction: row; */
-  width: 50%;
-  justify-content: flex-end;
+
 
   
 }

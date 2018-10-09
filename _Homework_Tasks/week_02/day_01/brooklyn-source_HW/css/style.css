@@ -1,7 +1,7 @@
 /* 
 
 ## Style Hints: 
-	
+
 Body Font Size = 12px
 	 Line Height = 17px
 	 Font Family = "Times New Roman", serif
@@ -10,89 +10,3 @@ Body Font Size = 12px
 Link Hover Color = #20222a
 
 */
-
-
-
-h1 {
-	font-size: 25px; 
-	/* padding: 1px 10px 0px 0px ; */
-	/* top: 8px;
-    left: 16px; */
-   
-
-	/* Top | Right | Bottom | Left */
-}
-body {
-	/* text-align: right; */
-	/* padding: 20px, 10px 20px 10px; */
-	font-family: 'Times New Roman', Times, serif;
-	color: #656565; 
-	padding-left : 65px;
-}
-
-
-section {
-	display: inline-block;
-	
-}
-p {
-	
-	/* height: 100px; */
-	width:500px;
-
-	font-size: 12px ;
-	line-height: 17px ;
-	
-}
-
-a:hover {
-	color :#20222a;
-}
-
-/* .head-img {
-
-	width: 80%;
-	/* Top | Right | Bottom | Left */
-		/* display:block; */
-/* } */
-/* } */ 
-
-a {
-	color :lightskyblue;
-	text-decoration: none;
-
-}
-
-.four {
-	
-	/* height: 50px;
-    width: 20.1%; */
-	display: inline-block;
-	border: 5px solid#c5c5c5;
-	margin: auto;
-	/* background: #ece9e9; */
-	/* padding-left: 50px; */
-}
-.four :first-child {
-	padding-left: 0;
-}
-.logos {
-	margin-left: 10	px;
-	border: 1px solid whitesmoke;
-}
-
-#container {
-	margin-left: 2px;
-	width :960px;
-	/* 40% */
-}
-
-.date {
-	color: lightskyblue;
-}
-footer {
-	padding: 5px;
-	margin: 5px;
-	color : #b4b4b4;
-	font-size: 7px;
-}

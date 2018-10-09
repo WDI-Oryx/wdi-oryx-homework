@@ -18,3 +18,12 @@ nav{
      background-color: black;
      color: white;
  }
+ li{
+     list-style: none;
+ }
+
+ .requst-buttom{
+     display: inline;
+     border: gray solid  10px;
+     display: inline;
+ }

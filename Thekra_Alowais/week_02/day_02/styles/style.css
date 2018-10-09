@@ -38,7 +38,8 @@ nav li{
 .feature {
   /* 1 property */
 display: flex;
-flex-direction: row;
+/* flex-direction: row; */
+
 }
 
 /* cta */
@@ -57,12 +58,14 @@ padding: 2px;
 footer {
   /* 1 property */
   display: flex;
+ 
 }
 
 .footer-left {
   /* 3 properties */
+
   flex-direction: row;
-  
+
 }
 
 .footer-left .footer-col {

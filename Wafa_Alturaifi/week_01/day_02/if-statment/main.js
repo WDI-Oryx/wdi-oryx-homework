@@ -2,8 +2,8 @@
 //var y;
 //var married = z;
 //var kids= n;
-
 //Age Calculator
+
 var currentyear = 2018;
 var  birthyear = 1969;
 var age = currentyear - birthyear;
@@ -38,12 +38,24 @@ console.log("the area is"+area);
 }
 
 
-var age =16;
-if (age=>18) {
-    console.log("Drive away!");
-}
-else{
-    console.log("Sorry, you can't drive yet");
-}
 
 
+function graterthan(nam1,num2) {
+    num1=prompt("enter your first number");
+    num2=prompt("enter your second number");
+    if (num1>>num2){
+        console.log(num1+" grater than "+num2);
+    }else
+    {
+        console.log(num2+" grater than "+num1);
+    }
+}
+
+function drivingage(age) {
+    
+    if (age<<18){
+console.log("Sorry, you can't drive yet");
+    }else {
+   console.log("Drive away!");
+    }
+}}

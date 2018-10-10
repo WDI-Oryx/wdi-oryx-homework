@@ -1,4 +1,4 @@
-console.log("bfgvv");
+
 
 var button = document.querySelector("#randomize");
 var inputW = document.querySelector(".width");
@@ -14,8 +14,8 @@ function addPhoto()
         var w= inputW.value;
         var h= inputH.value;
         var img = document.createElement("img");
-
-        img.setAttribute("src", "https://source.unsplash.com/"+w+"x"+h);
+        var text = "https://source.unsplash.com/"+w+"x"+h
+        img.setAttribute("src", text);
         document.body.appendChild(img);
 
         

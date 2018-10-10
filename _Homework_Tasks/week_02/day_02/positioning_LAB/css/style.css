@@ -60,11 +60,7 @@ nav {
   background-color: white;
   box-shadow: 0 3px 11px rgba(0, 0, 0, .1);
   transition: all 300ms ease-out;
-<<<<<<< HEAD
-  position: fixed;
-=======
   z-index: 99;
->>>>>>> 2329554f75bb3b58a64f80e940d6609c4de65199
 
   /* Step 1: Add styles for fixed nav */
   position: fixed;
@@ -114,16 +110,9 @@ nav .active {
  /* Hint: add code here */
   display: inline-block;
   position: relative;
-<<<<<<< HEAD
-  z-index: 99;
-=======
->>>>>>> 2329554f75bb3b58a64f80e940d6609c4de65199
 }
 
 .diag-1 {
-position: absolute;
-top: 150px;
-left: 350px;
   /* Hint: add code here */
   position: absolute;
   left: 350px;
@@ -131,10 +120,6 @@ left: 350px;
 }
 
 .diag-2 {
-  position: absolute;
-bottom: 300px;
-right:220px;
-
   /* Hint: add code here */
   position: absolute;
   top: 300px;
@@ -142,10 +127,6 @@ right:220px;
 }
 
 .diag-3 {
-
-  position: absolute;
-bottom: 190px;
-left: 100px;
   /* Hint: add code here */
   position: absolute;
   left: 380px;

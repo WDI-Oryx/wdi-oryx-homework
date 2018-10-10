@@ -1,0 +1,37 @@
+/* 
+
+## Style Hints: 
+
+Body Font Size = 12px
+	 Line Height = 17px
+	 Font Family = "Times New Roman", serif
+	 Font Color = #656565
+
+Link Hover Color = #20222a
+
+*/
+
+h1{
+	margin-left: 250px;
+	color: gray;
+}
+h2 
+{
+	margin-right: 710px;
+	color: gray;
+}
+
+#container
+{
+	text-align: center;
+	
+}
+footer{
+	text-align: center;
+
+}
+footer img 
+{	
+	border: 5px solid grey;
+	
+}

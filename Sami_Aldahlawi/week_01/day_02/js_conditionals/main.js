@@ -59,13 +59,17 @@ var suburb = "Riyadh";
 var appro = "";
 if(suburb === "riyadh"){
     appro = "Halla";
+    console.log(suburb);
 }else if (suburb === "Qassim"){
     appro = "Altawn";
+    console.log(suburb);
 }else if (suburb === "Jeddah"){
     appro = "Alatehad";
+    console.log(suburb);
 }else{
-
+    console.log("Sorry, I can guess what is your suburb");
 }
+
 
         //////////// ??????? ///////
 
@@ -160,7 +164,7 @@ Bonus: If the message is all spaces, also print "Fine. Be that way!"
 var message = "";
 if(message.endsWith('?') && message.length > 0){
     console.log("Sure.");
-}else if(message === message.toLocaleUpperCase() &&  message.trim().length > 0){
+}else if(message === message.toUpperCase() &&  message.trim().length > 0){
     console.log("Woah, chill out!");
 }else if(!message || message.trim().length === 0){
     console.log("Fine. Be that way!'");
@@ -172,10 +176,18 @@ if(message.endsWith('?') && message.length > 0){
 // The Pluralizer
     
 var numbers = 2;
-var noun = "dog";
+var noun = "dish";
 if(numbers > 1){
+    if(noun[noun.length-2] === "s" && noun[noun.length-1] === "h"){
+        noun += "es";
+        console.log(noun);
+    }else if(noun[noun.length-1] === "y"){
+        noun += "ies";
+        console.log(noun);
+    }else{
     noun += "s";
     console.log(noun);
+    }
 }else if(numbers === 1){
     console.log(noun);
 }else {

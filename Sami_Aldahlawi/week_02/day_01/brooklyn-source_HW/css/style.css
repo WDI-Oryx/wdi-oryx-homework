@@ -1,10 +1,6 @@
 /* 
 
 ## Style Hints: 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2329554f75bb3b58a64f80e940d6609c4de65199
 Body Font Size = 12px
 	 Line Height = 17px
 	 Font Family = "Times New Roman", serif
@@ -12,4 +8,37 @@ Body Font Size = 12px
 
 Link Hover Color = #20222a
 
-*/
+ */
+
+
+ body
+ {
+	 margin:   0 auto;
+	 width:100%;
+	 max-width: 1000px;
+ }
+#container
+{
+	margin: 20px auto;
+	width: 900;
+	max-width: 1000px;
+}
+h2
+{
+	color: lightslategray;
+}
+
+p:nth-child(2)
+{
+	color: lightblue;
+}
+
+footer
+ {
+	 width: 100%;
+ }
+
+ footer img
+ {
+	 width: 24%;
+ }

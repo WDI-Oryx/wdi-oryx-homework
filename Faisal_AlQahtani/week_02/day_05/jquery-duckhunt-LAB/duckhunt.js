@@ -34,15 +34,21 @@ $("document").ready(function () {
 
   function createDuck() {
     var body = $('body');
-    var $duck = $("<div/>").addClass("duck");
+
+    var randomWidth = Math.floor(Math.random() * window.innerWidth);
+    var randomHeight = Math.floor(Math.random() * window.innerHeight);
+
+    var $duck = $("<div/>").addClass("duck").css({
+      top: randomWidth,
+      left: randomWidth
+    });
     body.append($duck);
+
     setInterval(function () {
       $duck.toggleClass("flap")
     }, 250);
 
     setInterval(function () {
-      var randomWidth = Math.floor(Math.random() * window.innerWidth);
-      var randomHeight = Math.floor(Math.random() * window.innerHeight);
       $duck.animate({ top: randomHeight, left: randomWidth });
     }, 1000);
     var $mousePos = $('<div/>').css('position', 'absolute');

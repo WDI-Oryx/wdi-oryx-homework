@@ -1,0 +1,28 @@
+.container {
+    height: 700px;
+    width: 100%;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    height: 100px;
+    width: 100px;
+    background-color: firebrick;
+    border: 2px solid aquamarine;
+  }
+  
+  
+  h2 {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: crimson;
+    margin: 0;
+  }
+  
+  .active {
+    background: rebeccapurple;
+  }

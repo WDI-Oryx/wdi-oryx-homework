@@ -31,18 +31,18 @@ $(this).css("background-color", "white");
         
 });
 
-$(".box0").hover(function(){
-    $(this).css("background-color", "red");
-    }, function(){
-    $(this).css("background-color", "white");
-});
+// $(".box0").hover(function(){
+//     $(this).css("background-color", "red");
+//     }, function(){
+//     $(this).css("background-color", "white");
+// });
 
 
-// click box2 color green
+//click box2 color green
 function onBoxClick(){
     $(this).css("background-color", "green");
     $(this).addClass("clicked");
     $(this).off();
 }
 
-$(".box2").click(onBoxClick);
+$(".box").click(onBoxClick);

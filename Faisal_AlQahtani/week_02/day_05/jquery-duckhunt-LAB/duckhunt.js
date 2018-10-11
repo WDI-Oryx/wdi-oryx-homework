@@ -51,8 +51,23 @@ $("document").ready(function () {
     setInterval(function () {
       $duck.animate({ top: randomHeight, left: randomWidth });
     }, 1000);
+
     var $mousePos = $('<div/>').css('position', 'absolute');
     body.click((e) => {
+      $mousePos.css({
+        width: '100px',
+        height: '100px',
+        left: (e.clientX - 50) + 'px',
+        top: (e.clientY - 50) + 'px',
+        background: 'url(./images/shot.png)',
+        zIndex: 99
+      })
+      body.append($mousePos);
+      setTimeout(() => {
+        $mousePos.remove();
+      }, 50);
+    });
+    body.on("touchstart", (e) => {
       $mousePos.css({
         width: '100px',
         height: '100px',

@@ -1,0 +1,328 @@
+
+
+/* ======+++++======++++=====+++=== */
+/* ============ DESKTOP RULES ===== */
+/* ======+++++======++++=====+++=== */
+
+/* desktop rules go here */
+
+/* header & nav */
+
+header {
+  /* 1 property */
+  height: 60px;
+}
+
+header .logo, header nav li{
+  /* 1 property */
+  float: left;
+  list-style-type: none;
+   margin: 5px 5px 5px 100px; 
+}
+
+.aboutbtn 
+{
+  width: 100px;
+  margin: -20px auto 20px auto;
+  text-align: center;
+}
+
+.container .aboutrow {
+  /* 1 property */
+  display: flex;
+
+}
+.aboutcol h4
+{
+  margin: 0 auto;
+  text-align: center;
+}
+.aboutcol p
+{
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* feature */
+
+.feature {
+  /* 1 property */
+display: flex;
+width: 100%;
+
+}
+.feat-left {
+  width: 50%; 
+}
+.feat-right{
+  width: 50%;
+}
+.feat-right h3 {
+  width: 50%;
+  margin: 0 ; 
+}
+
+/* cta */
+
+.cta .container {
+  /* 1 property */
+  display: flex;
+
+}
+ .contactbtn
+{
+  margin: 15px 15px 15px 44px;
+  width:100px;
+  height: 30px;
+  text-align: center;
+}
+
+
+/* footer */
+
+footer  {
+  /* 1 property */
+  display: flex;
+  
+}
+
+.footer-left {
+  /* 3 properties */
+  width: 50%;
+  display: flex;
+  margin: 5px;
+}
+
+.footer-left .footer-col {
+  /* 1 property */
+  width: 50%;
+
+}
+
+.footer-right {
+  /* 1 property */
+  width: 40%;
+  margin-left: 20px;
+}
+
+/* ======+++++======++++=====+++=== */
+/* ========= DON'T TOUCH!!! ======= */
+/* ======+++++======++++=====+++=== */
+
+.container {
+  width: 80vw;
+  max-width: 1000px;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4em;
+  font-size: 13px;
+}
+
+header {
+  border-bottom: 3px solid #d0a064;
+  background-color: #167C80;
+}
+
+.logo {
+  padding: 15px;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+.navigation a {
+  color: white;
+  transition: all 0.2s;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}
+
+.navigation li:hover a {
+  color: #d0a064;
+  transition: all 0.2s;
+}
+
+.hero-cont {
+  background-image: url('../assets/hero.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-color: #555555;
+  background-blend-mode: multiply;
+  padding: 2em;
+}
+
+.hero h2, .hero h1 {
+  color: white;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 4em;
+  font-weight: bold;
+  padding: 1em 0;
+}
+
+.hero h1 {
+  font-size: 2em;
+  font-style: italic;
+  padding: 0.8em 0; 
+}
+
+.aboutbtn, .contactbtn {
+  display: block;
+  color: #167C80;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  text-decoration:none;
+  transition: all 0.2s;
+}
+
+.aboutbtn:hover, .contactbtn:hover {
+  background-color: #167C80;
+  color: white;
+  transition:all 0.2s;
+}
+
+.container .top {
+  padding: 1.5em 0;
+}
+
+.top h3 {
+  font-size: 2em;
+  line-height: 1.4em;
+  padding: 1em;
+  font-style: italic;
+}
+
+.top p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
+.aboutrow {
+  background-color: #d0a064;
+  padding: 15px;
+}
+
+.aboutcol {
+  border: 1px solid #fff;
+  padding: 15px;
+  margin: 5px;
+  background-color: #ffe5c5;
+}
+
+.aboutcol h4 {
+  font-size: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #167C80;
+  padding: 0.8em 0;
+}
+
+.feature {
+  background-color: #167C80;
+}
+
+.feat-left {
+  background-image: url('../assets/glacier.jpg');
+  background-size:cover;
+  background-position:center center;
+}
+
+.feat-right {
+  padding: 50px;
+}
+
+.feat-right p {
+  color: white;
+  margin: 1em 0;
+}
+
+.feat-intro {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ffe5c5;
+}
+
+.feat-right h3 {
+  font-size: 2em;
+  line-height: 1.4em;
+  color: white;
+  font-weight: bold;
+}
+
+.cta {
+  background-color: #d0a064;
+}
+
+footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 50px;
+  text-align: center;
+}
+
+.footer-col {
+  padding: 15px 0;
+}
+
+footer a {
+  color: #d0a064;
+  text-decoration: none;
+
+}
+
+input {
+  border: 0px;
+  background-color: #555;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button {
+  color: #555;
+  background-color: white;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 5px 15px;
+}
+
+footer h5 {
+  padding: 15px 0;
+}
+
+.cta .container h3 {
+  font-size: 1.5em;
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+
+  footer {
+    text-align: left;
+    padding: 50px 15px 50px 200px;
+  }
+
+}

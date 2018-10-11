@@ -1,0 +1,19 @@
+.btn-danger {
+    background-color: firebrick;
+    color: white;
+  }
+  
+  .btn-success {
+    background: forestgreen;
+  }
+  
+  .btn-add {
+    background: cornflowerblue;
+  }
+  
+  .btn {
+    height: 20px;
+    width: 100px;
+    border-radius: 4px;
+    color: white;
+  }

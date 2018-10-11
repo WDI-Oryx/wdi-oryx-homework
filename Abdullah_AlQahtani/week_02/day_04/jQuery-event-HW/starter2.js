@@ -9,8 +9,8 @@ $(function () {
     });
 
     $(".zone").on("mouseleave", function(event){
-      var zoneIndex = zones.indexOf(this.id);
-      if(zoneIndex === boxCounter.length){
+      var indexOfZones = zones.indexOf(this.id);
+      if(indexOfZones === boxCounter.length){
         $(this).toggleClass("green");        
       } else { 
         $(this).toggleClass("red");

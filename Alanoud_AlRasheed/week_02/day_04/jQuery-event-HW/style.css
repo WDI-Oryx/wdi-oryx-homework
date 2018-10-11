@@ -1,0 +1,39 @@
+.container {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.zone {
+  width: 100px;
+  height: 100px;
+  border: solid black;
+  margin: 20px;
+  display: inline-block;
+  transition: 0.5s all;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+h2 {
+  display: inline;
+  color: orangered;
+  font-size: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  padding: 15px;
+  border: 2px double orangered;
+  border-radius: 10px;
+  margin: auto;
+
+}

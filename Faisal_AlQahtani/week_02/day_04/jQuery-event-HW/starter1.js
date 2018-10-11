@@ -19,17 +19,22 @@ console.log('starter1.js linked');
 // use click to lock the color
 // when all is clicked log congratulations
 
-
+var counter = 0;
+if (counter === 4) {
+    console.log("Congratulations!")
+}
 var zone = $(".zone");
 $(function turnGreen() {
     $(zone).on("mouseenter", function () {
-        $(".zone").css("background-color", "green");
+        $(this).addClass("green");
     });
     $(zone).on("mouseleave", function () {
-        $(".zone").css("background-color", "white")
+        $(this).removeClass("green");
+
     });
-    $("#zone-1").on("click", function () {
-        $("#zone-1").css("background-color", "green")
+    $(zone).on("click", function () {
+        $(this).css("background-color", "green")
+        counter++;
     });
 });
 // $(function turnNormal() {

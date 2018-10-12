@@ -6,20 +6,21 @@ When a correct zone is clicked it should stay green
 Clicking on an incorrect zone should do nothing.
 When all zones are green, log a statement of congratulations to the console!
 */
+$(document).ready(function all() {
 
+    var array = ['zone-1', 'zone-2', 'zone-3', 'zone-4'];
+    randomIndex = Math.floor(Math.random() * (array.length));
+    //(array.length - 1);
+    //Math.floor(Math.random *
+    console.log(randomIndex);
+    //console.log($(".zone").getClass());
+    $("div.zone").find(".zone").css("background-color", "red");
+    $(".zone").hover(function b() {
+        var isHovered = $("#" + array[0]).is(":hover");
+        if (isHovered) {
+            console.log("green");
+            $("#" + array[0]).css("background-color", "green");
+        } else { $("#" + array[0]).css("background-color", "red"); }
 
-var array = ['zone-1', 'zone-2', 'zone-3', 'zone-4'];
-randomIndex = Math.floor(Math.random() * (array.length));
-//(array.length - 1);
-//Math.floor(Math.random *
-console.log(randomIndex);
-//console.log($(".zone").getClass());
-$("div.zone").find(".zone").css("background-color", "red");
-$(".zone").hover(function b() {
-    var isHovered = $("#" + array[0]).is(":hover");
-    if (isHovered) {
-        console.log("green");
-        $("#" + array[0]).css("background-color", "green");
-    } else { $("#" + array[0]).css("background-color", "red"); }
-
-});
+    });
+})

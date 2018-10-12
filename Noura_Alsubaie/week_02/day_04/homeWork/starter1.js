@@ -11,6 +11,8 @@ $('.zone').click(function(event){
     $(this).off();
     $(this).css('background', 'green');
 });
-
+if ($('div.zone').css('background') === 'green') {
+   alert("congrats!");
+}
 })
 });

@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
   var birds = [
     {
@@ -114,7 +114,7 @@ $(document).ready(function(){
   /* 1.  Create a function that logs all of the angry birds to the console. */
 
   function logBirds() {
-    for(var i = 0 ; i < birds.length ; i++){
+    for (var i = 0; i < birds.length; i++) {
       console.log(birds[i]);
     }
   }
@@ -124,7 +124,14 @@ $(document).ready(function(){
   /* 2.  Create a function that logs the name of all the angry birds to the console. */
 
   function logBirdNames() {
-    
+    debugger;
+    var names;
+    for (var i = 0; i < birds.length; i++) {
+      names += birds[i].name + " ";
+
+    }
+    // return names;
+
   }
 
   logBirdNames();
@@ -133,6 +140,9 @@ $(document).ready(function(){
   appends it to the div with class "container"  */
 
   function appendHeader() {
+    // var newHeading= document.createElement('h1');
+    var $newHeading = $('<h1/>').text("Angry Birds!");
+    $('.container').append($newHeading);
 
   }
 
@@ -145,7 +155,15 @@ $(document).ready(function(){
   */
 
   function appendBirdNames() {
+    var $containerDiv = $(".container");
+    for (var i = 0; i < birds.length; i++) {
+      var $paragraphs = $("<p/>").addClass("bird");
+      var $birdName = birds[i].name;
 
+      $paragraphs.text($birdName);
+
+      $containerDiv.append($paragraphs);
+    }
   }
 
   appendBirdNames();
@@ -156,5 +174,15 @@ $(document).ready(function(){
         b. then appends only the birds that have "feels: Cupcakes" properties
             as p-tags with class "bird" 
   */
-
+ function likesCupcake() {
+  var $cupcakeContainer = $('.cupcake-lovers');
+  for (var i=0;i<birds.length;i++) {
+   var angryBird = birds[i];
+   var name = birds[i].name;
+   if (angryBird.feels === 'Cupcakes')
+   var $newBird = $('<p/>').addClass('bird').text(name);
+   $cupcakeContainer.append($newBird);
+   }
+ }
+ likesCupcake();
 })

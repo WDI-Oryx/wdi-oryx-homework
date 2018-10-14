@@ -1,37 +1,55 @@
 console.log('starter1.js linked');
 
-//code goes here
+//code
+var totalClick = 0;
 
-var squareOne = document.querySelector("#zone-1");
-var squareTwo = document.querySelector("#zone-2");
-var squareThree = document.querySelector("#zone-3");
-var SquareFour = document.querySelector("#zone-4");
-var count = 0;
-function green(event){
-    this.classList.add("green");
-    this.addEventListener("click",none);
-    this.addEventListener("mouseout",white);
-    console.log("Count = " + count);
+var allZone = document.querySelectorAll(".zone");
+var totalBox = allZone.length;
+
+var firstBox = document.querySelector("#zone-1");
+var secondBox = document.querySelector("#zone-2");
+var thirdBox = document.querySelector("#zone-3");
+var fourthBox = document.querySelector("#zone-4");
+var fifthBox = document.querySelector("#zone-5");
+var sixthBox = document.querySelector("#zone-6");
+
+function turnGreen(event){
+    this.style.background = "green";
 }
-function white(event){
-        this.setAttribute("class","zone");
-        this.removeEventListener("mouseout",white);
-        console.log("Count = " + count);
+function turnWhite (event ){
+  this.style.background ="white";
 }
-function none(event){
-    this.removeEventListener("mouseover",green);
-    this.removeEventListener("mouseout",white);
-    this.removeEventListener("click",none);
-    count += 1;
-    console.log("Count = " + count);
-    if(count == 4){
-        console.log("congratulations");
+function clickColor (event){
+    this.removeEventListener("mouseover",turnGreen);
+    this.removeEventListener("mouseout",turnWhite);
+    this.removeEventListener("click",clickColor);
+    totalClick++;
+    if (totalClick == totalBox ){
+        alert("Winner");
     }
+
 }
 
+firstBox.addEventListener("mouseover",turnGreen);
+firstBox.addEventListener("mouseout",turnWhite );
+firstBox.addEventListener("click",clickColor);
 
-squareOne.addEventListener("mouseover", green);
-squareTwo.addEventListener("mouseover", green);
-squareThree.addEventListener("mouseover", green);
-SquareFour.addEventListener("mouseover", green);
+secondBox.addEventListener("mouseover",turnGreen);
+secondBox.addEventListener("mouseout",turnWhite );
+secondBox.addEventListener("click",clickColor);
 
+thirdBox.addEventListener("mouseover",turnGreen);
+thirdBox.addEventListener("mouseout",turnWhite );
+thirdBox.addEventListener("click",clickColor);
+
+fourthBox.addEventListener("mouseover",turnGreen);
+fourthBox.addEventListener("mouseout",turnWhite );
+fourthBox.addEventListener("click",clickColor);
+
+fifthBox.addEventListener("mouseover",turnGreen);
+fifthBox.addEventListener("mouseout",turnWhite );
+fifthBox.addEventListener("click",clickColor);
+
+sixthBox.addEventListener("mouseover",turnGreen);
+sixthBox.addEventListener("mouseout",turnWhite );
+sixthBox.addEventListener("click",clickColor);

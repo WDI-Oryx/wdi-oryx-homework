@@ -23,7 +23,7 @@ What should a user be able to do with the game?
 1. When the mouse enters any of the zones change its background color to `green`
 2. When the mouse leaves a zone change its background color back
 3. When you click on a zone it locks its color to green.
->HINT: You probably need to remove some event listeners ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener))
+   > HINT: You probably need to remove some event listeners ([mdn](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener))
 4. When all zones are checked green, log a statement of congratulations to the console!
 
 **Before coding anything, PSEUDOCODE out how to approach this game.** Here are some useful questions and notes for you:
@@ -58,7 +58,6 @@ Modify your previous game so that the zones need to be clicked in a particular o
 - how can we check if the zone is supposed the next one in the array?
 - how can we stop something from happening if we only want an event to occur for a correct click?
 
-
 ## Bonus
 
 Let's revisit both games!
@@ -66,13 +65,13 @@ Let's revisit both games!
 #### Game 1
 
 - When all zones are checked green make them turn yellow after one second, red after another second, and then clear the background color after one last second.
->HINT: Look at [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval)
+  > HINT: Look at [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval)
 
 #### Game 2
 
 - Clicking an incorrect box should make it turn red for one second, then revert back to clear
 - When all zones are green remove their backgrounds one by one, with a 1 second delay in between each, in the order that they were clicked
->hint: Look at [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval)!
+  > hint: Look at [setInterval](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval)!
 
 ## Submission
 

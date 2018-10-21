@@ -8,7 +8,7 @@ def menu
   puts "(m) Multiply"
   puts "(p) Power of"
   puts "(r) Root Square"
-  puts "(e) Root Square"
+  puts "(e) Exponent"
   puts "(q) Quit"
   puts ""
   puts "What operation would you like to perform?"

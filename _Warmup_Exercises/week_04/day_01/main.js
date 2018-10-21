@@ -8,6 +8,7 @@ function makeRange(endOfRange) {
 }
 
 // Finds and returns a list of prime numbers in range
+// Read more about filter(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 function findPrimes() {
   var primes = [];
 

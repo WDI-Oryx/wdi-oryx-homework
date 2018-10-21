@@ -24,12 +24,13 @@ return area;
 
 function operations(Number) {
     var result=halfNumber(4);
-      squareNumber(result);
-      areaOfCircle(result);
-      percentOf(result); 
-      console.log(result);
-      return result;
+    var result2 = squareNumber(result);
+    var result3= areaOfCircle(result2);
+    var result4=percentOf(result3, result2); 
+    console.log(result);
+    return result;
 
 }
 
 
+operations();

@@ -70,5 +70,5 @@ heading.innerText="My book list";
 var paragraph = document.createElement("p");
 
 for(i=0;i<books.length;i++){
-      console.log(  Document.innerText= books[i] + ", by " + );
+     // console.log(  Document.innerText= books[i] + ", by "  );
     }

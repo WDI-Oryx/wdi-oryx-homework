@@ -3,7 +3,7 @@ console.log("JS Connected!");
 //declare variables
 var nLine = ["Times Square", "34th", "28th", "23th", "Union Square", "8th"];
 var lLine = ["8th", "6th", "Union Square", "3rd", "1st"];
-var sLine = ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astop Place"];
+var sLine = ["Grand Central", "33rd", "28th", "23rd", "Union Square", "Astor Place"];
 var change = [];
 var stop = [];
 

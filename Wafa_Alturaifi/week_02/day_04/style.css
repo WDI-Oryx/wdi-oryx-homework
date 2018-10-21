@@ -1,0 +1,24 @@
+.container {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* .box {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+  }
+   */
+  
+  h2 {
+    text-align: center;
+    background-color: cornflowerblue;
+    color:black;
+    margin: 0;
+  }
+  
+  

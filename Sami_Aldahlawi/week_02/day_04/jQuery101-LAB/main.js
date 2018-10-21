@@ -124,7 +124,7 @@ $(document).ready(function(){
   /* 2.  Create a function that logs the name of all the angry birds to the console. */
 
   function logBirdNames() {
-
+    
   }
 
   logBirdNames();

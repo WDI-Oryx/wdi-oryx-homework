@@ -5,6 +5,7 @@ console.log('starter1.js linked');
 
 
 //code goes here
+
 $(function(){   
     var arr =['zone-4', 'zone-3', 'zone-1', 'zone-2'];
     var arr1 =['zone-1', 'zone-2', 'zone-3', 'zone-4'];
@@ -48,8 +49,10 @@ $(function(){
      {
         $(this).removeClass("green");
      });
+
      $(".zone").on("mouseleave", function(event)
      {
         $(this).removeClass("red");
      });
+
 });

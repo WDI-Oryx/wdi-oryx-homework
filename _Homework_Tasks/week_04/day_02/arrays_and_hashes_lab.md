@@ -11,6 +11,7 @@ instructors = ["Jack", "Moath", "Trevor"]
 
 ### B. Given the following data structure:
 
+```ruby
 book_series = {
   name: "In Search of Lost Time",
   author: "Marcel Proust",
@@ -24,6 +25,7 @@ book_series = {
     "Time Regained"
   ]
 }
+```
 
 1. how would you return the name of the book series?
 2. how would you return the last name of the author?

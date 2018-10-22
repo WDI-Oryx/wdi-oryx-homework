@@ -36,8 +36,8 @@ book_series = {
 
 ```ruby
 is = {
-  true: "It's true!", 
-  false: "It's false"
+  true => "It's true!", 
+  false => "It's false"
  }
 ```
 

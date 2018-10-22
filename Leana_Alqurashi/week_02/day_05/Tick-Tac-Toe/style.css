@@ -1,0 +1,101 @@
+body {
+    min-height: 100vh;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("http://www.fbcgallatin.org/wp-content/uploads/2016/11/chalkboard.jpg");
+  }
+table{
+border-collapse: collapse;
+border-style: hidden;
+
+}
+
+
+td{
+    border: 10px solid rgba(216, 191, 216, 0.411);
+    
+    border-radius: 90px;
+width: 200px;
+height: 200px;
+text-align: center;
+color: whitesmoke;
+font-size: 100px;
+font-family:Chalkduster, fantasy ;
+}
+canvas{ width: 850;
+margin:0px;}
+h1{
+    color: whitesmoke;;
+    font-family:Chalkduster, fantasy ;
+    text-align: center;
+    
+}
+h2{ color: rgba(245, 245, 245, 0.788);
+   text-align: center;
+font-family:Chalkduster, fantasy;}
+p{ font-family:Chalkduster, fantasy;
+color: whitesmoke;}
+.go{font-size: 20px;
+    color:whitesmoke ;}
+.go2{color: whitesmoke;
+    background-image: url("https://ubisafe.org/images1280_/transparent-watercolor-pale-pink-5.png");
+    background-repeat: no-repeat;
+    background-size: 123px 29px;
+    }
+
+.positionX{
+    color: rgba(196, 242, 248, 0.452);
+    
+}
+.positionO{
+    color:rgba(238, 235, 192, 0.527);
+   
+}
+.instruction{
+    
+    text-align: left;
+    margin-right: 850px;
+    justify-content: left;
+    display: inline-block;
+    
+}
+.announce{
+    position: absolute;
+    top: 270px;
+    width: 0;
+    height: 0;
+    z-index: 100;
+    margin-top: 170px;
+    margin-left: 75px;
+justify-content: center;
+    text-align: center;
+     align-content: center;
+     background-image: url("https://ubisafe.org/images1280_/transparent-watercolor-pale-pink-5.png");
+     background-repeat: no-repeat;
+     /* background: rgba(216, 191, 216, 0.562); */
+     background-size: 440px 140px;
+    border: hidden;
+    
+    padding: 20px;
+  }
+  button{
+      border:hidden;
+      background: none;
+      font-size: 20px;
+    font-family:Chalkduster, fantasy;
+  }
+  footer{width:100%;
+  text-align: center;
+  margin: 3px;
+ font-family: Snell Roundhand, cursive;
+  color:whitesmoke;
+  font-size:10px;
+  box-align:center;
+  position:fixed;    /*Here's what sticks it*/
+  bottom:0;          /*to the bottom of the body*/
+  left:0; } 
+  
+    

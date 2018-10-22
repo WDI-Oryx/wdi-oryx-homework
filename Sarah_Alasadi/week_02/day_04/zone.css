@@ -1,0 +1,21 @@
+.container {
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  .zone {
+    width: 100px;
+    height: 100px;
+    border: solid black;
+    margin: 20px;
+    display: inline-block;
+    transition: 0.5s all;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }

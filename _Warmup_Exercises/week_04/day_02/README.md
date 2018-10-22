@@ -15,3 +15,8 @@ Write a program that will take a number (eg `28` or `1755` or `9`, etc) and outp
 - 34 has neither 3, 5 nor 7 as a factor.
   - Raindrop-speak doesn't know what to make of that,
     so it just goes with the straightforward "34".
+
+
+## Sample
+- Input: `1755`
+- Output: `PlingPlang`

@@ -36,8 +36,8 @@ book_series = {
 
 ```ruby
 is = {
-  true: "It's true!", 
-  false: "It's false"
+  true => "It's true!", 
+  false => "It's false"
  }
 ```
 
@@ -57,11 +57,11 @@ users = {
     twitter: "woolymamMoath",
     favorite_numbers: [12, 42, 75],
   },
-  "Jack" {
+  "Jack": {
     twitter: "threequal",
     favorite_numbers: [8, 42, 12],
   },
-  "Trevor" {
+  "Trevor": {
     :twitter => "T$$'s_Romantic_Poetry",
     :favorite_numbers => [12, 14, 85],
   },

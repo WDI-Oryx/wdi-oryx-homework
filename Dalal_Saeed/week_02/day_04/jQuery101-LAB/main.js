@@ -114,9 +114,8 @@ $(document).ready(function(){
   /* 1.  Create a function that logs all of the angry birds to the console. */
 
   function logBirds() {
-    for(var i = 0 ; i < birds.length ; i++){
-      console.log(birds[i]);
-    }
+    console.log(birds)
+
   }
 
   logBirds();
@@ -124,16 +123,23 @@ $(document).ready(function(){
   /* 2.  Create a function that logs the name of all the angry birds to the console. */
 
   function logBirdNames() {
-    
+    var birdsNames 
+    for (var i = 0 ;i<birds.length;i++){
+      birdsNames = birds[i].name+" ,"
+    }
+return birdsNames
   }
 
-  logBirdNames();
+
+  console.log('d',logBirdNames());
 
   /* 3.  Create a function that creates a new h1 tag that says "Angry Birds!" and 
   appends it to the div with class "container"  */
 
   function appendHeader() {
-
+    var $newH1 = $('<h1/>').text("Angry Birds!");
+    $(".container").append($newH1);
+    console.log($newH1)
   }
 
   appendHeader();
@@ -145,7 +151,15 @@ $(document).ready(function(){
   */
 
   function appendBirdNames() {
+    var names=logBirdNames()
+    var mycontainer = $('.container')
+    for (var i = 0 ;i<names.length;i++){
+      var myP = $('<p class = "bird"> '+names+ '<p/>');
+      //myP.text(names[i])
+      
+    }
 
+    mycontainer.append(myP)
   }
 
   appendBirdNames();
@@ -157,4 +171,20 @@ $(document).ready(function(){
             as p-tags with class "bird" 
   */
 
-})
+  function birdsCupcakes(){
+    var cupcakes = $('.cupcake-lovers')
+    var angryBird = birds[i];
+    //     var name = birds[i].name;
+    if (angryBird.feels === 'Cupcakes'){
+    cupcakes.append
+
+  }
+
+}
+// var $cupcakeContainer = $('.cupcake-lovers');
+//   for (var i=0;i<birds.length;i++) {
+//     var angryBird = birds[i];
+//     var name = birds[i].name;
+//     if (angryBird.feels === 'Cupcakes')
+//     var $newBird = $('<p/>').addClass('bird').text(name);
+//     $cupcakeContainer.append($newBird);

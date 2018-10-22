@@ -33,7 +33,10 @@ book_series = {
 ### C. Given the following data structure:
 
 ```ruby
-is = {true => "It's true!", false => "It's false"}
+is = {
+  true: "It's true!", 
+  false: "It's false"
+ }
 ```
 
 1. What is the return value of `is[2 + 2 == 4]`?

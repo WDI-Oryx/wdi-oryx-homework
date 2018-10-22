@@ -11,17 +11,26 @@
 header {
   /* 1 property */
   display: flex;
+ 
+ 
 }
 
-header .logo, header nav {
+
+header .logo, header .navigation {
   /* 1 property */
-  display: inline;
+  display: flex;
+ 
+  
+ 
+  
+
 }
 
 
 .container .aboutrow {
   /* 1 property */
   display: flex;
+ 
 }
 
 
@@ -36,7 +45,7 @@ header .logo, header nav {
 
 .cta .container {
   /* 1 property */
-  display: flex;
+  display: inline-flex;
 }
 
 
@@ -44,11 +53,11 @@ header .logo, header nav {
 
 footer {
   /* 1 property */
-  position: relative;
+  display: flex;
 }
 
 .footer-left {
-  position: relative;
+ 
   display: flex;
   
   /* 3 properties */
@@ -56,13 +65,15 @@ footer {
 
 .footer-left .footer-col {
   /* 1 property */
-  width: 50%;
+  width: 100%;
+
   
 }
 
 .footer-right {
   /* 1 property */
-  width: 50%;
+ 
+ margin-left:20%;
 }
 
 /* ======+++++======++++=====+++=== */

@@ -20,13 +20,15 @@ def fromTo(line, startPoint, destination)
   b = line.index(destination);  # ending point index
 
   if a < b
-    ((a + 1)..b).each do |i|
-      through += line[i] + ", "
+    (a + 1).upto(b) do |i|
+      through += line[i] + "."
+      through[through.length-1] = ", " if i != b
       $counter += 1
     end
   else
-    (b..(a - 1)).reverse_each do |i|
-      through += line[i] + ", "
+    (a - 1).downto(b) do |i|
+      through += line[i] + "."
+      through[through.length-1] = ", " if i != b
       $counter += 1
     end
   end

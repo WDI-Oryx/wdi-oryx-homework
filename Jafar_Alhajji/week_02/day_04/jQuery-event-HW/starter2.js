@@ -5,69 +5,54 @@ console.log('starter1.js linked');
 
 
 //code goes here
-$(function(){
-    var mainArray=['zone-1', 'zone-2', 'zone-3', 'zone-4'];
-    var arr =['zone-2', 'zone-3', 'zone-1', 'zone-4'];
-    var testArr = [];
-    var index = 0;
 
-       var index=mainArray.indexOf(arr[0]);
-            testArr.push(mainArray[index]);
-            testArr.push(mainArray[index+1]);
-            testArr.push(mainArray[index-1]);
-    // for(var i = 0; i<arr.length;i++)
-    // {
-    //     $(arr[i]).attr("value")
-    //     console.log($(arr[i]));
-    // }
-    console.log()
+$(function(){   
+    var arr =['zone-4', 'zone-3', 'zone-1', 'zone-2'];
+    var arr1 =['zone-1', 'zone-2', 'zone-3', 'zone-4'];
+   
     $(".zone").on("mouseenter",function (event) 
     { 
-        // var index=mainArray.indexOf(id);
-        // var d = $(arr[index]).attr("value");
-        // if (id === mainArray[index] )
-        // {
-        //     $(this).addClass("green");
-        // }
-        // || id === mainArray[index+1] || id === mainArray[index-1]
+        var index= arr[0].split("-");
+        if (  
+              $(this).attr("id").includes(arr[0])
+        ||    $(this).attr("id").includes(("zone-"+(parseInt(index[1])+1)))
+        ||    $(this).attr("id").includes(("zone-"+(parseInt(index[1])-1))) 
+           )
         
-        //find the index of the element from the origin array
-        
-        
-        var id = $(this).attr("value");
-        
-        
-        if (testArr.includes(id))
         {
-         debugger;
             $(this).addClass("green");
         }
-        else{
-            //$(this).addClass("red");
+        else 
+        {
+            $(this).addClass("red");
         }
         
-    
-        
     });
+
+     $(".zone").click(function (event) 
+     { 
+         if ($(this).attr("id")===arr[0])
+         {
+        $(this).css("background-color", "green");
+        arr.shift();
+         }
+         else 
+         {
+             setTimeout(function(event){
+                $(this).addClass("red");
+             },5000);
+
+         }
+     });
+
      $(".zone").on("mouseleave", function(event)
      {
         $(this).removeClass("green");
      });
 
-     
+     $(".zone").on("mouseleave", function(event)
+     {
+        $(this).removeClass("red");
+     });
 
-    
-
-    
-
-
-    
-
-
-
-    
-    
-
-
-    
 });

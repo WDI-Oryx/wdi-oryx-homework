@@ -13,8 +13,6 @@ def get_line_array(line)
   array
 end
 
-# Returns the stops on the line I'm travelling on
-# Needs the line you're travelling on, the start stop, the end stop
 def tripString(line, startStop, endStop)
   lineArray = get_line_array(line)
   stopsString = ""

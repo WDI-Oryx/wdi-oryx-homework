@@ -9,13 +9,13 @@ end
 
 def s_line(key)
   if key == "N"
-    p lines["N"]
+    return lines["N"]
   end
   if key == "L"
-    p lines["L"]
+    return lines["L"]
   end
   if key == "6"
-    p lines["6"]
+    return lines["6"]
   end
   return key
 end
@@ -26,6 +26,7 @@ end
 
 def trip(line, start_stop, end_stop)
   trip_line = s_line(line)
+  p trip_line
   start_index = trip_line.index(start_stop)
   end_index = trip_line.index(end_stop)
   stops = ""
@@ -50,9 +51,9 @@ def plan_trip(start_line, start_stop, end_line, end_stop)
   else
     puts "You must travel on the following stops on the #{start_line}  line:  #{trip(start_line, start_stop, "Union Square")}"
     puts "Change at Union Square."
-    puts "Your journey continues through the following stops:  #{end_line}  line: #{getTripString(endLine, "Union Square", endStop)}"
+    puts "Your journey continues through the following stops:  #{end_line}  line: #{trip(end_line, "Union Square", end_stop)}"
   end
   #   puts " #{stops} stops in total"
 end
 
-p plan_trip("L", "8th", "N", "8th")
+p plan_trip("N", "Times Square", "N", "8th")

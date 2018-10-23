@@ -12,7 +12,7 @@ def subway_system(nameLine, source, destination)
   if source < destination
     newLine = nameLine[source..destination]
   else
-    while source >= 0
+    while source >= destination
       newLine.push(nameLine[source])
       source -= 1
     end

@@ -30,13 +30,12 @@ book_series = {
 1. how would you return the name of the book series?
 2. how would you return the last name of the author?
 3. how would you return an array of the books that begin with the letter 'T'?
-   
 
 ### C. Given the following data structure:
 
 ```ruby
 is = {
-  true => "It's true!", 
+  true => "It's true!",
   false => "It's false"
  }
 ```

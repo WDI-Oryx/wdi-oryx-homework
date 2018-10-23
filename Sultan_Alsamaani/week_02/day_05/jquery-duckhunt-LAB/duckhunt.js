@@ -46,21 +46,6 @@ setTimeout(function () {
   
 
   // 5. Congratulations!
-  var $mousePos = $('<div/>').css('position', 'absolute');
-  $body.click((e)=>{
-    $mousePos.css({
-      width: '100px',
-      height: '100px',
-      left: (e.clientX-50)+'px',
-      top: (e.clientY-50)+'px',
-      background: 'url(./images/shot.png)',
-      zIndex: 99
-    })
-    $body.append($mousePos);
-    setTimeout(()=>{
-      $mousePos.remove();
-    }, 50);
-  });
   // 6. Things are getting a bit messy. Let's create
   //    a "function" called createDuck() that does everything in 1-4
   function createDuck() {
@@ -68,7 +53,6 @@ setTimeout(function () {
     $duck.addClass("duck");
     $body.append($duck);
 
-    
     setInterval(function () {
       $duck.toggleClass('flap');
     }, 250)
@@ -77,20 +61,20 @@ setTimeout(function () {
     $duck.css("left", Math.random() * (window.innerWidth - 50) + 'px')
 
     setInterval(function () {
-      $duck.animate({ "top": Math.random() * window.innerHeight + 'px', "left": Math.random() * window.innerWidth + 'px' }, 1)
+      $duck.animate({ "top": Math.random() * window.innerHeight + 'px', "left": Math.random() * window.innerWidth + 'px' }, 500)
     }, 1000);
-
-    //remove duck when click it
-    $duck.click(function() {
-      $duck.remove();
-    });
-
     // setTimeout(function () {
     //   $duck.css('top', Math.random() * (window.innerHeight - 50) + 'px');
     //   $duck.css('left', Math.random() * (window.innerWidth - 50) + 'px');
     // }, 1000)
+    $duck.on('click',function(){
+      $duck.addClass('shot');
+      setTimeout(function(){
+        $duck.remove();
+        checForWinner();
+      },100)
+    })
     return $duck;
-    
   }
   //    and "returns" the duck object
 
@@ -106,28 +90,7 @@ setTimeout(function () {
   // HINT: Use Math.random() * window.innerWidth    for "left"
   //       And Math.random() * window.innerHeight   for "top"
 
-
   // 9. Our ducks are going to be easy targets if they only move once.
   //    Modify createDuck() so the ducks keep moving around
-
-  // 10. ------ We're almost there! ------
-
-  // 11. BOOM. Attach a "click" handler that adds the "shot" class to
-  //     the duck when you click on it!
-
-  // 12. After a duck has been clicked on, remove it from the DOM after
-  //     a short delay (1 second)
-
-  // 13. Create a new function named checkForWinner() that reads the DOM
-  //     to see if there are any ducks left. If not, alert "YOU WIN!"
-
-  function checkForWinner() {
-    if($('.duck').length === 0) {
-      alert('you win!!!!');
-    }
-  }
-  checkForWinner();
-
-  // FIN. You win 1 trillion tokens.  Play the day away!
 
 })

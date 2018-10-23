@@ -14,33 +14,58 @@ function setBgColor(myThis,color){
 
 
 //code goes here
-var zones = ['zone-1', 'zone-2', 'zone-3', 'zone-4']
-$('.zone').on('click',function(event){
-    $(this).off('mouseleave')
-    if (game(this.id)){
-        setBgColor(this,"green")
-    }
 
 
-})
-
-$('.zone').on('mouseover',function(event){
-    for (var i =0;i<zones.length;i++){
-
-    if (!(game(this.id,zones[i]))){
-        setBgColor(this,"red")
+var i=0;
+var nextZone = zones[i];
+  var current;
+$('.zone').on('click',function(){
+    current=$(this);
+    if (game(this.id,nextZone)){
+        $(this).addClass("green");
+        i++;
+        nextZone = zones[i];
+        console.log(i,nextZone,zones[i]);
+        $(this).off('mouseleave');
+        $(this).off('mouseover');
+        if($('.zone.green').length === 4)
+        {
+            console.log("Congrats!!");
+        }
     }
     else{
-        setBgColor(this,"green")
+        current.toggleClass("red");
+        setTimeout(function() {
+            current.removeClass("red");
+           
+            console.log($(this),"j");   
+          }, 1500);
+          
     }
-    }
-    return
+
+
 })
+$('.zone').on('mouseover',function(event){
+    
+    
+  
+       
+    if ((game(this.id,nextZone))){
+        $(this).addClass("green");
+        
+    }
+    else{
+        $(this).addClass("red");
+       
+    }
+    
+    })
+  
 
 $('.zone').on('mouseleave',function(event){
   
-    setBgColor(this,"white")
-  
+    $(this).removeClass("red");
+    $(this).removeClass("green");
 
 })
 

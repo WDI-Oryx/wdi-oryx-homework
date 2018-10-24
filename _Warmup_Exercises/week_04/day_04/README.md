@@ -1,4 +1,4 @@
-# Robot Name
+# Robot Factory
 
 You run a robot factory. As robots are created, they roll off the conveyor belt as empty, mindless husks of machinery -- until you first boot them up.
 

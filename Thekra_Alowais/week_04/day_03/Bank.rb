@@ -33,7 +33,7 @@ end
 class BankAccount < Bank
   attr_accessor :owner, :balance
 
-  def initialize(owner, ba)
+  def initialize(owner, balance)
     @owner = owner
     @balance = balance
   end

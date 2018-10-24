@@ -11,6 +11,7 @@ instructors = ["Jack", "Moath", "Trevor"]
 
 ### B. Given the following data structure:
 
+```ruby
 book_series = {
   name: "In Search of Lost Time",
   author: "Marcel Proust",
@@ -24,6 +25,7 @@ book_series = {
     "Time Regained"
   ]
 }
+```
 
 1. how would you return the name of the book series?
 2. how would you return the last name of the author?
@@ -33,7 +35,10 @@ book_series = {
 ### C. Given the following data structure:
 
 ```ruby
-is = {true => "It's true!", false => "It's false"}
+is = {
+  true => "It's true!", 
+  false => "It's false"
+ }
 ```
 
 1. What is the return value of `is[2 + 2 == 4]`?
@@ -52,11 +57,11 @@ users = {
     twitter: "woolymamMoath",
     favorite_numbers: [12, 42, 75],
   },
-  "Jack" {
+  "Jack": {
     twitter: "threequal",
     favorite_numbers: [8, 42, 12],
   },
-  "Trevor" {
+  "Trevor": {
     :twitter => "T$$'s_Romantic_Poetry",
     :favorite_numbers => [12, 14, 85],
   },

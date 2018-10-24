@@ -11,7 +11,7 @@ navigate to the `db` directory and run:
 $ touch schema.sql
 $ touch seeds.sql
 ```
-Copy the following into *schema.sql*
+Copy the following into **schema.sql**
 ```
 DROP TABLE IF EXISTS songs;
 DROP TABLE IF EXISTS artists;
@@ -31,7 +31,7 @@ CREATE TABLE songs(
   artist_id INT
 );
 ```
-Copy the content of `seeds.sql` snippet from slack into *seeds.sql*
+Copy the content of `seeds.sql` snippet from slack into **seeds.sql**
 
 Run the following commands
 ```bash

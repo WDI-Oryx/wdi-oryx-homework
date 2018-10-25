@@ -13,22 +13,21 @@ require_relative "models/song" # require the Song class definition that we defin
 # Part 1.1
 # There are a bunch of challenges to find different models below.
 # write the Active Record code to complete the challenge below each.
-hana = Artist.create({name: "Hana", photo_url: "photo"}) #
-# trevor.pets.create({name: "FuFu", animal_type: "hamster"})
+
 # Find all artists
 all_artist = Artist.all
-p all_artist
+all_artist
 
 # Find just one artist by id
-
+p Artist.find(3)
 # Find Taylor Swift (or your other fav artist) by name.
-
+p Artist.find_by name: "Taylor Swift"
 # Find all artists from the USA
-
+p Artist.find_by nationality: "American" #wrong
 # Find all artists NOT from the USA
-
+all_artist2 = Artist.not.where("nationality =American")
 # Create a new artist for your favorite artist
-
+hana = Artist.create({name: "Hana", photo_url: "photo"})
 # Change at least 2 of their attributes
 
 # Destroy the artist you just created

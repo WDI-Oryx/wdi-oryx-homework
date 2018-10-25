@@ -18,8 +18,10 @@ So back to nucleotides.
 
 There are 5 types of nucleotides. 4 of these occur in DNA: `A`, `C`, `G`, and `T`. 4 occur in RNA: `A`, `C`, `G`, `U`.
 
-There are no other nucleotides.
 
 Find how many of each nucleotides are in a string that you pass in to a function
 
-Make sure that you validate it has nucleotides!
+
+## Example
+`Input` "Tasmanian" <br>
+`Output` {:A=>3, :C=>0, :G=>0, :T=>1}

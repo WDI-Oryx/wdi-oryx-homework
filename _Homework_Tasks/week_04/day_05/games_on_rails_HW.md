@@ -29,6 +29,16 @@ Users click a link between 1 and 10. The controller validates the guess, compare
 - If those numbers are the same, show a win view
 - If they are different, show a lose view
 
+Your links should look like this:
+
+```html
+<a href="/games/secret/1">1</a>
+<a href="/games/secret/2">2</a>
+<a href="/games/secret/3">3</a>
+<!-- ... -->
+<a href="/games/secret/10">10</a>
+```
+
 ## Bonus
 
 - Style your Rails app

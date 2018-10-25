@@ -9,17 +9,15 @@ class Bank
 
   def create_account(name = "", balance = 0)
     puts "The name is #{name} and the balance is #{balance}"
-    p acc = @accounts.push(name: name, balance: balance)
-    # bank_acc = BankAccount.new(name, balance)
-
+    bank_acc = BankAccount.new(name, balance)
+    @accounts.push(bank_acc)
+    p "the accounts: #{@accounts}"
+    return bank_acc
   end
 
-  def update_BankAccount_name(newname, index)
-    p @accounts[index]
-    if @accounts[index]
-      p @accounts[index][:name] = newname
-    end
-  end
+  #   def update_BankAccount_name(newname, index)
+  #     @accounts[index] = newname
+  #   end
 
   def total_balance
     total = 0
@@ -30,17 +28,18 @@ class Bank
   end
 end
 
-class BankAccount < Bank
+class BankAccount
   attr_accessor :owner, :balance
 
-  def initialize(owner, ba)
+  def initialize(owner, balance)
     @owner = owner
     @balance = balance
   end
 
   def withdraw(withdraw)
-    if @balance > withdraw
-      p @balance -= withdraw
+    if @balance >= withdraw
+      #   p "the balance #{@balance}"
+      @balance -= withdraw
       if @balance < 100
         p "Low balance, please add funds."
       end
@@ -52,14 +51,24 @@ class BankAccount < Bank
   end
 
   #   Have a method that prints the name and balance of that BankAccount
+
   #   def show_bankaccount(id)
-  #     @accounts.select { |x| puts "#{@owner} and #{balance}" if x == @owner }
+  #     # @accounts.select { |x| puts "#{@owner} and #{balance}" if x[:name][id] == id }
+  #     if @accounts[id]
+  #       p @accounts[id][:name]
+  #     end
+
   #   end
 end
 
-newacc = Bank.new("alrajhi", "Riyadh")
-newacc.create_account("thekra", 17)
-new_name = newacc.create_account("abdullah", 21)
-newacc.total_balance
-new_name = newacc.update_BankAccount_name("maha", 0)
-p newacc
+new_bank = Bank.new("alrajhi", "Riyadh")
+
+thekra_account = new_bank.create_account("Thekra", 1000)
+noura_account = new_bank.create_account("noura", 12)
+
+puts thekra_account.balance
+thekra_account.withdraw(100)
+puts thekra_account.balance
+# p new_bank.update_BankAccount_name("maha", 0)
+# p new_bank
+# p thekra_account.show_bankaccount(0)

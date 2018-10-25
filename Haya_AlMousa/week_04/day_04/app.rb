@@ -15,21 +15,21 @@ require_relative "models/song" # require the Song class definition that we defin
 # write the Active Record code to complete the challenge below each.
 
 # Find all artists
-
+p Artist.all  
 # Find just one artist by id
-
+p Artist.find(1)
 # Find Taylor Swift (or your other fav artist) by name.
-
+p Artist.where(name: “Taylor Swift“)
 # Find all artists from the USA
-
+p Artist.where(nationality: “USA “)
 # Find all artists NOT from the USA
-
+p Artist.where.not(nationality: “USA “)
 # Create a new artist for your favorite artist
-
+p ahmed = Artist.create(name: “ahmed”, photo_url: “https://www.pexels.com/photo/person-singing-1370545/“, nationality: “egyption”)
 # Change at least 2 of their attributes
-
+p ahmed.update(name: “mohammed”, photo_url: “https://www.pexels.com/photo/photo-of-man-recording-935959/“)
 # Destroy the artist you just created
-
+p Destroy.all
 
 # Part 1.2 - Create your Song Model / Setup Associations
 # Create a file that will contain your AR class definition for Songs
@@ -39,13 +39,13 @@ require_relative "models/song" # require the Song class definition that we defin
 # Part 1.3
 
 # Find the artist with the name Enya
-
+p Artist.find_by(name: "Enya")
 # Use AR methods to find all of Enya's songs, store them in a variable
-
+p song = Artist.find_by(name: "Enya")
 # Use the "where" method to find the artist Enya and store it to a variable "enya"
-
+p enya = Artist.where(name: "Enya")
 # get all of Enya's songs and save to a variable called "enya_songs"
-
+p enya_songs = Song.all(name: "Enya")
 # Get the first song out of enya_songs and get that song's title
 
 # Find the song with the title 'Unstoppable' and store in a variable

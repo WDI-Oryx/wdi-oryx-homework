@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+
+gem "activerecord"  # this gem provides a connection between your ruby classes to relational database tables
+gem "sqlite3"

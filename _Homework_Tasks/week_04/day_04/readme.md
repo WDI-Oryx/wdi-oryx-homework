@@ -8,6 +8,33 @@ $ bundle install
 
 navigate to the `db` directory and run:
 ```bash
+$ touch schema.sql
+$ touch seeds.sql
+```
+Copy the following into **schema.sql**
+```
+DROP TABLE IF EXISTS songs;
+DROP TABLE IF EXISTS artists;
+
+CREATE TABLE artists(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  photo_url TEXT,
+  nationality TEXT
+);
+
+CREATE TABLE songs(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT,
+  album TEXT,
+  preview_url TEXT,
+  artist_id INTEGER
+);
+```
+Copy the content of `seeds.sql` snippet from slack into **seeds.sql**
+
+Run the following commands
+```bash
 $ sqlite3 tunr.db
 sqlite> .database # Lists names and files of attached databases
 sqlite> ^D        # CTRL+D => to exit sqlite back to command line

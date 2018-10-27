@@ -17,18 +17,18 @@ DROP TABLE IF EXISTS songs;
 DROP TABLE IF EXISTS artists;
 
 CREATE TABLE artists(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id SERIAL PRIMARY KEY,
   name TEXT,
   photo_url TEXT,
   nationality TEXT
 );
 
 CREATE TABLE songs(
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  id SERIAL PRIMARY KEY,
   title TEXT,
   album TEXT,
   preview_url TEXT,
-  artist_id INTEGER
+  artist_id INT
 );
 ```
 Copy the content of `seeds.sql` snippet from slack into **seeds.sql**

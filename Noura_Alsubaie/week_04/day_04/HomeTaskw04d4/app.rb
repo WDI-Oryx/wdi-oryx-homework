@@ -42,11 +42,11 @@ Artist.where(name: "Enya")
 # Use AR methods to find all of Enya's songs, store them in a variable
 song = Artist.find_by(name: "Enya")
 # Use the "where" method to find the artist Enya and store it to a variable "enya"
-enya = Artist.where(name: "Enya")
+enya = Artist.find_by(name: "Enya")
 # get all of Enya's songs and save to a variable called "enya_songs"
-enya_songs = enya.song()
+enya_songs = enya.songs()
 # Get the first song out of enya_songs and get that song's title
-enya_songs.find_by().title()
+enya_songs.first.title
 
 # Find the song with the title 'Unstoppable' and store in a variable
 # Get that song's artist, store that in a variable

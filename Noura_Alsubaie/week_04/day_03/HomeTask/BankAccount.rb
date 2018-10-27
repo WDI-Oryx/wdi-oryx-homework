@@ -1,4 +1,4 @@
-
+require "pry"
 class BankAccount
 attr_accessor :owner, :balance
 
@@ -19,35 +19,41 @@ end
 def withdraw(amount)
     
     if (amount > @balance)
-         puts "The balance available in your account is not enough to complete this process "
+       return "The balance available in your account is not enough to complete this process "
     else (amount <= @balance)
         @balance -= amount      
-
+        return @balance
+    end
 end
 
-def transfer (sender, receiver, amount)
-    puts "Enter your name  "
-    sender = gets.chomp
-    puts "Enter beneficiary's name"
-    receiver = gets.chomp
-    puts "Enter the amount "
-    amount = gets.chomp
+def transfer (amount, receiver)
+    withdraw(100)
+    receiver.deposit(100)
+    # binding.pry
 
-    sender.withdraw(amount)
-    receiver.deposit(amount) #how to assign it  to specific account
+    # puts "Enter your name  "
+    # sender = gets.chomp
+    # puts "Enter beneficiary's name"
+    # receiver = gets.chomp
+    # puts "Enter the amount "
+    # amount = gets.chomp
+
+    # sender.withdraw(amount)
+    # receiver.deposit(amount) #how to assign it  to specific account
 
 end
 end
 
-end
+
 
 ba= BankAccount.new("Nora", 500)
-
+ba2= BankAccount.new("Roger", 500)
+# binding.pry
 p ba.withdraw(700)
 p ba.deposit(100)
 p ba.balance()
 
-
+ba.transfer(100, ba2)
 
 class Bank < BankAccount 
     attr_accessor :name, :location, :accounts 

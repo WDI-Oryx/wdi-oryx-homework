@@ -20,7 +20,24 @@ The URL should look something like http://localhost:3000/games/magic/Some-questi
 
 ## Secret Number
 
-Users click a number between 1 and 10. The controller validates the guess, compares it to the computer's guess and renders the **win or lose view** (these are two separate HTML pages!).
+Users click a link between 1 and 10. The controller validates the guess, compares it to the computer's guess and renders the **win or lose view** (these are two separate HTML pages!).
+
+### The Process
+
+- The users clicks a link (that should take you to a page like `/games/secret/1`)
+- Rails comes up with a random number between 1 and 10 (in the controller)
+- If those numbers are the same, show a win view
+- If they are different, show a lose view
+
+Your links should look like this:
+
+```html
+<a href="/games/secret/1">1</a>
+<a href="/games/secret/2">2</a>
+<a href="/games/secret/3">3</a>
+<!-- ... -->
+<a href="/games/secret/10">10</a>
+```
 
 ## Bonus
 

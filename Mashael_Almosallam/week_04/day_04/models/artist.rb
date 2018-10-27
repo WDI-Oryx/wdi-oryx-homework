@@ -1,3 +1,3 @@
 class Artist < ActiveRecord::Base
-  has_many :song # AR classes are singular and capitalized by convention
+  has_many :songs # AR classes are singular and capitalized by convention
 end

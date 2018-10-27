@@ -16,7 +16,7 @@ require_relative "models/song" # require the Song class definition that we defin
 # Find all artists
 p Artist.all
 # Find just one artist by id
-p Artist.find_by(artist_id: 1) #Couldn't find Artist with 'id'=1 (ActiveRecord::RecordNotFound) ERROR
+p Artist.find_by(id: 1) #Couldn't find Artist with 'id'=1 (ActiveRecord::RecordNotFound) ERROR
 # Find Taylor Swift (or your other fav artist) by name.
 p Artist.find_by(name: "Taylor Swift")
 # Find all artists from the USA

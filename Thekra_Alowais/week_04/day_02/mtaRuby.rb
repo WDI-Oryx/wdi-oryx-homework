@@ -17,20 +17,20 @@ def getTripString(line, startStop, endStop)
   stopsString = ""
   startIndex = line_array.index(startStop)
   endIndex = line_array.index(endStop)
-  p "startIndex #{startIndex} and endIndex #{endIndex}"
+  #   p "startIndex #{startIndex} and endIndex #{endIndex}"
   if startIndex < endIndex
     i = startIndex
-    while startIndex <= endIndex
-      p "error #{line_array[i]}"
-      stopsString += line_array[i]
+    # p "error #{line_array[i]}"
+    while i <= endIndex
+      stopsString += line_array[i] + ", "
       #   p "stopsString #{stopsString}"
       $stopsCount += 1
       i = i + 1
     end
   else
     j = startIndex
-    while startIndex >= endIndex
-      stopsString += line_array[j]
+    while j >= endIndex
+      stopsString += line_array[j] + ", "
       $stopsCount += 1
       j = j - 1
     end
@@ -51,5 +51,5 @@ def planTrip(startLine, startStop, endLine, endStop)
   p " #{$stopsCount} stops in total"
 end
 
-planTrip(:n, "8th", :n, "Times Square")
-# planTrip(:l, "8th", :n, "8th")
+# planTrip(:n, "8th", :n, "Times Square")
+planTrip(:l, "8th", :n, "8th")

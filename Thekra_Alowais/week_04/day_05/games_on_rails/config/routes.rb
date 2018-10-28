@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get "games/rps/:input", to: "games#rps"
   get "games/magic/:question", to: "games#question"
   # resources :secrets
-  # get "games/secret/:num", to: "games#secret"
+  get "games/secret", to: "games#secret"
 end

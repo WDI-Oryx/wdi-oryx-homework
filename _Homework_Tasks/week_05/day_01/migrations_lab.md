@@ -12,7 +12,7 @@ By the end of this, students should be able to:
 ## Instructions/Setup
 
 
-- Start a new ruby project called "
+- Start a new ruby project called *MigrationLab*
 - Follow below instructions *in order*
 
 ### Step 1

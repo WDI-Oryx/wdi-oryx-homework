@@ -43,6 +43,14 @@ class GamesController < ApplicationController
   end
 
   #game 3
-  #   def secret
-  #   end
+
+  def secret
+    # @random_number = Random.rand(1..10)
+    # @user_num = params[:num]
+    # if @random_number == @user_num
+    #   render("games/win")
+    # else
+    #   render("games/lose")
+    # end
+  end
 end

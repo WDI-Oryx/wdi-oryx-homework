@@ -26,6 +26,10 @@ p book_series[:author].split.last
 # 3. how would you return an array of the books that begin with the letter 'T'?
 # p book_series[:books].start_with? "T"
 # p book_series.select { |book| book[:books].start_with?("T") }
+p book_series[:books].each do |book|
+  p book if book.start_with? "T"
+end
+# p book_series[:books].select { |book| book.start_with?("T") }
 
 is = {
   true => "It's true!",
@@ -67,7 +71,9 @@ p users[:Trevor][:favorite_numbers]
 # 5. How would you return the smallest of Jack's favorite numbers?
 p users[:Jack][:favorite_numbers].min_by { |x| x }
 # 6. How would you return an array of Moath's favorite numbers that are also even?
-p users[:Moath][:favorite_numbers].map! { |x| x if x.even? }
+array = []
+# favorite_numbers: [12, 42, 75],
+users[:Moath][:favorite_numbers].each { |x| p array.push(x) if x.even? }
 # 7. How would you return an array of the favorite numbers common to all users?
 usersString = users[:Moath][:favorite_numbers]
 usersString += users[:Jack][:favorite_numbers]

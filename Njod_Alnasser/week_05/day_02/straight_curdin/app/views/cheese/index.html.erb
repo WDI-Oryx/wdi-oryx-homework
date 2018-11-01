@@ -1,0 +1,15 @@
+<h1>The Great Hall of Cheeses  ^_^</h1>
+
+<ol>
+<% @cheese.each do |cheese| %>
+   <li>
+    <a href="/cheese/<%= cheese.id %>"><%= cheese.name %></a>
+    <%= link_to ' , Eat this cheese', "/cheese/#{cheese.id}", method: :delete %>
+   </li> 
+   
+<% end %>
+</ol>
+
+
+<%= link_to 'New Cheese', "/cheese/new" %>
+

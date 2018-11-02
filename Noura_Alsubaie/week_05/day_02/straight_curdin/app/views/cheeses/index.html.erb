@@ -4,8 +4,9 @@
 <ul>
 <% @cheeses.each do |cheese| %>
 <h4> <li><%= link_to(cheese.name, cheese_path(cheese)) %> </li></h4>
- <button><%= link_to 'Eat This Cheese', "/cheeses/#{cheese.id}", method: 'delete' %></button>
 
+ <button><%= link_to 'Eat This Cheese', "/cheeses/#{cheese.id}", method: 'delete',
+ data: {confirm: "Are you sure you want this much of calories"} %></button>
 <% end %>
 </ul>
 </div>

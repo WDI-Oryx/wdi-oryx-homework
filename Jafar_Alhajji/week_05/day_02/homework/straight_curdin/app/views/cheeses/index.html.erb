@@ -1,0 +1,8 @@
+<h1>The Great Hall of Cheeses</h1>
+
+<% @cheeses.each do |cheese| %>
+<ul>
+<li><a href="/cheeses/<%=cheese.id%>"> <%= cheese.name %></a> 
+<%= button_to "Eat This Cheese", cheese, method: :delete %></li>
+</ul>
+<% end %>

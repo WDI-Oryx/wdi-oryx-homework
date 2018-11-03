@@ -1,0 +1,10 @@
+<h1>Cheeses#edit</h1>
+
+<%= form_for @cheese do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :description %>
+  <%= f.text_area :milk_type %>
+   <%= f.text_area :stank_level %>
+  <%= f.text_area :image_url %>
+  <%= f.submit "Save cheese" %>
+<% end %>

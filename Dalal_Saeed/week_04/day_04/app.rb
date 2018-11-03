@@ -21,7 +21,7 @@ Artist.find(3)
 # Find Taylor Swift (or your other fav artist) by name.
 Artist.find_by name: "Taylor Swift"
 # Find all artists from the USA
-Artist.where nationality: "American" #wrong
+Artist.where nationality: "American"
 # Find all artists NOT from the USA
 Artist.where.not nationality: "American"
 # Create a new artist for your favorite artist
@@ -42,33 +42,36 @@ hana.destroy_all
 # Find the artist with the name Enya
 enya = Artist.find_by(name: "Enya")
 # Use AR methods to find all of Enya's songs, store them in a variable
-Enya_songs = enya.songs.as_json
 # Use the "where" method to find the artist Enya and store it to a variable "enya"
 enya = Artist.where(name: "Enya").select("id")
-
 # get all of Enya's songs and save to a variable called "enya_songs"
-p enya_songs = Song.where(artist_id: enya)
+enya_songs = Song.where(artist_id: enya)
 # Get the first song out of enya_songs and get that song's title
-p Enya_songs.first.values_at("title")
+enya_songs.first.title
 # Find the song with the title 'Unstoppable' and store in a variable
-unstoppable = Song.where title: "Unstoppable"
+unstoppable = Song.where(title: "Unstoppable")
 # Get that song's artist, store that in a variable
-id = unstoppable.as_json[0].values_at("artist_id")
+id = unstoppable.select("artist_id")
+
 song_artist = Artist.find_by(id: id)
+
 # Reassign the song's artist to be a different one (your choice)
-song_artist.update_attribute(:name, "changes")
+song_artist.update_attribute(:name, "Changes")
 # Save that song
 
 # Create a new song, and associate it with a different artist of your choice
-come = Song.create(title: "Come wind Come Rain", album: "Just Another Diamond Day", preview_url: "https://google.com.sa", artist_id: 1)
+song = Song.create({title: "Suddnely", album: "Suddnely", preview_url: "https://www.youtube.com/watch?v=IUAS_MRSuvc", artist_id: 1})
 # Delete that song
-Song.destroy(title: "Come wind Come Rain")
+song.destroy
+Song.where(title: "Suddnely").destroy_all #destroy all
 # Find all of Enya's songs again, store in a variable
-p enya_songs_again = Enya.songs.as_json
+enya = Artist.where(name: "Enya").select("id")
+enya_songs = Song.where(artist_id: enya)
 # Using each, iterate over those songs and for each song, print "I like" + the song name
-enya_songs_again.each do |song|
-  p "I Like #{song.values_at("title").dig(0)}"
+enya_songs.each do |song|
+  p "I Like #{song.title}"
 end
+p Artist.all.select("year")
 # Bonus
 
 # Use Active Record queries (http://guides.rubyonrails.org/active_record_querying.html#conditions) for the below:

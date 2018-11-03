@@ -1,0 +1,7 @@
+<%# <h1>Creatures#edit</h1>
+<p>Find me in app/views/creatures/edit.html.erb</p> %>
+<%= form_for @creature do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :description %>
+  <%= f.submit "Save Creature" %>
+<% end %>

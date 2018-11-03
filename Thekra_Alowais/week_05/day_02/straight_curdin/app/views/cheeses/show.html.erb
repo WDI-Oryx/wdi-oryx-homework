@@ -1,0 +1,10 @@
+<%# <h1>Cheeses#show</h1> %>
+<%# <p>Find me in app/views/cheeses/show.html.erb</p> %>
+<p><%= @cheese.name %> </p>
+<p><%= @cheese.milk_type %> </p>
+<p><%= @cheese.image_url %> </p>
+<p><%= @cheese.description %> </p>
+<p><%= @cheese.stank_level %> </p>
+
+<Button> <%= link_to "Edit Cheese", "#{cheese_path(@cheese)}/edit" %></Button>
+<Button> <%= link_to "Eat This Cheese", cheese_path(@cheese), method: "delete" %></Button>

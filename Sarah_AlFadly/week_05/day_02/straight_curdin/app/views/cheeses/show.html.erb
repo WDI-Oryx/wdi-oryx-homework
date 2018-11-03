@@ -1,0 +1,8 @@
+<p>Name: <%= @cheese.name %></p>
+<p>Milk Type: <%= @cheese.milk_type %></p>
+<p>Image: <img src=<%= @cheese.image_url %> width="300px" hieght="300px"></p>
+<p>Description: <%= @cheese.description %></p>
+<p>Stank Level: <%= @cheese.stank_level %></p>
+<p><%= link_to("Edit", "/cheeses/#{@cheese.id}/edit") %></p>
+<p><%= link_to("Eat This Cheese", "/cheeses/#{@cheese.id}", method: "delete") %></p>
+

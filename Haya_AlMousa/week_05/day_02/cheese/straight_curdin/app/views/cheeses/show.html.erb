@@ -1,0 +1,13 @@
+<strong>Name:</strong>
+<p><%= @cheese.name %></p>
+<strong>Milk Type:</strong>
+<p><%= @cheese.milk_type %></p>
+<strong>Description:</strong>
+<p><%= @cheese.description %></p>
+<strong>Stank Level:</strong>
+<p><%= @cheese.stank_level %></p>
+<p><%= image_tag (@cheese.image_url)%> </p>
+
+
+<%= link_to 'Edit', edit_cheese_path(@cheese) %>
+<%= link_to 'Back', cheeses_path %>

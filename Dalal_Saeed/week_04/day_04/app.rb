@@ -25,10 +25,13 @@ p Artist.find_by name: "Taylor Swift"
 # Find all artists from the USA
 p Artist.find_by nationality: "American" #wrong
 # Find all artists NOT from the USA
-all_artist2 = Artist.not.where("nationality =American")
+all_artist2 = Artist.where.not("nationality =American")
 # Create a new artist for your favorite artist
 hana = Artist.create({name: "Hana", photo_url: "photo"})
 # Change at least 2 of their attributes
+p updated_name = Artist.where(name: "Hana")
+p updated_name.update(name: "Hana")
+Artist.where(name: "Hana").destroy_all
 
 # Destroy the artist you just created
 

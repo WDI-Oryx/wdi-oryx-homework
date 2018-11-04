@@ -1,0 +1,8 @@
+<h1>Cheese#index</h1>
+
+<ol>
+<% @cheese.each do |cheese|%>
+<li> <a href="/cheese/<%= cheese.id %>"> Cheese <%= cheese.id %> Page</a> </li>
+<%= link_to("Delete", "/cheese/#{cheese.id}", method: "delete") %>
+<% end %>
+</ol>

@@ -1,0 +1,10 @@
+<h1>Cheeses#new</h1>
+<%= link_to 'Edit', "/cheeses/#{@cheese.id}/edit" %>
+<%= link_to 'Home', "/cheeses" %>
+<%= form_for :cheese, url: "/cheeses", method: "post" do |f| %>
+  <b>Cheese Name:  </b>  <%= f.text_field :name %><br>
+  <b>Milk Type:    </b><%= f.text_field :milk_type %><br>
+  <b>Description:  </b><%= f.text_area :description %><br>
+  <b>Image URL:    </b><%= f.text_area :image_url %><br>
+  <%= f.submit "Save Cheese" %>
+<% end %>

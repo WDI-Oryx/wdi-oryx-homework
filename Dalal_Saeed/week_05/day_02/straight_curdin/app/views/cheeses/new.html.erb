@@ -1,0 +1,11 @@
+<h1>Cheeses#new</h1>
+
+
+<%= form_for @cheese do |form| %>
+  Name: <%= form.text_field :name %>
+  Description: <%= form.text_field :description %>
+  Milk Type: <%= form.text_field :milk_type %>
+  Stank Level: <%= form.text_field :stank_level %>
+  Image: <%= form.text_field :image_url%>
+  <%= form.submit %>
+<% end %>

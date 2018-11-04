@@ -1,0 +1,8 @@
+<h1>I AM A FORM</h1>
+
+<%= form_for @donut do |form| %>
+  Name: <%= form.text_field :name %>
+  Size: <%= form.text_field :size %>
+  Frosting Type: <%= form.text_field :frosting_type %>
+  <%= form.submit %>
+<% end %>

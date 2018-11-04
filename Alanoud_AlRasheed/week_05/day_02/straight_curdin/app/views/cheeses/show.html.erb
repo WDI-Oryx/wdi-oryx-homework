@@ -1,0 +1,7 @@
+<h1><%= @cheese.name %></h1>
+<p>Milk Type: <%= @cheese.milk_type.capitalize %></p>
+<img src="<%=  @cheese.image_url %>" alt="">
+<p>"<%= @cheese.description %>"</p>
+<p>Stank Level: <%= @cheese.stank_level %></p>
+<p class="delete_btn"><%= link_to("Edit", "/cheeses/#{@cheese.id}/edit") %></p>
+<%= render partial: "nav" %>

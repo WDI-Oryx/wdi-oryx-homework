@@ -1,0 +1,13 @@
+<h1>The Great Hall of Cheeses</h1>
+
+
+<% @cheeses.each do |cheese| %>
+    <div>
+    <%= link_to(cheese.name, cheese_path(cheese)) %>
+    
+    <%= link_to  "Edit this cheese", cheese, :method => :update%>
+
+    <%= link_to "Eat this cheese", cheese, :method => :delete%>
+    </div>
+  <% end %>
+

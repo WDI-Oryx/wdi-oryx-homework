@@ -1,0 +1,10 @@
+<h1>cheeses#show</h1>
+
+
+<p>Name:<%= @cheese.name%></p>
+<p>Milke:<%= @cheese.milk_type%></p>
+<p>Image: <%= @cheese.image_url %> </p>
+<p>Description:<%= @cheese.description %></p>
+
+<p><%= link_to ("Delete","/Cheeses/#{cheese.id}", method: "delete")%></p>
+

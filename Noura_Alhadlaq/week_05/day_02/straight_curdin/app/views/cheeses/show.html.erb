@@ -1,0 +1,6 @@
+<h1><%= @cheese.name %></h1>
+<p>Milk Type: <%= @cheese.milk_type %></p>
+<p>Description: <%= @cheese.description %></p>
+<p><img src="<%= @cheese.image_url %>" alt="<%= @cheese.name %> image"></p>
+<p>Stank level: <%= @cheese.stank_level %></p>
+<p><%= link_to("Edit cheese", "/cheeses/#{@cheese.id}/edit") %></p>

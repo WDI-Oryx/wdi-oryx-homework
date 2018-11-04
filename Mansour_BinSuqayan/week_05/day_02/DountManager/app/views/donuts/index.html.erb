@@ -1,0 +1,11 @@
+<h1>All the Donuts</h1>
+
+<% @donuts.each do |donut|%>
+<h3><%= link_to(donut.name,donut_path(donut)) %></h3>
+<p>Name: <%= donut.name%><p>
+<p>Size:<%= donut.size%><p>
+<p>Frosting: <%= donut.frosting_type%><p>
+<p><%= link_to("Edit","/donuts/#{donut.id}/edit") %></p>
+<p><%= link_to("Delete","/donuts/#{donut.id}",method:"delete") %>
+<% end %>
+

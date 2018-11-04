@@ -1,0 +1,14 @@
+<%= button_to 'Eat This Cheese', @cheeses, method: :delete %>
+
+<a href="./<%= @cheeses.id %>/edit">Edit This Cheese</a>
+<p>Name: <%= @cheeses.name %></p>
+
+<p>Milk Type: <%= @cheeses.milk_type %></p>
+
+<p>Stank Level: <%= @cheeses.stank_level %></p>
+
+<p>Description<%= @cheeses.description %></p>
+
+<p> <img src="<%= @cheeses.image_url %>"></p>
+
+<a href="/cheeses">Back</a>

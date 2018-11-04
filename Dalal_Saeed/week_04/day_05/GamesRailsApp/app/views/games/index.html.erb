@@ -1,0 +1,9 @@
+
+
+<h2>choose a game to play</h2>
+
+<%= @gamesList.each do |gm|%>
+  <a href="games/<%= gm %>"><%= gm %></a>
+  <br>
+
+<%end%>

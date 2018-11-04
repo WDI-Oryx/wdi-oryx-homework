@@ -1,0 +1,11 @@
+<%= form_for :cheese, url: "/cheese", method: "post" do |form| %>
+  Name: <%= form.text_field :name %>
+  milk Type: <%= form.text_field :milk_type %>
+  Stank Level: <%= form.text_field :stank_level %>
+  Description: <%= form.text_field :description %>
+  image_url: <%= form.text_field :image_url %>
+  <%= form.submit %>
+<% end %>
+
+
+<a href="/cheese">Back</a>

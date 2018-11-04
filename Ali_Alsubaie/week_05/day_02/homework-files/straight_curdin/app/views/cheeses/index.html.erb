@@ -1,0 +1,11 @@
+<h1>The Great Hall of Cheeses</h1>
+<%= link_to 'Add New Cheese', new_cheese_path %>
+<ul>
+  <% @cheeses.each do |cheese| %>
+    <li>
+      <%= cheese.name %> |
+      <%= link_to 'Show', cheese %> |
+      <%= link_to 'Eat This Cheese', "/cheeses/#{cheese.id}", method: 'delete' %>
+    </li>
+  <% end %>
+</ul>

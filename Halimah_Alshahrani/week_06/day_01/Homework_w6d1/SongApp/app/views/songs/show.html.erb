@@ -1,0 +1,16 @@
+
+<h2>
+  <%= @song.name %>
+</h2>
+
+<p>
+Album:  <%= @song.album %>.
+</p>
+
+<p>
+  Song by: 
+  <%= link_to @song.artist.name, artist_path(@song.artist) %>.
+</p>
+<a href="./<%= @song.id %>/edit">Edit</a>
+
+<%= link_to 'Delete Song', song_path(@song), method: :delete %>

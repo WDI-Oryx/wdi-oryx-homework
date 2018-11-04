@@ -1,0 +1,14 @@
+<h1>Cheeses#show</h1>
+
+<%= link_to 'Edit', "/cheeses/#{@cheese.id}/edit" %>
+<%= link_to 'Home', "/cheeses" %>
+<%= link_to 'New', "/cheeses/new" %>
+
+<h3><b>Cheese Name:</b> <%= @cheese.name %></h3>
+<p><b>Milk Type:</b> <%=  @cheese.milk_type %></p>
+<p><b>Description:</b> <%=  @cheese.description %></p>
+<b>Image:</b> 
+<p><img src="<%= @cheese.image_url %>" alt=""></p>
+
+
+

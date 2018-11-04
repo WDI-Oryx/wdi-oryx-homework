@@ -1,0 +1,10 @@
+<%= form_for :cheese, url: "/cheese", method: "post" do |form| %>
+  Name: <%= form.text_field :name %> <br> <br>
+  Milk Type: <%= form.text_field :milk_type %> <br> <br>
+  Description: <%= form.text_field :description %> <br> <br>
+  Image_url: <%= form.text_field :image_url %>
+  <br>
+    <br>
+    
+  <%= form.submit %>
+<% end %>

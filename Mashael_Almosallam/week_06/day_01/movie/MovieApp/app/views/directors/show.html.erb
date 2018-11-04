@@ -1,0 +1,17 @@
+<h2><%= @director.name %></h2>
+<p>Date of Birth: <%= @director.dob %></p>
+<p>Country: <%= @director.country %></p>
+<p> <img src="<%= @director.image %>" width =500></p>
+
+<p><%= link_to("Edit Director", edit_director_path(@director)) %></p>
+<%= link_to "Delete Director", director_path(@director), method: :delete %>
+
+<h3>All films</h3>
+<ul>
+<% @director.films.each do |film|  %>
+<li>
+film Title : <%= link_to(film.title, films_path(film)) %>
+</li>
+</br>
+<% end%>
+</ul>

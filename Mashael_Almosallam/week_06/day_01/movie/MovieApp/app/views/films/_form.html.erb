@@ -1,0 +1,22 @@
+<%= form_for @film do |f| %>
+  <div>
+    <%= f.label :title, "What is the title?" %>
+    <%= f.text_field :title %>
+  </div>
+  </br>
+  <div>
+    <%= f.label :rating, "What is the rating" %>
+    <%= f.number_field :rating %>
+  </div>
+    </br>
+  <div>
+    <%= f.label :image, "Where is the image?" %>
+    <%= f.url_field :image %>
+  </div>
+    <div>
+    <%= f.collection_select( :director_id, Director.all , :id, :name )%>
+
+  </div>
+
+  <%= f.submit "Create Film" %>
+<% end %>

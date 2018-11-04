@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+     text-align: center;
+ }
+
+ h1 {
+     background-color: salmon;
+     color: white;
+     padding: 10px;
+     margin: 0px;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-weight: normal;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-size: 55px;
+ }
+
+img {
+     border: 3px solid salmon;   
+     border-radius: 10px; 
+    width: 160px;
+    height: 160px;
+}
+
+h3 {
+       font-weight: normal;
+    font-size: 25px;
+    padding: 0px;
+    margin: 15px;
+}
+
+a {
+    color: salmon;
+    text-decoration: none;
+    font-family:  Helvetica, Arial, sans-serif;
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+
+a:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+.btn {
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.btn > a, .delete_btn >a {
+    padding: 3px 20px;
+    border-radius: 10px;
+    background-color: salmon;
+    color: white;
+}
+
+ .btn>a:hover, .delete_btn >a:hover {
+     color: salmon;
+     background-color: white;
+     border: 1px solid salmon;
+ }

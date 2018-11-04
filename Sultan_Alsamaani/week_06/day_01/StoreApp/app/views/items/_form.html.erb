@@ -1,0 +1,32 @@
+
+<%= form_for @item do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :details %>:
+  <%= f.text_field :details %><br />
+
+<%= f.label :price %>:
+  <%= f.text_field :price %><br />
+
+<%= f.label :store_id, "select the store"%> 
+<%= f.collection_select :store_id, Store.all, :id, :name %>
+
+  <%= f.submit %>
+<% end %>
+
+<%# create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.string "details"
+    t.integer "price"
+    t.integer "store_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end %>

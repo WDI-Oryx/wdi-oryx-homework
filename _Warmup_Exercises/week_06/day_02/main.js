@@ -27,7 +27,6 @@ function myReduce1(array, callBack, init) {
 function myReduce2(array, callBack, init) {
   // Start with init, if it's undefined use the first item in the array as the initial value
   var initialValue = init || array.shift();
-  debugger;
   for (var i = 0; i < array.length; i++) {
     initialValue = callBack(initialValue, array[i]);
   }

@@ -1,5 +1,3 @@
-var myArray = [1, 2, 3, 4];
-
 var sum = function (a, b) {
   return a + b;
 };

@@ -14,4 +14,5 @@
 
 class Director < ApplicationRecord
   has_many :films
+  has_many :genres, through: :films
 end

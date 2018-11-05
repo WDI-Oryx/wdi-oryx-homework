@@ -15,3 +15,7 @@ film Title : <%= link_to(film.title, films_path(film)) %>
 </br>
 <% end%>
 </ul>
+<h3>The Director's films are in the following genres</h3>
+<% @director.genres.uniq.each do |genre|%>
+<p><%= genre.name %></p>
+<% end%>

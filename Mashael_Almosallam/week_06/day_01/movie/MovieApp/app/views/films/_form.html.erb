@@ -17,6 +17,16 @@
     <%= f.collection_select( :director_id, Director.all , :id, :name )%>
 
   </div>
-
+<div>
+<%= f.label :genre_ids, "What genre is this film?" %>
+</br>
+<%= f.collection_check_boxes :genre_ids, Genre.all, :id, :name%>
+<!--
+ids becasue it's an array
+:genre_ids is the key in params
+Genre.all is the collection that we aare showing
+:id is the value that will be added into params
+:name is the text to show to the user-->
+</div>
   <%= f.submit "Create Film" %>
 <% end %>

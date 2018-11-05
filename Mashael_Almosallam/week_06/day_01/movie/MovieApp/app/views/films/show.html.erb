@@ -4,3 +4,7 @@
 <p> <img src="<%= @film.image %>" width =300></p>
 <p>Directed by: <%= link_to(@film.director.name, director_path(@film.director)) %></p>
 
+<h4>All Genres</h4>
+<% @film.genres.each do |genre| %>
+<p><%= link_to genre.name, genre_path(genre) %></p>
+<% end %>

@@ -22,5 +22,10 @@
     -->
   </div>
 
+  <div>
+  <%= f.label :genre_id, "What genre is this book?" %> <br>
+  <%= f.collection_check_boxes :genre_ids, Genre.all, :id, :name %>
+  </div>
+
   <%= f.submit %>
 <% end %>

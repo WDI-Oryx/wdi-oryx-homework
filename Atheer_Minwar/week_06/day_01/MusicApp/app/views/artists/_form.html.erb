@@ -1,0 +1,28 @@
+<%= form_for @artist do |a| %>
+<div>
+<%= a.label :name %>
+<%= a.text_field :name %>
+</div>
+
+<div>
+<%= a.label :formed %>
+<%= a.date_field :formed %>
+</div>
+
+<div>
+<%= a.label :genres %>
+<%= a.text_field :genres %>
+</div>
+
+<div>
+<%= a.label :website %>
+<%= a.url_field :website %>
+</div>
+
+<div>
+<%= a.label :image %>
+<%= a.url_field :image %>
+</div>
+
+<%= a.submit %>
+<% end %>

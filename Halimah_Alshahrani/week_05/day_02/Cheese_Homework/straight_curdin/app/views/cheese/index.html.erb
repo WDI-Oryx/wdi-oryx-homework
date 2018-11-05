@@ -1,0 +1,19 @@
+<h1>The Great Hall of Cheeses</h1>
+
+ <p><%= link_to("New cheese", "/cheese/new") %></p>
+
+
+<% @cheeses.each do |cheese| %>
+<ul>
+<li>   <h3><%= link_to(cheese.name, cheese_path(cheese)) %></h3> </li>
+  <li>Milk type: <%= cheese.milk_type %></li>
+  <li>Description: <%= cheese.description%></li>
+  <br>
+  <%= image_tag(cheese.image_url)%>
+
+  </ul>
+  <p><%= link_to("Edit", "/cheese/#{cheese.id}/edit") %></p>
+  <p><%= link_to("Delete", "/cheese/#{cheese.id}", method: "delete") %></p>
+<% end %>
+
+ 

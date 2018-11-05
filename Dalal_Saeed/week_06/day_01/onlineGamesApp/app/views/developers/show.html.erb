@@ -18,3 +18,10 @@ website: <%= @developer.website%>
      <li><%= link_to(game.title, game_path(game)) %></li>
      <%end %>
  </ul>
+
+<h3>Genres List:</h3>
+ <ul>
+ <% @developer.genres.each do |g| %>
+     <li><%= link_to(g.name, genre_path(g)) %></li>
+     <%end %>
+ </ul>

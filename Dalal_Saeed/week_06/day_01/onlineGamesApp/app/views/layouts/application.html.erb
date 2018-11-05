@@ -10,12 +10,13 @@
   </head>
 
   <body>
-  <h1> Games Developers App </h1>
+  <h1> Games App </h1>
   <nav>
   <%= link_to(" all Developers ", developers_path )%>
   <%= link_to(" add new Developer ", new_developer_path) %>
   <%= link_to(" all Games ", games_path )%>
   <%= link_to(" add new Game ", new_game_path) %>
+  <%= link_to(" all Genres ", genres_path) %>
   </nav>
     <%= yield %>
   </body>

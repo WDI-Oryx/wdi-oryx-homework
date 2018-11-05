@@ -1,0 +1,23 @@
+<h1> your choice:  <%= @user_chose %></h1>
+<%rps=@arr[rand(3)]%>
+<h1>Random choice: <%=  rps%></h1>
+
+<% if (@user_chose == rps )%>
+<h1 style="text-align:center"> Draw</h1>
+<%elsif (@user_chose == "Rock" and rps == "Paper") %>
+<h1 style="text-align:center"> Looooooser ^-^</h1>
+<%elsif (@user_chose == "Rock" and rps == "Scissors") %>
+<h1 style="text-align:center"> You win -_-</h1>
+<%end%>
+
+<%if (@user_chose == "Paper" and rps == "Scissors") %>
+<h1 style="text-align:center"> Looooooser ^-^</h1>
+<%elsif (@user_chose == "Paper" and rps == "Rock") %>
+<h1 style="text-align:center"> You win -_-</h1>
+<%end%>
+
+<%if (@user_chose == "Scissors" and rps == "Rock") %>
+<h1 style="text-align:center"> Looooooser ^-^</h1>
+<%elsif (@user_chose == "Scissors" and rps == "Paper") %>
+<h1 style="text-align:center"> You win -_-</h1>
+<%end%>

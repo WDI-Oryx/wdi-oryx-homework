@@ -1,0 +1,11 @@
+<h1>Cheeses#edit</h1>
+<%# <p>Find me in app/views/cheeses/edit.html.erb</p> %>
+
+<%= form_for @cheese do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :milk_type %>
+  <%= f.text_field :image_url %>
+  <%= f.text_area :description %>
+    <%= f.text_field :stank_level %>
+  <%= f.submit "update cheese" %>
+<% end %>

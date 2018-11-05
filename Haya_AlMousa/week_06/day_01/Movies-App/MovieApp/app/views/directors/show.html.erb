@@ -1,0 +1,14 @@
+<h2>
+  <%= @director.name %>
+</h2>
+
+<p>
+  Date of birth: <%= @director.dob %>
+</p>
+
+<p>
+  Location: <%= @director.location %>
+</p>
+
+<%= link_to "Edit Director", edit_director_path(@director) %>
+ <%= link_to "Delete Director", director_path(@director), method: :delete %>

@@ -1,0 +1,23 @@
+
+
+<h3>Seller <%=@seller.id %></h3>
+<h4>More about <%=@seller.name %>
+ </h4>
+
+ 
+ <p>Email: <%=@seller.email %> </p>
+ <p>Location: <%=@seller.location %>  </p> 
+ <p>Rate: <%=@seller.rating %> </p>
+ <p>Products:
+
+<ul>
+<% @seller.products.each do |product| %>
+<li><%= product.name %>   </li>
+  <%= @seller.product.name %> 
+  <%= @seller.product.price %> 
+  <%= @seller.product.description %> 
+ <% end %>
+ 
+  </p>
+ 
+

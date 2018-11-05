@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ActorApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <nav>
+ <span> <%= link_to 'All Actors', actors_path %> </span>
+<span><%= link_to 'Add Actor', new_actor_path %> </span>
+<span><%= link_to 'All Movies', movies_path %> </span>
+<span><%= link_to 'Add Movie', new_movie_path %> </span>
+</nav>
+  <body>
+    <%= yield %>
+  </body>
+</html>

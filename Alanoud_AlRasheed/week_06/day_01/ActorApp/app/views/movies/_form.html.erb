@@ -1,0 +1,24 @@
+<%= form_for @movie do |f| %>
+
+<div class="form">
+<span><%= f.label :title, "Title" %> </span>
+<span><%= f.text_field :title %></span>
+</div>
+
+<div class="form">
+<span><%= f.label :image, "Poster" %> </span>
+<span><%= f.url_field :image %></span>
+</div>
+
+<div class="form">
+<span><%= f.label :director, "Director" %> </span>
+<span><%= f.text_field :director %></span>
+</div>
+
+<div class="form">
+<span><%= f.label :actor_id, "Actor" %> </span>
+<span><%= f.collection_select :actor_id, Actor.all, :id, :name %></span>
+</div>
+
+<%= f.submit %>
+<% end %>

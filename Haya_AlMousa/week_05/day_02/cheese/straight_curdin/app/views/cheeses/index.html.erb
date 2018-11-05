@@ -1,0 +1,13 @@
+<h1>The Great Hall of Cheeses</h1>
+<% @cheeses.each do |cheese| %>
+<ul>
+<li><%= link_to @cheese, cheese_path(cheese) %></li> 
+<li><%= link_to 'Eat This Cheese', cheese_path(cheese),
+              method: :delete, 
+              data: { confirm: 'Are you sure?' } %> </li>
+</ul>
+
+<% end %>
+
+
+<%= link_to 'Add New Cheese', new_cheese_path(@cheese) %>

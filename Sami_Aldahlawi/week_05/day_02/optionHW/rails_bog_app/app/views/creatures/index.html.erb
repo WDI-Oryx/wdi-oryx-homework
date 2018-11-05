@@ -1,0 +1,9 @@
+<h1>Creatures#index</h1>
+<p>Find me in app/views/creatures/index.html.erb</p>
+
+<% @creature.each do |row|%>
+<label>Name: </label> <%= row.name %><br/>
+<label>Description: </label><%= row.description %><br/>
+<br/>
+<br/>
+<%end%>

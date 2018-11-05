@@ -1,0 +1,9 @@
+<h1>Show Details</h1>
+<h3>Title:<%=  @book.title%></h3>
+
+<h3>Blurb:<%=  @book.blurb%></h3>
+
+<h3>Image<%=  @book.image%></h3>
+
+<h3 >Written by : <%= link_to @book.author.name, author_path(@book.author.id) %></h3>
+<h3></h3>

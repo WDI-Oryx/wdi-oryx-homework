@@ -1,0 +1,15 @@
+<h1>The Great Hall of Cheeses</h1>
+
+
+
+<% @cheese.each do |cheese| %>
+<p> Name: <%= cheese.name%> </p>
+<p> Milk:<%= cheese.milk_type%></p>
+<p>Image: <%= cheese.image_url %> </p>
+<p>Description:<%= cheese.description %></p>
+
+ <% end %>
+
+  <%= render partial: 'form' %>
+
+

@@ -11,15 +11,13 @@ class CheesesController < ApplicationController
     @cheese = Cheese.new
   end
 
-  def edit
-    @cheese = Cheese.find(params[:id])
-    cheese.update(cheese_params)
-    redirect_to cheese_path(@cheese)
-  end
-
   def create
     cheese = Cheese.create(cheese_params)
     redirect_to cheeses_path
+  end
+
+  def edit
+    @cheese = Cheese.find(params[:id])
   end
 
   def update

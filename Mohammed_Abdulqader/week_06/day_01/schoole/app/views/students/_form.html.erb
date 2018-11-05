@@ -1,0 +1,19 @@
+<%= form_for @student do |f| %>
+  <div>
+    <%= f.label :name, "What is the name?" %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :dob, "Where is the dob?" %>
+    <%= f.url_field :dob %>
+  </div>
+  <div>
+    <%= f.label :college, "Describe the college" %>
+    <%= f.text_area :college %>
+  </div>
+  <div>
+    <%= f.label :teacher_id, "Who is the teacher?" %>
+    <%= f.collection_select :teacher_id, Teacher.all, :id, :name %>
+    
+  </div>
+  

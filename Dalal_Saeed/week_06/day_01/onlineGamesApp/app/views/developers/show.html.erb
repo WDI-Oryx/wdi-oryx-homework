@@ -1,0 +1,20 @@
+
+<h2>
+<%= @developer.name %>
+</h2>
+<img src=<%= @developer.image %> alt="image">
+<p>
+location: <%= @developer.location %>
+</p><p>
+website: <%= @developer.website%>
+</p>
+ <%= link_to("Edit", edit_developer_path) %>
+ <%= link_to("Delete", developer_path(@developer),  method: :delete ) %>
+
+ <h3>Games List:</h3>
+ 
+<ul>
+ <% @developer.games.each do |game| %>
+     <li><%= link_to(game.title, game_path(game)) %></li>
+     <%end %>
+ </ul>

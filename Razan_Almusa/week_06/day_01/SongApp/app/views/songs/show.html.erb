@@ -1,0 +1,9 @@
+<h2>@song.name</h2>
+
+<p> <%= @song.year %> </p>
+
+<p> <%= @song.album %> </p>
+
+<p>
+Sings by: <%= link_to @song.singer.name, singer_path(@song.singer) %>
+</p>

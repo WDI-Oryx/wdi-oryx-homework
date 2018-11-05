@@ -20,7 +20,4 @@ myReduce([1, 2, 3, 4], sum, 0);
 
 myReduce([1, 2, 3, 4], sum, 15);
 // => 25
-
-myReduce([1, 2, 3, 4], subtract, 0);
-// => -8
 ```

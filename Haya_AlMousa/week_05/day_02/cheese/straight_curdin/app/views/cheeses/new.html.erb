@@ -1,0 +1,15 @@
+<h2> Add New Cheese </h2>
+<%= form_for :cheese, url: "/cheeses", method: "post" do |f| %>
+<strong>Name:</strong>
+  <%= f.text_field :name %>
+  <strong>Milk Type:</strong>
+  <%= f.text_field :milk_type %>
+  <strong>Description:</strong>
+  <%= f.text_area :description %>
+  <strong>Stank Level:</strong>
+<%= f.text_area :stank_level %>
+  <strong>Image URL:</strong>
+  <%= f.text_field :image_url %>
+  <%= f.submit "Save Cheese" %>
+<% end %>
+<%= link_to 'Back', cheeses_path %>

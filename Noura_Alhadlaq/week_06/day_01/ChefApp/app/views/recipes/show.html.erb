@@ -1,0 +1,13 @@
+<h1><%= @recipe.title %></h1>
+<p>by <%= @recipe.chef.name %></p>
+<img src="<%= @recipe.image %>" alt="image">
+<ul>
+<li>
+<strong>Ingredients:</strong> <br>  <%= @recipe.ingredients %>
+</li>
+<li>
+<strong>Method:</strong> <br>  <%= @recipe.method %>
+</li>
+</ul>
+
+<%= link_to("Remove Recipe", recipe_path, method: :delete) %>

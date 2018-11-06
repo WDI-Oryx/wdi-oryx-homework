@@ -1,0 +1,19 @@
+<%= form_for @hobby do |f| %>
+
+<div class="form">
+<span><%= f.label :name %> </span>
+<span><%= f.text_field :name %></span>
+</div>
+
+<div class="form">
+<span><%= f.label :image %> </span>
+<span><%= f.url_field :image %></span>
+</div>
+
+<div class="form">
+<span><%= f.label :category %> </span>
+<span><%= f.text_field :category %></span>
+</div>
+
+<p class="btn"><%= f.submit %></p>
+<% end %>

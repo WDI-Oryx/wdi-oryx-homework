@@ -1,0 +1,17 @@
+<h1>Actor:</h1>
+
+<p><%= @actor.name %></p>
+<img src="<%= @actor.image %>">
+<p>Date of Birth: <%= @actor.dob %></p>
+<p>Born in: <%= @actor.location %></p>
+
+
+<h3>Well Known Movies</h3>
+<% @actor.movies.each do |movie| %>
+<li><%= link_to movie.title, movie_path(movie) %></li>
+<% end %>
+
+<br>
+<br>
+<p><%= link_to 'Edit', edit_actor_path(@actor) %> </p>
+<p><%= link_to("Delete", "/actors/#{@actor.id}", method: "delete") %> </p>

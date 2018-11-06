@@ -1,0 +1,7 @@
+<h1>Categories#index</h1>
+<%#= console %>
+<% @categories.each do |c| %>
+<%#= c.name %>
+<%= link_to c.name, category_path(c) %>
+<br>
+<% end %>

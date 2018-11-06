@@ -1,0 +1,45 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body
+{
+    margin: 80px 0;
+    font-family: monospace;
+
+    
+}
+
+
+nav 
+{
+    background: #16161d;
+    color: #f8f8ff;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    box-shadow: 0 0 5px #161616;
+
+}
+
+nav a , nav span
+{
+    background: #161616;
+    transition: all 0.3s;
+    text-decoration-color:#161616;
+    flex-grow: 1;
+    color: inherit;
+  
+}
+
+nav a:hover , nav span:hover
+{
+    color:#16161d;
+    background:#f8f8ff;
+}

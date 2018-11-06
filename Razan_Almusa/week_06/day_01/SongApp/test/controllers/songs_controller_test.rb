@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class SongsControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
@@ -20,5 +20,4 @@ class SongsControllerTest < ActionDispatch::IntegrationTest
     get songs_new_url
     assert_response :success
   end
-
 end

@@ -14,5 +14,11 @@
 <%= s.collection_select :singer_id, Singer.all, :id, :name %>
 </div>
 
+
+  <div>
+  <%= s.label :genre_ids, "what genre is this ?" %> <br>
+  <%= s.collection_check_boxes :genre_ids, Genre.all, :id, :name %>
+</div>
+
 <%= s.submit %>
 <% end  %>

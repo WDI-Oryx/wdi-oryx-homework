@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shops</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Welcome to My Shop List App</h1>
+    <nav>
+      <%= link_to 'All Shops', shops_path, class: "m" %>
+      <%= link_to 'Add Shop', new_shop_path, class: "m" %>
+      <%= link_to 'All Products', products_path, class: "m" %>
+      <%= link_to 'Add Product', new_product_path, class: "m" %>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

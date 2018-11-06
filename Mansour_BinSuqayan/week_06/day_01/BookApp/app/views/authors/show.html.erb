@@ -1,0 +1,27 @@
+h2>
+  <%= @author.name %>
+</h2>
+
+<p>
+  Date of birth: <%= @author.dob %>
+</p>
+
+<p>
+  Location: <%= @author.location %>
+</p>
+
+<p>
+  Description: <%= @author.description %>
+</p>
+
+<div class="controls">
+  <%= link_to "Edit Author", edit_author_path(@author) %>
+  <%= link_to "delete Author" , author_path(@author), method: :delete %>
+</div>
+
+<h3>All Books</h3>
+<ul>
+<% @author.books.each do |book| %>
+<li><a href="/books/<%= book.id %>"><%= book.title%></a></li>
+<% end%>
+</ul>

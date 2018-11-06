@@ -1,0 +1,22 @@
+<h2>
+  <%= @shop.name %>
+  <span style="font-size: 14px;">
+    <%= link_to '(Edit Shop)', edit_shop_path %>
+  </span>
+</h2>
+<br>
+<div>
+  <strong>Description:</strong> <%= @shop.description %>
+  <br>
+  <strong>Location:</strong> <%= @shop.location %>
+</div>
+<br>
+<h3>Products:</h3>
+<ul>
+  <% @shop.products.each do |p| %>
+    <li>
+      <%= link_to p.name, p, class: "m" %>
+      <%= link_to "(Remove)", p, method: :delete, class: "m" %>
+    </li>
+  <% end %>
+</ul>

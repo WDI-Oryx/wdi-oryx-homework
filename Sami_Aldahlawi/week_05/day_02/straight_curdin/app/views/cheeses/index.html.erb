@@ -1,0 +1,7 @@
+<h1>The Great Hall of Cheeses</h1>
+
+<ul>
+<%@all_cheese.each do |cheese| %>
+<li><a href="/cheeses/<%= cheese.id%>">cheeses <%= cheese.id%></a><li>
+<%end %>
+</ul>

@@ -1,0 +1,10 @@
+<h2> Student Information </h2>
+
+<p> Student : <%= @student.name %> </p>
+
+<p>Major : <%= @student.major %> </p>
+
+<%= link_to 'Edit student Information', edit_student_path %>
+<%= link_to 'Remove student', student_path(@student), method: :delete %>
+
+

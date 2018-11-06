@@ -13,5 +13,6 @@
 
 class Book < ApplicationRecord
   belongs_to :author
+  has_and_belongs_to_many :genres
   # for every instace of Book, if you call .author - go to find the acco
 end

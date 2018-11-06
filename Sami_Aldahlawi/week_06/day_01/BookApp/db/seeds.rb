@@ -13,3 +13,16 @@ james = Author.create(name: "James Joyce", dob: "1941-01-13", location: "Zurich"
 Book.destroy_all
 geb = Book.create(title: "Godel, Eschar and Bach", image: "", blurb: "The best", author_id: doug.id)
 ulysses = Book.create(title: "Ulysses", image: "", blurb: "Pretty great", author_id: james.id)
+
+genres = ["History", "Comedy", "Horror", "Science", "Tech", "JS", "CSS", "Ruby", "Ruby on Rails", "Theoretical"]
+
+genres.each do |g|
+  Genre.create(name: g)
+end
+
+micheal = Author.create(name: "Micheal Hartl", dob: "1970-01-01", location: "California", description: "A lovely man", image: "")
+the_rails_tutorial = Book.create(title: "The Ruby on Rails Tutorial", image: "", blurb: "The best way to learn eCommerce stuff with Rails", author_id: micheal.id)
+the_rails_tutorial.genres << Genre.find_by(name: "Tech")
+the_rails_tutorial.genres << Genre.find_by(name: "Ruby")
+the_rails_tutorial.genres << Genre.find_by(name: "Ruby on Rails")
+the_rails_tutorial.genres << Genre.find_by(name: "Theoretical")

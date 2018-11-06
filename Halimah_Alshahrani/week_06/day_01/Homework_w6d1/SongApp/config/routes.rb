@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'song_types/index'
+  get 'song_types/show'
   # get 'songs/index'
   # get 'songs/show'
   # get 'songs/new'

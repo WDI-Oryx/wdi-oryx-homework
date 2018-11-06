@@ -1,0 +1,5 @@
+<h4>All Songs Type </h4>
+<% @song.song_types.each do |type| %>
+  <p><%= link_to(type.name, song_type_path(type)) %></p>
+<% end %>
+

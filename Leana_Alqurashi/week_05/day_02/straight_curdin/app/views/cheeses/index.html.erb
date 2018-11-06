@@ -1,0 +1,14 @@
+<h1>Cheeses</h1>
+
+  <% @cheeses.each do |cheese|%>
+<div>
+    <p>Name: <%= cheese.name %></p>
+     <p>Milk Type: <%= cheese.milk_type %></p>
+      <p>Description: <%= cheese.description %></p>
+      <p>Stank Level: <%= cheese.stank_level %></p>
+                  <p><%= link_to("Eat the Cheese", "/cheeses/#{cheese.id}", method: "delete")%>
+
+      </div>
+      <img src="<%= cheese.image_url%>" alt="cheese image" >
+
+     <%end%>

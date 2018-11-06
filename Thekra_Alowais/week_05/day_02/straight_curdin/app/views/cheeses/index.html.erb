@@ -1,0 +1,9 @@
+<h1>Cheeses#index</h1>
+<h1>The Great Hall of Cheeses</h1>
+
+<% @cheeses.each do |cheese| %>
+<p>
+<%= link_to cheese.name, cheese_path(cheese) %>
+</p>
+<br>
+<% end %>

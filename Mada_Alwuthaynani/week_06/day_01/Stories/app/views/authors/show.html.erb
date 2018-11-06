@@ -1,0 +1,18 @@
+<h1>Authors</h1>
+
+<h1>Authors#show</h1>
+
+<h2>
+<%= @author.name %>
+</h2>
+<p>
+Descriptin: <%= @author.description%>
+</p>
+<h1>this author has written:</h1>
+<ul>
+<%@author.stories.each do |story| %>
+<li>
+<%= link_to(story.title, story)%> 
+</li>
+<% end %>
+</ul>

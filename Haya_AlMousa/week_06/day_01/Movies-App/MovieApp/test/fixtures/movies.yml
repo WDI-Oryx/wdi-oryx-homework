@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  lead_actor: MyString
+  description: MyString
+  director_id: 1
+
+two:
+  title: MyString
+  lead_actor: MyString
+  description: MyString
+  director_id: 1

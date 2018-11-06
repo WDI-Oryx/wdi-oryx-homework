@@ -1,0 +1,8 @@
+
+<h1>The Great Hall of Cheeses</h1>
+<% @cheeses.each do |cheese| %>
+<h3><%= link_to(cheese.name.capitalize, cheese_path(cheese))%></h3>
+<p class="delete_btn"><%= link_to("Eat This Cheese", "/cheeses/#{cheese.id}", method: "delete") %></p>
+<hr>
+<% end %>
+<p class="btn"><%= link_to("Add New", "/cheeses/new") %></p>

@@ -1,0 +1,6 @@
+<h1>All Stores</h1>
+<% @stores.each do |store| %>
+<h3><%= link_to store.name, store_path(store) %></h3>
+<%=link_to "edit", edit_store_path(store) %>
+<%=link_to "delete", store_path(store), method: :delete %>
+<% end %>

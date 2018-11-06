@@ -1,0 +1,27 @@
+<h2>
+<%# to see the record in json  <to_json> %>
+<%= @teacher.name  %>
+</h2>
+
+<p>
+  Date of birth: <%= @teacher.dob %>
+</p>
+
+<p>
+  Location: <%= @teacher.location %>
+</p>
+
+<p>
+  course: <%= @teacher.course %>
+</p>
+
+<div class= "controls">
+
+
+
+
+      <%= link_to "Edit", edit_teacher_path(@teacher) %>
+      
+
+      <%= link_to "Delete teacher", teacher_path(@teacher), method: :delete %>
+

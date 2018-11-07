@@ -1,0 +1,8 @@
+<%= form_for @cheese do |f| %>
+Name: <%= f.text_field :name %>
+Milk_type: <%= f.text_field :milk_type %>
+Description: <%= f.text_field :description %>
+Image_url<%= f.text_field :image_url %>
+Stank_level <%= f.text_field :stank_level %>
+<%= f.submit "Save Cheese" %>
+<% end %>

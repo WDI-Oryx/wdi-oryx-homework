@@ -1,0 +1,21 @@
+<h2>name: <%= @item.name %></h2>
+<p>details: <%= @item.details %></p>
+<p>price: <%= @item.price %></p>
+<p>store name: <%= @item.store.name %></p>
+
+
+<%# create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.string "details"
+    t.integer "price"
+    t.integer "store_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end %>

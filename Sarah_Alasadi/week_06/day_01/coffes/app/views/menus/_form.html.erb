@@ -1,0 +1,23 @@
+<%= form_for @menu do |f| %>
+
+<div>
+<%= f.label :name%>
+<label for="name"></label>
+<%= f.text_field :name%>
+
+
+
+<div>
+<%= f.label :size%>
+<label for="name"></label>
+<%= f.text_field :size%>
+
+
+<div>
+<%= f.label :description%>
+<label for="name"></label>
+<%= f.text_field :description%>
+
+</div>
+<%= f.submit "Create Menu" %>
+<% end %>

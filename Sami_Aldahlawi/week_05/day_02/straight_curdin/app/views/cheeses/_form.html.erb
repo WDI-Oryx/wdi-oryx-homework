@@ -1,0 +1,7 @@
+<%= form_for @cheese do |form| %>
+  Name: <%= form.text_field :name %>
+  milk_type: <%= form.text_field :milk_type %>
+  description Type: <%= form.text_field :description %>
+  stank_level: <%= form.number_field :stank_level %>
+  <%= form.submit %>
+<% end %>

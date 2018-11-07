@@ -1,0 +1,18 @@
+<%= form_for @course do |f| %>
+
+<div>
+<%= f.label :name, "Course Name" %>
+<%= f.text_field :name %>
+</div>
+
+<div>
+<%= f.label :course_id, "Course ID" %>
+<%= f.text_field :course_id %>
+</div>
+
+<div>
+<%= f.label :department, "Department" %>
+<%= f.text_field :department %>
+</div>
+<%= f.submit %>
+<% end %>

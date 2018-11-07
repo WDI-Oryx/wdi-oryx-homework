@@ -1,0 +1,15 @@
+<h2> All Authors</h2>
+
+<ul>
+<% @menus.each do |menu| %>
+
+<li>
+
+
+<%= link_to(menu.name, menu_path(menu))%>
+
+
+
+</li>
+<% end %>
+</ul>

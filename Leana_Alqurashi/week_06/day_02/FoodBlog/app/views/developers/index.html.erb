@@ -1,0 +1,10 @@
+<h2>Developers</h2>
+<% @developers.each do |developer| %>
+<div>
+<h3><%= link_to(developer.name, developer_path(developer)) %></h3>
+</div>
+<!-- link to the show page for this particular author-->
+<!-- we can also use
+link_to(author.name, author)
+-->
+<%end %>

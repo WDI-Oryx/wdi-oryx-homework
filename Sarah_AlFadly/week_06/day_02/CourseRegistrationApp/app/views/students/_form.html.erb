@@ -1,0 +1,24 @@
+<%= form_for @student do |f| %>
+
+<div>
+<%= f.label :name, "Student Name" %>
+<%= f.text_field :name %>
+</div>
+
+<div>
+<%= f.label :student_id, "Student ID" %>
+<%= f.text_field :student_id %>
+</div>
+
+<div>
+<%= f.label :semester, "Semester" %>
+<%= f.text_field :semester %>
+</div>
+
+<div>
+<%= f.label :course_id, "Course Name" %>
+<%= f.collection_check_boxes :course_ids, Course.all, :id, :name %>
+</div>
+
+<%= f.submit %>
+<% end %>

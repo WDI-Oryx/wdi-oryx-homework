@@ -1,0 +1,21 @@
+<h2>
+<%= @book.title %>
+</h2>
+
+<h2>
+<%= @book.blurb %>
+</h2>
+
+
+
+<p>
+Written by: <%= link_to @book.author.name,author_path(@book.author.id) %>
+</p>
+
+<h4>All genres</h4>
+
+<% @book.genres.each do |genre| %>
+<p>
+<%= link_to genre.name, genre_path(genre) %>
+</p>
+<% end %>

@@ -1,0 +1,27 @@
+<h2>
+  <%= @movie.title %>
+</h2>
+
+<p>
+ The lead actor of this movie is <%= @movie.lead_actor %> 
+</p>
+
+<p>
+  Description of the movie: <%= @movie.description %> 
+</p>
+
+<p>
+  This movie is Directed by: 
+ <strong> <%= link_to @movie.director.name, director_path(@movie.director) %> </strong>
+</p>
+
+<h4>All Genres of this Movie</h4>
+
+<% @movie.genres.each do |genre| %>
+  <p>
+    <%= link_to genre.name, genre_path(genre) %>
+  </p>
+<% end %>
+
+<%= link_to "Edit movie", edit_movie_path(@movie) %>
+ <%= link_to "Delete Movie", movie_path(@movie), method: :delete %>

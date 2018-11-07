@@ -1,0 +1,13 @@
+<h1><%= @cheese.name %></h1>
+
+
+<h3> <%= @cheese.name %> </h3>
+
+<%= @cheese.milk_type %>
+<br>
+<p> <%=@cheese.description  %></p>
+
+<img src="<%= @cheese.image_url %>">
+<br>
+<br>
+<%= render partial: "nav" %>

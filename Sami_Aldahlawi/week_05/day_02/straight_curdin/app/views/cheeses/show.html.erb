@@ -1,0 +1,8 @@
+<h1>Information Cheese</h1>
+<h2>Name: <%= @values.name %></h2> 
+<h2>Mlik_type: <%= @values.milk_type %></h2> 
+<h2>Description: <%= @values.description %></h2> 
+<h2>Stank_level: <%= @values.stank_level %></h2> 
+
+<%= link_to "Delete Cheese", cheese_path(@values), method: :delete%>
+<%= link_to "Edit Cheese", edit_cheese_path	 %>

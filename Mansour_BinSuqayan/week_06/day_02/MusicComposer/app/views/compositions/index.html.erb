@@ -1,0 +1,6 @@
+<h1>ALL Compositions</h1>
+<ul>
+<% @compositions.each do |composition| %>
+<li><a href="/compositions/<%= composition.id %>"><%= composition.title %></a></li>
+<% end%>
+</ul>

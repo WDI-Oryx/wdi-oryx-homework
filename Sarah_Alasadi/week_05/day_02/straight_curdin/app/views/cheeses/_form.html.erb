@@ -1,0 +1,8 @@
+<h1> I'm A Form</h1>
+<%= form_for @cheese do |form|%>
+Name: <%= form.text_field :name %>
+Type: <%= form.text_field :milk_type %>
+Image: <%= form.text_field :image_url %>
+Description:<%= form.text_field :description %>
+<%= form.submit%>
+<% end%>

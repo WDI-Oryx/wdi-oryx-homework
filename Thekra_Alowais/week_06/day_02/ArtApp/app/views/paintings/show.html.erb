@@ -1,0 +1,12 @@
+<h1>Paintings#show</h1>
+<h2>
+<%= @painting.name %>
+</h2>
+<br>
+<%= @painting.description %>
+<br>
+Created By: <%= link_to @painting.artist.name, artist_path(@painting.artist) %>
+<h4>All Categories</h4>
+<% @painting.categories.each do |c| %>
+  <p><%= link_to(c.name, category_path(c)) %></p>
+<% end %>

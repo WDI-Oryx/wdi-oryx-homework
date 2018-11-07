@@ -1,0 +1,11 @@
+<h1>Artist</h1>
+<h1>
+<%#= consosle %>
+<%#= @artist.to_json %>
+<%= @artist.name %>
+</h1>
+<%# image_tag %>
+<%= @artist.image %>
+<br>
+<%= link_to 'Edit artist', edit_artist_path %>
+ <%= link_to 'Delete artist', artist_path(@artist), method: :delete %>

@@ -1,0 +1,20 @@
+<%= form_for @song do |f| %>
+  <div>
+    <%= f.label :name, "What is the song?" %> <br>
+    <%= f.text_field :name %>
+  </div>
+  <br>
+  <div>
+    <%= f.label :album, "What is the album?" %><br>
+    <%= f.text_field :album %>
+  </div>
+  <br>
+  <div>
+    <%= f.label :artist_id, "Who sing this song?" %><br>
+    <%= f.collection_select :artist_id, Artist.all, :id, :name %>
+
+  </div>
+  <br>
+
+  <%= f.submit %>
+<% end %>

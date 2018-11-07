@@ -1,0 +1,16 @@
+<h2> 
+Name:<%= @menu.name %>
+</h2>
+<p>
+Size: <%= @menu.size%>
+</p>
+
+<p>
+Description: <%= @menu.description%>
+</p>
+<div class="controls">
+ <%= link_to 'Edit Menu', edit_menu_path %>
+ <%= link_to 'Delete' , menu_path(@menu) ,method: :delete%>
+ <div class="controls">
+ <%= link_to 'Edit Menu', edit_menu_path %>
+ <%= link_to 'Delete ' , menu_path(@menu) ,method: :delete%>

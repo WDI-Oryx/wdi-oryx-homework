@@ -1,0 +1,6 @@
+<h1>All artists paintings</h1>
+<% @paintings.each do |painting| %>
+<%#= painting.name %>
+<%= link_to painting.name, painting_path(painting) %>
+<br>
+<% end %>

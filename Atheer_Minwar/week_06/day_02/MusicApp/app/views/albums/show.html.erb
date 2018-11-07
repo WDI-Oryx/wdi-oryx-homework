@@ -1,0 +1,12 @@
+<h1><%=  @album.title %></h1>
+<h2> By : <%= link_to @album.artist.name, artist_path(@album.artist) %></h2>
+<br>
+<h4>
+Released in: <%= @album.released %>
+</h4>
+
+<div class="center">
+<img src="<%= @album.album_art %>" width="700" height="400">
+</div>
+
+

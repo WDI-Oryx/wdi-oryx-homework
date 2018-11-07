@@ -1,0 +1,19 @@
+<h1>Add new painting</h1>
+
+<%= form_for @painting do |p| %>
+<%=p.label :name , "Painting name: " %>
+<%=p.text_field :name %>
+<br>
+<%=p.label :description, "Painting description: "%>
+<%=p.text_field :description %>
+<br>
+<%=p.label :artist_id, "Created by "%>
+<%=p.collection_select :artist_id, Artist.all, :id, :name %>
+<br>
+  <div>
+  <%= p.label :category_ids, "What category is this paintnig?" %>
+  <%= p.collection_check_boxes :category_ids, Category.all, :id, :name %>
+  </div>
+<br>
+<%=p.submit %>
+<% end %>

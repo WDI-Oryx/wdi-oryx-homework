@@ -1,0 +1,16 @@
+<h2>
+  <%= @movie.title %>
+</h2>
+
+<p>
+  <%= @movie.leading_actor %>
+</p>
+
+<p>
+  <%= @movie.decription %>
+</p>
+
+<p>
+  Directed by: 
+  <%= link_to @movie.director.name, director_path(@movie.director) %>
+</p>

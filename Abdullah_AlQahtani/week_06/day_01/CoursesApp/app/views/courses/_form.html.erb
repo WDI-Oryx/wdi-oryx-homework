@@ -1,0 +1,15 @@
+
+<%= form_for @course do |form| %>
+  <div>
+    <%= form.label :name, "What is the name of the course?" %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :description, "Description of the course" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <%= form.submit %>
+<% end %>
+
+<a href="/courses">Back</a>

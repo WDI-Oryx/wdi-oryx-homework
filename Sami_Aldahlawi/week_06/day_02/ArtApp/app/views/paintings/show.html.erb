@@ -13,5 +13,11 @@ Image:</label><img src="<%=  @painting.image  %>">
 <label>
 By:</label><h3><%= @painting.artiest.name %></h3>
 <br>
+Tags:
+<ul>
+<% @painting.tags.each do |tag| %> 
+<li><%= tag.name %></li>
+<% end%>
+<ul>
 <%= link_to "Edit  ,", edit_painting_path %>
 <%= link_to "Delete", painting_path(@painting),method: :delete %>

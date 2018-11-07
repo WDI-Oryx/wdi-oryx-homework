@@ -4,5 +4,6 @@ Description: <%= f.text_field :description %><br>
 Price :<%= f.number_field :price %><br>
 Image: <%= f.url_field :image %><br>
 Artiest_id <%= f.collection_select :artiest_id, Artiest.all, :id, :name %><br>
+Tags : <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
 <%= f.submit %>
 <% end%>

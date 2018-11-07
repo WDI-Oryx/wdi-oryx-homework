@@ -13,10 +13,10 @@
  *= require_tree .
  *= require_self
  */
-label
+/* label
 {
   float: left;
-}
+} */
 
 img
 {

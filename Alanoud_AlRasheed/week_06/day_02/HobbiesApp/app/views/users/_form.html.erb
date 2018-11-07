@@ -1,0 +1,25 @@
+<%= form_for @user do |f| %>
+
+<div class="form">
+<span><%= f.label :name, "What is your name?" %> </span>
+<span><%= f.text_field :name %></span>
+</div>
+
+<div class="form">
+<span><%= f.label :age, "How old are you?" %> </span>
+<span><%= f.text_field :age %></span>
+</div>
+
+<div class="form">
+<span><%= f.label :gender, "What is your gender?" %> </span>
+<span><%= f.text_field :gender %></span>
+</div>
+
+
+<div class="form">
+<span><%= f.label :hobby_ids, "What do you like to do?" %> </span>
+<p><%= f.collection_check_boxes :hobby_ids, Hobby.all, :id, :name %></p>
+</div>
+
+<p class="btn"><%= f.submit %></p>
+<% end %>

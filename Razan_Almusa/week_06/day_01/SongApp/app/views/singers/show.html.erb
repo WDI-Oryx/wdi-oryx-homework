@@ -1,0 +1,31 @@
+<h2>
+<%= @singer.name %>
+</h2>
+
+
+<p>
+Date of birth: <%= @singer.dob %>
+</p>
+
+<p>
+Nationality: <%= @singer.nationality %>
+</p>
+
+<p>
+Gender: <%= @singer.gender %>
+</p>
+
+<div class="controls">
+<%= link_to 'Edit Singer', edit_singer_path(@singer) %>
+<%= link_to "Delete Singer", singer_path(@singer), method: :delete %>
+</div>
+
+<h3>This singer has sing:</h3>
+
+<ul>
+  <% @singer.songs.each do |song| %>
+    <li>
+      <%= link_to song.nme, song_path(song) %>
+    </li>
+  <% end %>
+</ul>

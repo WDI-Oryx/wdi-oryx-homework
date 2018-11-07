@@ -1,0 +1,20 @@
+<%= form_for @developer do |form| %>
+  <div>
+  <%= form.label :name, "Developer Name" %>
+  <%= form.text_field :name %>  
+  </div>
+ 
+  <div>
+  <%= form.label :country , "Country"%>
+  <%= form.text_area :country %>
+  </div>
+  
+  <div>
+  <%= form.label :image %>
+  <%= form.url_field :image %>
+  </div>
+ 
+ 
+ 
+  <%= form.submit %>
+<% end  %>

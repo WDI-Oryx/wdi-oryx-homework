@@ -1,0 +1,21 @@
+<%= form_for  @cheese do |form| %>
+
+ <div>
+  <%= form.label :name %>
+  <%= form.text_field :name %>  
+  </div>
+  <div>
+  <%= form.label :milk_type %>
+  <%= form.text_field :milk_type %>
+  </div>
+   <div>
+  <%= form.label :description %>
+  <%= form.text_field :description %>
+  </div>
+  <div>
+  <%= form.label :image_url %>
+  <%= form.url_field :image_url %>
+  </div>
+
+  <%= form.submit %>
+<% end  %>

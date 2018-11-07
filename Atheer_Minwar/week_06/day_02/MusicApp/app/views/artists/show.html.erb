@@ -1,0 +1,31 @@
+<h1><%= @artist.name %></h1>
+<br>
+<h4>
+<%= link_to 'Visit Artist Website', @artist.website %>
+</h4>
+<h4>
+Formed in: <%= @artist.formed %>
+</h4>
+<h4>
+Genre: <%= @artist.genres %>
+</h4>
+<h4>
+  <%= pluralize @artist.albums.length, "Album" %>
+</h4>
+<ul>
+  <% @artist.albums.each do |album| %>
+    <li>
+      <%= link_to album.title, album_path(album) %>
+    </li>
+  <% end %>  
+
+<div class="center">
+<img src="<%= @artist.image %>" width="700" height="400">
+</div>
+<br>
+
+<br>
+<div>
+  <%= link_to "Edit Artist", edit_artist_path(@artist) %>
+</div>
+

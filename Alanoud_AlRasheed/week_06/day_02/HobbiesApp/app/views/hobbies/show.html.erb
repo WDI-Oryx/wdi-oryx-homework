@@ -1,0 +1,18 @@
+<h2>Hobby</h2>
+
+<p>Name: <%= @hobby.name %></p>
+<p>Category: <%= @hobby.category %></p>
+<img src="<%= @hobby.image %>">
+
+
+<h3>This hobby currently has <%=  pluralize @hobby.users.length, "user" %></h3>
+
+<h3>Users Interested in this Hobby</h3>
+<% @hobby.users.uniq.each do |u| %>
+<li><%= link_to u.name, u %></li>
+<% end %>
+
+<br>
+<br>
+<p><%= link_to 'Edit', edit_hobby_path(@hobby) %> </p>
+<p><%= link_to("Delete", "/hobbies/#{@hobby.id}", method: "delete") %> </p>

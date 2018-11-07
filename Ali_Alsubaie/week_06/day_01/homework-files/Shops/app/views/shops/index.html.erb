@@ -1,0 +1,10 @@
+<h2>Shop List</h2>
+
+<ul>
+  <% @shops.each do |shop| %>
+    <li>
+      <%= link_to shop.name, shop, class: "m" %> |
+      <%= link_to '(Remove)', shop, method: :delete, class: "m" %>
+    </li>
+  <% end %>
+</ul>

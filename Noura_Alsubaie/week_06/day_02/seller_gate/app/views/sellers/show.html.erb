@@ -1,0 +1,18 @@
+
+
+<h3>Seller <%=@seller.id %></h3>
+<h4>More about <%=@seller.name %>
+ </h4>
+
+ 
+ <p>Email: <%=@seller.email %> </p>
+ <p>Location: <%=@seller.location %>  </p> 
+ <p>Rate: <%=@seller.rating %> </p>
+ <p>Products: 
+ <% @seller.products.each do |s| %>
+ <li><%= s.name %></li>
+ </p>
+<% end %>
+  <%= link_to 'Back', sellers_path %>
+ 
+

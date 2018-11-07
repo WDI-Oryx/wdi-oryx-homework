@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StoreApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+<nav>
+<%= link_to "show stores", stores_path%> - <%= link_to "new store", new_store_path%> <br>
+<%= link_to "show items", items_path%> - <%= link_to "new iten", new_item_path%> <br>
+<%= link_to "show owners", owners_path%> - <%= link_to "new owner", new_owner_path%> <br><br>
+</nav>
+  <body>
+    <%= yield %>
+  </body>
+</html>

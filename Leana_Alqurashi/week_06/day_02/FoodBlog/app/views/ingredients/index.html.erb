@@ -1,0 +1,11 @@
+<h2>All Ingredients</h2>
+
+<% @ingredients.each do |ingredient| %>
+<div>
+<h3><%= ingredient.name %></h3>
+</div>
+<!-- link to the show page for this particular author-->
+<!-- we can also use
+link_to(author.name, author)
+-->
+<%end %>

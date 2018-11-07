@@ -1,0 +1,28 @@
+<%= form_for @recipe do |form| %>
+  <div>
+  <%= form.label :name, "Recipe Name" %>
+  <%= form.text_field :name %>  
+  </div>
+ 
+  <div>
+  <%= form.label :description , "Description"%>
+  <%= form.text_area :description %>
+  </div>
+  
+  <div>
+  <%= form.label :image %>
+  <%= form.url_field :image %>
+  </div>
+ <div>
+  <%= form.label :developer_id, "Developed By? " %>
+  <%= form.collection_select :developer_id, Developer.all, :id, :name %>
+  </div>
+  <div>
+  <%= form.label :ingredient_ids, "choose ingredients"%>
+
+  <%= form.collection_check_boxes :ingredient_ids, Ingredient.all, :id, :name%>
+  </div>
+ 
+ 
+  <%= form.submit %>
+<% end  %>

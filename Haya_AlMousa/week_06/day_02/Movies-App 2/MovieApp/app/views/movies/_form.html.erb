@@ -1,0 +1,34 @@
+<%= form_for @movie do |f| %>
+  <div>
+    <%= f.label :title, "What is the title?" %>
+    <%= f.text_field :title %>
+  </div>
+  <br>
+  <div>
+    <%= f.label :lead_actor, "Who is the lead actor?" %>
+    <%= f.text_field  :lead_actor %>
+  </div>
+    <br>
+
+  <div>
+    <%= f.label :description, "Describe the movie" %>
+    <%= f.text_area :description %>
+  </div>
+    <br>
+
+  <div>
+    <%= f.label :director_id, "Who directed this movie?" %>
+    <%= f.collection_select :director_id, Director.all, :id, :name %>
+    
+  </div>
+    <br>
+
+    <div>
+    <%= f.label :genre_ids, "What is the genre of this movie?" %><br>
+    <%= f.collection_check_boxes :genre_ids, Genre.all, :id, :name %>
+    
+  </div>
+<br>
+
+  <%= f.submit %>
+<% end %>

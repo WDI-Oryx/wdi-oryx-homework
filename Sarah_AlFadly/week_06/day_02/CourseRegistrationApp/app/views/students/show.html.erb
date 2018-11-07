@@ -1,0 +1,25 @@
+<h3><%= @student.name %></h3>
+<h3><%= @student.student_id %></h3>
+<h3><%= @student.semester %></h3>
+
+<hr>
+
+<h3>This student studies: <%= pluralize @student.courses.length, "course" %></h3>
+
+<ul>
+<% @student.courses.each do |course| %>
+<li><%= link_to(course.name, course_path(course)) %></li>
+<% end %>
+</ul>
+
+<h3>Student's teachers</h3>
+<ul>
+<% @student.teachers.uniq.each do |teacher| %>
+<li><%= teacher.name %></li>
+<% end %>
+</ul>
+
+<hr>
+
+<p><%= link_to("Edit Student", edit_student_path(@student)) %></p>
+<p><%= link_to("Delete Student", student_path(@student), method: :delete) %></p>

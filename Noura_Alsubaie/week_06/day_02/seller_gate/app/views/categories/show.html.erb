@@ -1,0 +1,5 @@
+<%= @Category.name %>
+
+<%= @Category.products.each do |c|  %>
+<%= link_to c.name, product_path(c) %>
+<% end %>

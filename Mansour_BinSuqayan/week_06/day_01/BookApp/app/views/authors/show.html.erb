@@ -3,7 +3,7 @@ h2>
 </h2>
 
 <p>
-  Date of birth: <%= @author.dob %>
+  Date of birth: <%= @author.dob.strftime "%B %d, %Y" %>
 </p>
 
 <p>
@@ -19,9 +19,21 @@ h2>
   <%= link_to "delete Author" , author_path(@author), method: :delete %>
 </div>
 
-<h3>All Books</h3>
+<h3>
+this author has written
+<%= pluralize @author.books.length, "book" %>
+</h3>
 <ul>
 <% @author.books.each do |book| %>
 <li><a href="/books/<%= book.id %>"><%= book.title%></a></li>
 <% end%>
 </ul>
+
+
+<h3>The Author book are in the sollowing genres</h3>
+
+<% @author.genres.uniq.each do |genre| %>
+ <p>
+ <%= genre.name %>
+ </p>
+<% end %>

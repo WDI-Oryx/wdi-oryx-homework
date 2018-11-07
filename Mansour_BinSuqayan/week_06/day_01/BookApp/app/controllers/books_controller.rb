@@ -17,12 +17,13 @@ class BooksController < ApplicationController
   end
 
   def edit
-    
   end
 
   private
 
   def book_params
-    params.require(:book).permit(:title, :image, :blurb, :author_id)
+    params.require(:book).permit(:title, :image, :blurb, :author_id, genre_ids: [])
   end
 end
+
+#Book.create (..., author_id:)

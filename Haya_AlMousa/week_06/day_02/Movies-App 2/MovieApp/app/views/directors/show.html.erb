@@ -1,0 +1,37 @@
+<h2>
+  <%= @director.name %>
+</h2>
+
+<p>
+  Date of birth: <%= @director.dob.strftime "%B %d, %Y" %>
+</p>
+
+<p>
+  Location: <%= @director.location %>
+</p>
+
+<%= link_to "Edit Director", edit_director_path(@director) %>
+ <%= link_to "Delete Director", director_path(@director), method: :delete %>
+
+ <h3>
+  This director has directed 
+  <%= pluralize @director.movies.length, "movie" %>
+</h3>
+
+<ol>
+  <% @director.movies.each do |movie| %>
+    <li>
+      <%= link_to movie.title, movie_path(movie) %>
+    </li>
+  <% end %>
+</ol>
+
+<h3>The director's movies are in the following genres</h3>
+
+<ul>
+<% @director.genres.uniq.each do |genre| %>
+  <li>
+    <%= link_to genre.name, genre_path(genre) %>
+  </li>
+<% end %>
+</ul>

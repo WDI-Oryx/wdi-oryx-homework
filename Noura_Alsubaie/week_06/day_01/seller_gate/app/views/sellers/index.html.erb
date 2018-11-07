@@ -1,0 +1,16 @@
+
+
+
+<h3>Our Partners </h3>
+
+<ul>
+<% @sellers.each do |seller| %>
+<li><%= seller.name %>  <%=  link_to seller.rating  , seller_path(seller) %> </li>
+<% end %>
+
+</ul>
+
+
+<%= link_to 'Join Us', new_seller_path %>
+
+<%= link_to 'Shop now ', products_url %>

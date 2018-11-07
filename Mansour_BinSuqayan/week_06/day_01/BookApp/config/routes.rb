@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'genres/index'
+  get 'genres/show'
   # get 'books/index'
   # get 'books/show'
   # get 'books/new'
@@ -6,6 +8,8 @@ Rails.application.routes.draw do
   resources :books
   #get "/authors", to: "authors#index"
   resources :authors
+
+  resources :genres, only: [:index, :show]
   # get 'authors/index'
   # get 'authors/show'
   # get 'authors/new'

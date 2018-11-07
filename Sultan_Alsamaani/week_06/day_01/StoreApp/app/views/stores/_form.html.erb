@@ -1,0 +1,28 @@
+
+<%= form_for @store do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %><br />
+
+  <%= f.label :location %>:
+  <%= f.text_field :location %><br />
+
+  
+
+  <%= f.submit %>
+<% end %>
+
+<%# create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.string "details"
+    t.integer "price"
+    t.integer "store_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end %>

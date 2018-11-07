@@ -1,0 +1,17 @@
+This is showing up 
+
+<%# only design without entry information  %>
+<%= form_for @author do |form| %>
+  <div>
+  <%= form.label :name %>
+  <%= form.text_field :name %>  
+  </div>
+ 
+
+  <div>
+  <%= form.label :Description %>
+  <%= form.text_field :description %>
+  </div>
+  
+  <%= form.submit %>
+<% end  %>

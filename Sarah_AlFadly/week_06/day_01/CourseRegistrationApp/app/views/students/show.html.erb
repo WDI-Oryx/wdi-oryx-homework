@@ -1,0 +1,7 @@
+<h2><%= @student.name %></h2>
+<h2><%= @student.student_id %></h2>
+<h2><%= @student.semester %></h2>
+<h2><%= link_to(@student.course.name, course_path(@student.course)) %></h2>
+
+<p><%= link_to("Edit Student", edit_student_path(@student)) %></p>
+<p><%= link_to("Delete Student", student_path(@student), method: :delete) %></p>

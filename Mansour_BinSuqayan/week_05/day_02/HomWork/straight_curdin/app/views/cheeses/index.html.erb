@@ -1,0 +1,7 @@
+<h1>The Great Hall of Cheeses</h1>
+<p>Find me in app/views/cheeses/index.html.erb</p>
+<ul>
+<% @cheese_element.each do |i| %>
+<li> <a href="/cheeses/<%= i.id %>"><%= i.id%></a></li>
+<%end %>
+</ul>

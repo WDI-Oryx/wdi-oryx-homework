@@ -1,0 +1,13 @@
+<%= form_for @journalist do |f| %>
+
+  <%= f.label :name, "The journalist name !" %>
+    <%= f.text_field :name %>
+    <br>
+     <%= f.label :age, "Age !" %>
+    <%= f.number_field :age %>
+    <br>
+     <%= f.label :article_field , "What is the Article Field?" %>
+    <%= f.text_field :article_field %>
+    <br>
+  <%= f.submit %>
+<% end  %>

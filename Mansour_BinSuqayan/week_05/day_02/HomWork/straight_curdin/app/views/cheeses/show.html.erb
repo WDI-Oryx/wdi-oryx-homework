@@ -1,0 +1,9 @@
+<h1>Cheeses#show</h1>
+<h1>Description: <%= @input.description%></h1>
+<h1>NAME: <%=  @input.name%></h1>
+<h1>TYPE: <%=  @input.milk_type%></h1>
+<h1>stank_level: <%= @input.stank_level%></h1>
+
+
+<%= link_to "Eat Cheese", cheese_path(@input), method: :delete%>
+<%= link_to "Edit", edit_cheese_path(@input)%>

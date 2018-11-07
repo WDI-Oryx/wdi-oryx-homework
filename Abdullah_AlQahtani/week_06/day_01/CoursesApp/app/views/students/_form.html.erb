@@ -1,0 +1,19 @@
+
+<%= form_for @student do |form| %>
+  <div>
+    <%= form.label :name, "Student name:" %>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :major, "Student Major:" %>
+    <%= form.text_field :major %>
+  </div>
+    <div>
+    <%= form.label :course_id, "Which Course student will join it" %>
+    <%= form.collection_select :course_id, Course.all, :id, :name %>
+  </div>
+
+  <%= form.submit %>
+<% end %>
+
+<a href="/students">Back</a>

@@ -1,0 +1,21 @@
+<h1><%= @recipe.title %></h1>
+<p>by <%= @recipe.chef.name %></p>
+<img src="<%= @recipe.image %>" alt="image">
+<ul>
+<li>
+<h3>Ingredients: </h3> <%= @recipe.ingredients %>
+</li>
+<li>
+<h3>Method: </h3> <%= @recipe.method %>
+</li>
+</ul>
+<h3>Comments: </h3>
+<% @recipe.comments.each do |comment| %>
+<ul>
+<li>
+<%= comment.name %>: <%= comment.body %> <%= link_to("Remove", comment_path(comment), method: :delete) %>
+</li>
+</ul>
+
+<% end %>
+<%= link_to("Remove Recipe", recipe_path, method: :delete) %>

@@ -1,0 +1,22 @@
+<%= form_for @product do |f| %>
+<div>
+<%= f.label :type %>
+<%= f.text_field :type %>
+</div>
+<div>
+<%= f.label :price,   %>
+<%= f.number_field :price %>
+</div>
+<div>
+<%= f.label :description, "More details about the product" %>
+<%= f.text_area :description %>
+</div>
+<div>
+<%= f.label :seller_id, "Who sell this product?" %>
+<%= f.collection_select :seller_id, Seller.all, :id, :name %>
+
+</div>
+
+<%= f.submit " Add Product " %>
+
+<% end %>

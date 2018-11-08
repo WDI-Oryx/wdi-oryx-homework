@@ -1,0 +1,10 @@
+<h2>List fo the singers</h2>
+ 
+ <ul>
+ <% @singers.each do |singer|  %>
+<li>
+<%= link_to(singer.name, singer_path(singer)) %>
+
+</li>
+<% end %>
+</ul>

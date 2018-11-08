@@ -30,8 +30,8 @@ class CheeseController < ApplicationController
 
   def update
     cheese_params = params.require(:cheese).permit(:name, :milk_type, :image_url, :description, :stank_level)
-    @cheese = Donut.find(params[:id])
-    @cheese.update(donut_params)
+    @cheese = Cheese.find(params[:id])
+    @cheese.update(cheese_params)
     redirect_to @cheese
   end
 end

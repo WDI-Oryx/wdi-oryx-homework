@@ -1,0 +1,15 @@
+<h2>All Artists</h2>
+
+<ul>
+  <% @artists.each do |artist| %>
+    <li>
+      <%= link_to(artist.name, artist_path(artist)) %>
+      <!-- 
+        Link to the show page for this particular author
+        author_path is creating the HREF for you 
+      -->
+      <%#= link_to(author.name, "/authors/#{author.id}") %>
+      <%#= link_to(author.name, author) %>
+    </li>
+  <% end %>
+</ul>

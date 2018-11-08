@@ -1,0 +1,9 @@
+<h2>Name: <%= @product.name %></h2>
+
+<p>Brand: <%= @product.brand %></p>
+<p>Description: <%= @product.description %></p>
+<p>Price: <%= @product.price %>$</p>
+<p>From: <%= @product.shop.name %> shop</p>
+
+<%= link_to 'Update', edit_product_path, class: "m" %>
+<%= link_to '(Remove)', @product, method: :delete, class: "m" %>

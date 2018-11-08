@@ -1,0 +1,7 @@
+<h1>Composers#show</h1>
+Name:<%= @composer.name %><br>
+Nationality:<%= @composer.nationality %><br>
+Birthday:<%= @composer.birthday %><br>
+
+<%= link_to "Edit",edit_composer_path(@composer)%>
+<%= link_to "Delete", composer_path(@composer), method: :delete%>

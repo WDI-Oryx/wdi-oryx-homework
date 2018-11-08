@@ -1,0 +1,13 @@
+<%= form_for @product do |form| %>
+ <div>
+ <%= form.label :name, " what is the name?" %>
+ <%= form.text_field :name %>
+ </div>
+
+ <div>
+ <%= form.label :description, "what is the description?" %>
+ <%= form.text_field :description %>
+ </div>
+
+ <%= form.submit %>
+<% end %>

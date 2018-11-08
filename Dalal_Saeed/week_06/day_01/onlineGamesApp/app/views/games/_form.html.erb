@@ -1,0 +1,19 @@
+this is showing up
+<%= form_for @game do |f| %>
+<div>
+<%= f.label :title %>
+<%= f.text_field :title %>
+</div>
+<div>
+    <%= f.label :developer_id , "select the Developer " %>
+    <%= f.collection_select :developer_id , Developer.all, :id, :name %>
+  
+  </div>
+
+<div>
+<%= f.label :genre_id,"choose genres" %>
+<%= f.collection_check_boxes :genre_ids, Genre.all ,:id ,:name %>
+</div>
+  <%= f.submit %>
+ 
+<%end %>

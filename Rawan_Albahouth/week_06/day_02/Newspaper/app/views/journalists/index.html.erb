@@ -1,0 +1,10 @@
+<h1>Journalists</h1>
+
+
+<% @journalist.each do |journalist| %>
+ 
+    <h4>
+      <li><%= link_to journalist.name, journalist_path(journalist) %> </li>
+    </h4>
+ 
+<% end %>

@@ -1,0 +1,6 @@
+<h1>All comments</h1>
+<% @comments.each do |comment|%>
+<p>
+<%= comment.body %> by: <%= comment.name %>
+</p>
+<% end %>

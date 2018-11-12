@@ -1,0 +1,15 @@
+<p>
+Name: <br>
+<h1><%= person.name %></h1>
+Home Town : <br>
+<h1><%= person.hometown %></h1>
+visit:<br>
+<h1><%= person.viste %></h1>
+</p>
+
+<h4>All City Viste</h4>
+
+<% @person.citys.each do |genre| %>
+  <p>
+    <%= link_to citys.name, citys_path(citys) %>
+  </p>

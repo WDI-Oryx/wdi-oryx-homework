@@ -1,0 +1,27 @@
+<p>
+<%= @student.name %>
+</p>
+
+<p>
+ <p>
+  Date of birth: <%= @student.dob %>
+</p>
+
+<p>
+  Collige: <%= @student.collige %>
+</p>
+
+<p>
+  major: <%= @student.major %>
+</p>
+
+<p>
+  Your teachers: 
+  <% @student.teachers.each do |teacher| %>
+    <%= teacher.name %>
+  <% end %>
+</p>
+<h4>All Course</h4>
+<% @student.courses.each do |course| %>
+<p><%= link_to course.name, course_path(course)  %></p>
+<% end %>

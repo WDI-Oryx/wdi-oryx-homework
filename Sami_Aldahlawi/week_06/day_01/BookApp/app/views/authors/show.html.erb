@@ -1,0 +1,15 @@
+<h1>SHOW DETAILS</h1>
+<h2>Name: <%= @author.name %></h2>
+<h2>Date: <%= @author.dob %></h2>
+<h2>Location: <%= @author.location %></h2>
+<!--<h2>Image: <%= @author.image %></h2>-->
+<h2>Description: <%= @author.description %></h2>
+<h2>All Books</h2>
+<ul>
+<% @author.books.each do |book| %>
+<li><a href="/books/<%= book.id %>"><%= book.title%></a></li>
+<% end %>
+</ul>
+
+<%= link_to "Edit Author", edit_author_path	 %>
+<%= link_to "Delete Author", author_path(@author), method: :delete %>

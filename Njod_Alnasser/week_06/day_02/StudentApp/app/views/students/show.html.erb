@@ -1,0 +1,11 @@
+<h1>Students#show</h1>
+<p><%= @student.first_name %></p>
+
+<ul>
+  <% @student.classes.each do |classe| %>
+    <li>
+      <%= link_to(classe.title, classe) %>
+    
+    </li>
+  <% end %>
+</ul>

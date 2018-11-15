@@ -1,0 +1,9 @@
+<h1>Classes#index</h1>
+<ul>
+  <% @Classes.each do |classe| %>
+    <li>
+      <%= link_to(classe.title,classe) %>
+    
+    </li>
+  <% end %>
+</ul>

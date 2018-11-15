@@ -1,0 +1,20 @@
+<h2> Course : <%= @course.name %> </h2>
+
+<p>Description : <%= @course.description %> </p>
+
+<%= link_to 'Edit Course Information', edit_course_path %>
+<%= link_to 'Remove Course', course_path(@course), method: :delete %>
+
+
+<h3> Student List :</h3>
+
+<h4>
+ <ul>
+ <% @course.students.each do |student| %>
+   <li>
+     <%= link_to("#{student.name}", student_path(student.id)) %>
+   </li>
+ <% end %>
+
+ </ul>
+</h4>

@@ -1,0 +1,19 @@
+<h2> <%= @company.name %> </h2>
+<p> Company Type: <%= @company.type_of_company %> </p>
+<p> Phone Number: <%= @company.phone_number %> </p>
+<%= link_to "Edit", edit_company_path %>
+<%= link_to 'Delete', company_path(@company), method: :delete%>
+
+<h2>This Company has these Employees</h2>
+<h3>
+  <ul>
+  <% @company.employees.each do |emp| %>
+    <li>
+      <%= link_to "#{emp.name}", employee_path(emp.id) %>  
+    </li>
+  <% end %>
+    
+  </ul>
+</h3>
+
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SongApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <nav>
+      <%= link_to "All Artists", artists_path %>
+      <%= link_to "Add an Artist", new_artist_path %>
+      <%= link_to "All Songs", songs_path %>
+      <%= link_to "Add a Song", new_song_path %>
+      <%= link_to 'All Songs type', song_types_index_path %>
+      </nav>
+    <%= yield %>
+  </body>
+</html>

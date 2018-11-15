@@ -1,0 +1,6 @@
+<h1>All PAINTINGS</h1>
+<ul>
+<% @paintings.each do |painting|%>
+<li><a href="/paintings/<%= painting.id %>"><%= painting.title %></a></li>
+<% end%>
+<ul>

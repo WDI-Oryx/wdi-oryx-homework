@@ -1,0 +1,13 @@
+<h1><%= @chef.name %></h1>
+<p>Birth Date: <%= @chef.dob %></p>
+<img src= "<%= @chef.image %>" alt="image"> <br>
+<strong>Recipes:</strong>   
+<% @chef.recipes.each do |recipe| %>
+<ul>
+<li>
+<%= link_to recipe.title, recipe_path(recipe) %>
+</li>
+</ul>
+<% end %>
+<br>
+<%= link_to("Remove chef", chef_path, method: :delete) %>

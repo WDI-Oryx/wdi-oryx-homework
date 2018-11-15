@@ -1,0 +1,6 @@
+<%= form_for @composer do |f| %>
+<label>Name</label> <%= f.text_field :name %><br>
+<label>Nationality</label><%= f.text_field :nationality %><br>
+<label>Birthday</label><%= f.date_field :birthday %><br>
+<%= f.submit %>
+<% end%>

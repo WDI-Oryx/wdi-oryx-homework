@@ -1,0 +1,9 @@
+<%=  form_for @composition do |f|%>
+title <%= f.text_field :title %> <br>
+description <%= f.text_field :description %> <br>
+music type <%= f.text_field :music_type %> <br>
+BY : <%= f.collection_select :composer_id,Composer.all,:id,:name%>  <br>
+Tags : <%= f.collection_check_boxes :tag_ids, Tag.all,:id,:name %>
+ <%= f.submit %>
+<% end%>
+

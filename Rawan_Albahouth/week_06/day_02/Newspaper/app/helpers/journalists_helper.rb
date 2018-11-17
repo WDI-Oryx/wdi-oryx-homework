@@ -1,0 +1,2 @@
+module JournalistsHelper
+end

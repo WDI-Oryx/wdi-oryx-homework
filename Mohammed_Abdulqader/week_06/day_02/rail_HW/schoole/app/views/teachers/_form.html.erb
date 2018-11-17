@@ -1,0 +1,23 @@
+<%= form_for @author do |form| %>
+  <div>
+  <%= form.label :name %>
+  <%= form.text_field :name %>  
+  </div>
+ 
+  <div>
+  <%= form.label :dob %>
+  <%= form.date_field :dob %>
+  </div>
+  <div>
+  <%= form.label :Location %>
+  <%= form.text_field :location %>
+  </div>
+  <div>
+  <%= form.label :course_to_teach %>
+  <%= form.text_field :course_to_teach %>
+  </div>
+  <div>
+  
+  </div>
+  <%= form.submit %>
+<% end  %>

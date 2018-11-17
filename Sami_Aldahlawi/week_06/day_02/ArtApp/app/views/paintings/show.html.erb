@@ -1,0 +1,23 @@
+<h1>SHOW PAINTING</h1>
+<label>Title:</label><h3><%= @painting.title %></h3>
+
+<label>
+Description: </label><h3><%= @painting.description %></h3>
+
+<label>
+Price:</label> <h3>$<%= @painting.price %></h3>
+
+<label>
+Image:</label><img src="<%=  @painting.image  %>">
+<br>
+<label>
+By:</label><h3><%= @painting.artiest.name %></h3>
+<br>
+Tags:
+<ul>
+<% @painting.tags.each do |tag| %> 
+<li><%= tag.name %></li>
+<% end%>
+<ul>
+<%= link_to "Edit  ,", edit_painting_path %>
+<%= link_to "Delete", painting_path(@painting),method: :delete %>

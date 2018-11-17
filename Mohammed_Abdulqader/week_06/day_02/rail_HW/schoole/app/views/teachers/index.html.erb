@@ -1,0 +1,11 @@
+<h2>All Teachers</h2>
+
+<ul>
+<% @teachers.each do |teacher| %>
+    <li>
+        <%= link_to teacher.name, "/teachers/#{teacher.id}" %>
+
+       
+    </li>
+<% end %>
+</ul>

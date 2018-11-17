@@ -1,0 +1,14 @@
+
+<br>
+<h3>Journalist's Information </h3>
+
+<p> Name: <%= @journalist.name %> </p> 
+<p> Age: <%= @journalist.age %> </p> 
+<p> Article Field:  In <%= @journalist.article_field %> </p> 
+
+<%= link_to "Edit ", edit_journalist_path(@journalist) %>
+  <%= link_to "Delete ", journalist_path(@journalist), method: :delete %>
+
+<br>
+<br>
+<%= link_to "All Journalists ", journalists_path %>

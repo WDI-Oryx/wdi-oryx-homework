@@ -1,0 +1,10 @@
+
+
+<h3>The Article </h3>
+
+<p> Title: <%= @article.title %> </p> 
+<p> Date: <%= @article.date %> </p> 
+<p> Puplished by: .. <%= @article.journalist.name %> </p> 
+
+<br>
+<%= link_to "All Articles ", articles_path %>

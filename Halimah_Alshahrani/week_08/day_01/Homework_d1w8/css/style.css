@@ -1,0 +1,42 @@
+nav{
+display: flex;
+
+justify-content:space-between;
+
+background-color: black;
+height: 80px;
+align-items: center;
+padding: 10px 30px;
+ color:  rgba(255, 140, 140, 0.543);
+}
+body {
+	margin: 0;
+    font-family:monospace;
+    font-size: 14px;
+    font-weight: bold;
+    background-image: url("https://www.davishighnews.com/wp-content/uploads/2018/05/Space.jpg");
+    background-size: cover;
+}
+ input#search {
+	background: none;
+	padding: 10px 30px;
+	border: 1px solid  rgba(255, 140, 140, 0.543);
+	outline: none;
+	color: whitesmoke;
+	font-family: monospace;
+	font-size: 15px;
+}
+ input#search::placeholder {
+	color: whitesmoke;
+}
+ .container {
+	background-color: rgba(255, 140, 140, 0.543);
+	text-align: center;
+    border: 3px rgb(55, 29, 29) solid;
+	margin: 100px 300px;
+    padding: 10px;
+    height: 800px;
+}
+p {
+	font-family: monospace;
+}

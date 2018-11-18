@@ -1,0 +1,6 @@
+<h1>The Great Hall of Cheeses</h1>
+<ol>
+<% @cheese.each do |cheese| %>
+   <li>  <a href="/cheese/<%= cheese.id %>"> Cheese  <%= cheese.id %> Page</a> </li>
+<% end %>
+</ol>

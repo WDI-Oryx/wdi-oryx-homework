@@ -1,0 +1,27 @@
+<h1>Artist</h1>
+<h1>
+<%#= consosle %>
+<%#= @artist.to_json %>
+<%= @artist.name %>
+</h1>
+<%# image_tag %>
+<%= @artist.image %>
+<br>
+<%= link_to 'Edit artist', edit_artist_path %>
+ <%= link_to 'Delete artist', artist_path(@artist), method: :delete %>
+
+ <% @artist.paintings.each do |b| %>
+<br>
+ Artist Paintings: 
+<li>
+<%#= b.title %>
+<%= link_to b.name, painting_path(b) %>
+</li>
+<% end %>
+
+<h3>Artist painting has the following categories:</h3>
+<% @artist.categories.uniq.each do |c| %>
+<p>
+<%=  c.name%>
+</p>
+<% end %>

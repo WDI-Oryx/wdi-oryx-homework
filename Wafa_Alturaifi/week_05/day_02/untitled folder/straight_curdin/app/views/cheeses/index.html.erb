@@ -1,0 +1,11 @@
+<h1>The Great Hall of Cheeses</h1>
+
+
+<% @cheeses.each do |cheeses| %>
+<ul>
+<li>name:<%= cheeses.name %></li>
+<li>milk_type:<%= cheeses.milk_type %></li>
+</ul>
+<%= link_to 'Eat This Cheese', "/cheeses/#{cheeses.id}", method: 'delete' %>
+<% end %>
+

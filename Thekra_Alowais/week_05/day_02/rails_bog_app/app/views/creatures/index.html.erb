@@ -1,0 +1,9 @@
+<%# <h1>Creatures#index</h1> %>
+<%# <p>Find me in app/views/creatures/index.html.erb</p> %>
+<%# Creature is tablename + the creatures is variable we create in index action to store table data  %>
+<% @creatures.each do |creature| %>
+  <p>
+    <strong>Name:</strong> <%= creature.name %><br>
+    <strong>Description:</strong> <%= creature.description %>
+  </p>
+<% end %>

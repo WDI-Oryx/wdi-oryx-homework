@@ -1,0 +1,19 @@
+<%= form_for @director do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :dob %>
+    <%= f.date_field :dob %>
+  </div>
+  <div>
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+  </div>
+  <div>
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+  </div>
+  <%= f.submit "Create Director" %>
+<% end %>

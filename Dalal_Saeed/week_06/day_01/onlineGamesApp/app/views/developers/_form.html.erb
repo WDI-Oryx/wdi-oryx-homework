@@ -1,0 +1,21 @@
+this is showing up
+<%= form_for @developer do |f| %>
+<div>
+<%= f.label :name %>
+<%= f.text_field :name %>
+</div>
+<div>
+<%= f.label :location %>
+<%= f.text_field :location %>
+</div>
+<div>
+<%= f.label :website %>
+<%= f.text_field :website %>
+</div>
+<div>
+<%= f.label :image %>
+<%= f.text_field :image %>
+</div>
+  <%= f.submit %>
+ 
+<%end %>

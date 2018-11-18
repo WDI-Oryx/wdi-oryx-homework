@@ -1,0 +1,14 @@
+<h1>The Great Hall of Cheeses</h1>
+
+<ul> 
+<% @cheeses.each do |cheese| %>
+<li> <%#= cheese.name %>
+<%= link_to cheese.name, cheese_path(cheese) %>
+<%= button_to "Eat This Cheese", cheese, :method => :delete, data: { confirm: 'Are you sure?' } %>
+<%= link_to 'Edit', edit_cheese_path(cheese) %>
+<%#= link_to 'Destroy', cheese_path(cheese),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+ </li>
+<% end %>
+</ul>

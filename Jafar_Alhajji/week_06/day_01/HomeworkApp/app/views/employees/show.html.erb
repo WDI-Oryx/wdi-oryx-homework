@@ -1,0 +1,7 @@
+<h2> <%= @employee.name %> </h2>
+<p> Employee Age: <%= @employee.age %> </p>
+<p> Gender: <%= @employee.gender %> </p>
+<%= link_to "Edit", edit_employee_path %>
+<%= link_to 'Delete', employee_path(@employee), method: :delete%>
+
+

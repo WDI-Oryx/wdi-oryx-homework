@@ -1,0 +1,23 @@
+<%= form_for @album do |a| %>
+  <div>
+    <%= a.label :title %>
+    <%= a.text_field :title %>
+  </div>
+    <div>
+    <%= a.label :released %>
+    <%= a.date_field :released %>
+  </div>
+  <div>
+    <%= a.label :album_art %>
+    <%= a.url_field :album_art %>
+  </div>
+
+  <div>
+    <%= a.label :artist_id%>
+    <%= a.collection_select :artist_id, Artist.all, :id, :name %>
+
+
+  </div>
+
+  <%= a.submit %>
+<% end %>

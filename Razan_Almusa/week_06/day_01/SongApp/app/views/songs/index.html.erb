@@ -1,0 +1,6 @@
+<h2>All Songs</h2>
+
+<% @songs.each do |song| %>
+<h4> <%= song.name %> </h4>
+<%= link_to("More details", song_path(song)) %>
+<% end %>

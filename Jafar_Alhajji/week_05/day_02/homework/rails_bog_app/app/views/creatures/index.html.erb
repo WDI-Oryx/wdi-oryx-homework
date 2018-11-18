@@ -1,0 +1,7 @@
+<h1>Creatures#index</h1>
+<% @creatures.each do |creature| %>
+  <p>
+    <strong>Name:</strong> <%= creature.name %><br>
+    <strong>Description:</strong> <%= creature.description %>
+  </p>
+<% end %>

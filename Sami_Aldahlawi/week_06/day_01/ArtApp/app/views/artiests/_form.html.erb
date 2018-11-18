@@ -1,0 +1,6 @@
+<%= form_for @artiest do |f| %>
+<label>Name:</label> <%= f.text_field :name%><br>
+<label>Nationality:</label> <%= f.text_field :nationality %><br>
+<label>Birth day:</label> <%= f.date_field :birth_day %><br>
+<%= f.submit %>
+<% end%>

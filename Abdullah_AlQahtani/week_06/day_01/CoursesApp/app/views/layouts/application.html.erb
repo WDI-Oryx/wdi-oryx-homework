@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CoursesApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= link_to 'All Courses', courses_path %>
+        <%= link_to 'All Students', students_path %>
+    <%= link_to 'Add new course', new_course_path %>
+    <%= link_to 'Add new student', new_student_path %>
+    <%= yield %>
+  </body>
+</html>

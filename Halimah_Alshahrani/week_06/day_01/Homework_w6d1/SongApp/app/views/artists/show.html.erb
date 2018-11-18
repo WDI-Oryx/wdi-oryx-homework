@@ -1,0 +1,25 @@
+<p>Name: <%= @artist.name %></p>
+<br>
+<p>Date of birth: <%= @artist.dob %>.</p>
+<br>
+<p> Nationality: <%= @artist.nationality %>.</p>
+
+<br>
+<p> <img src="<%= @artist.image %>">.</p>
+
+
+<br>
+
+<a href="./<%= @artist.id %>/edit">Edit artist</a>
+
+<%= link_to 'Delete Artist', artist_path(@artist), method: :delete %>
+
+<h3>This artist has sing:</h3>
+
+<ul>
+  <% @artist.songs.each do |song| %>
+    <li>
+      <%= link_to song.name, song_path(song) %>
+    </li>
+  <% end %>
+</ul>

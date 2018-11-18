@@ -1,0 +1,9 @@
+<h2>All Film List</h2>
+
+<% @films.each do |film| %>
+<div class="film">
+<h3>film title: <%= film.title %>
+</h3>
+<%= link_to "See more", film_path(film) %>
+</div>
+<% end%>

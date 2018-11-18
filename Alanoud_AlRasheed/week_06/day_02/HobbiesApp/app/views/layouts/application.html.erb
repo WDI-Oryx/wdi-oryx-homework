@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HobbiesApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+   <nav>
+ <span> <%= link_to 'All Hobbies', hobbies_path %> </span>
+<span><%= link_to 'Add Hobby', new_hobby_path %> </span>
+<span><%= link_to 'All Users', users_path %> </span>
+<span><%= link_to 'Add User', new_user_path %> </span>
+</nav>
+    <%= yield %>
+  </body>
+</html>

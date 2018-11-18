@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HomeworkApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <%= link_to "All Companies", companies_path %>
+      <%= link_to "Add Copmany", new_company_path %>
+
+      <%= link_to "All Employees", employees_path %>
+      <%= link_to "Add Employee", new_employee_path %>
+      
+    </nav>
+
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<%= form_for @company do |f| %>
+<div>
+<%= f.label :name %>
+<%= f.text_field :name %>
+</div>
+<div>
+<%= f.label :type_of_company %>
+<%= f.text_field :type_of_company %>
+</div>
+<div>
+<%= f.label :phone_number %>
+<%= f.number_field :phone_number %>
+</div>
+<div>
+<%= f.submit %>
+</div>
+<% end %>

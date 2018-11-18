@@ -1,0 +1,15 @@
+
+<h3>Game Title :
+<%= @game.title %>
+</h3>
+<h4>Genres:
+<ul>
+<%@game.genres.each do |g| %>
+<li><%= g.name %> </li>
+<% end %>
+</ul>
+</h4>
+ <%= link_to("Edit", edit_game_path) %>
+ <%= link_to("Delete", game_path(@game),  method: :delete ) %>
+
+ 

@@ -1,0 +1,22 @@
+<%= form_for @director do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+    <br>
+
+  <div>
+    <%= f.label :dob %>
+    <%= f.date_field :dob %>
+  </div>
+    <br>
+
+  <div>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+    <br>
+
+
+  <%= f.submit %>
+<% end %>

@@ -15,5 +15,5 @@ Classe.destroy_all
 
  class1=Classe.(id: "1", title:"math", descrption:"Calaculator")
 
- class2=Classe.(id: "2", title:"math", descrption:"Calaculator")
+ class2=Classe.(id: "2", title:"Art", descrption:"dance")
 

@@ -1,0 +1,32 @@
+<span><%= link_to("Add New Donut", new_donut_path) %></span>
+
+
+<div class="row">
+  <div class="col s6 teal lighten-2 offset-s3 z-depth-2">
+    <h3 class="center">All the Donuts</h1>
+  </div>
+</div>
+<div class="about row z-depth-3">
+  <p class="col s6">A doughnut (British English) or donut (American English) (both: /ˈdoʊnət/ or /ˈdoʊnʌt/; see etymology section) is a type of fried dough confection or dessert food. The doughnut is popular in many countries and prepared in various forms as a sweet snack that can be homemade or purchased in bakeries, supermarkets, food stalls, and franchised specialty vendors.</p>
+  <%= image_tag "donut.png", class: "donut-pic col s4" %>
+  <p class="col s2">more words</p>
+</div>
+<p class="view-donuts center">see donuts</p>
+
+<div class="donuts row">
+  <% @donuts.each do |donut| %>
+    <div class="col m4">
+      <div class="card medium teal lighten-4">
+        <div class="card-content white-text">
+          <h3 class=""><%= link_to(donut.name, donut_path(donut)) %></h3>
+          <p>Size: <%= donut.size %></p>
+          <p>Frosting: <%= donut.frosting_type %></p>
+          <div class="card-action">
+            <p><%= link_to("Delete", "/donuts/#{donut.id}", method: "delete") %></p>
+            <p><%= link_to("Edit", "/donuts/#{donut.id}/edit") %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

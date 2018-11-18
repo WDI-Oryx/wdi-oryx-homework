@@ -1,0 +1,13 @@
+<h1>SHOW ARTIEST</h1>
+<label>Name:</label><h3><%= @artiest.name %></h3>
+
+<label>
+Nationality: </label><h3><%= @artiest.nationality %></h3>
+
+<label>
+Birth Day:</label> <h3><%= @artiest.birth_day %></h3>
+
+
+<%= link_to "Edit , ",edit_artiest_path %>
+<%= link_to "Delete ", artiest_path(@artiest),method: :delete %>
+

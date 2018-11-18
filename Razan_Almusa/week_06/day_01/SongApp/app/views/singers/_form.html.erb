@@ -1,0 +1,30 @@
+
+
+<%= form_for @singer do |s| %>
+
+<div>
+<%= s.label :name %>
+<%= s.text_field :name %>
+</div>
+
+<div>
+<%= s.label :nationality %>
+<%= s.text_field :nationality %>
+</div>
+
+
+<div>
+<%= s.label :dob %>
+<%= s.date_field :dob %>
+</div>
+
+<div>
+<%= s.label :gender %>
+<%= s.text_field :gender %>
+</div>
+
+
+
+<%= s.submit "Add Singer" %>
+
+<% end  %>

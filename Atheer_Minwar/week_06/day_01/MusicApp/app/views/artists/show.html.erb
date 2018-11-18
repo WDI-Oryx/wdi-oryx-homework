@@ -1,0 +1,22 @@
+<h1><%= @artist.name %></h1>
+
+
+<ul>
+<li>
+Formed in: <%= @artist.formed %>
+</li>
+<li>
+Genre: <%= @artist.genres %>
+</li>
+<li>
+Website: 
+<a href=""><%= @artist.website %></a>
+</li>
+<li>
+image: 
+<img src="<%= @artist.image %>">
+</li>
+</ul>
+<div>
+  <%= link_to "Edit Artist", edit_artist_path(@artist) %>
+</div>

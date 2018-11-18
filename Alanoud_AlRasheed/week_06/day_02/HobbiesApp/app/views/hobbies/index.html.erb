@@ -1,0 +1,4 @@
+<h1>All Hobbies</h1>
+<% @hobbies.each do |hobby| %>
+<p><%= link_to hobby.name, hobby_path(hobby) %></p>
+<% end  %>

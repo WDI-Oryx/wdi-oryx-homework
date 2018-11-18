@@ -1,0 +1,24 @@
+<%= form_for @product do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :brand %>
+    <%= f.text_field :brand %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+  <div>
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+  </div>
+  <div>
+    <%= f.label :shop_id, 'Shop' %>
+    <%= f.collection_select(:shop_id, Shop.all, :id, :name) %>
+  </div>
+  <br>
+  <%= f.submit %>
+<% end %>

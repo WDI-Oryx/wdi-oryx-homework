@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: directors
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  dob        :date
+#  country    :string
+#  image      :string
+#  films      :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dob: 2018-11-04
+  country: MyString
+  image: MyString
+  films: MyString
+
+two:
+  name: MyString
+  dob: 2018-11-04
+  country: MyString
+  image: MyString
+  films: MyString

@@ -1,0 +1,30 @@
+<h1><%= @cheese.name %></h1>
+
+
+<%= form_with model: @cheese, local: true do |form| %>
+ 
+  <p>
+    <%= form.label :name %><br>
+    <%=  @cheese.name %>
+  </p>
+ 
+  <p>
+    <%= form.label :milk_type %><br>
+    <%=  @cheese.milk_type %>
+  </p>
+  <p style = "width: 400px;" >
+    <%= form.label :description %><br>
+    <%# <p style = "width: 400px;"> %>
+    <%=  @cheese.description %>
+    <%# </p> %>
+  </p>
+  <p>
+    <%= form.label :image_url %><br>
+    <%=  image_tag(@cheese.image_url, :size => '300x200') %>
+  </p>
+  <p>
+    <%= form.label :stank_level %><br>
+    <%=  @cheese.stank_level %>
+  </p>
+ 
+<% end %>

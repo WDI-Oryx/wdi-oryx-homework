@@ -1,0 +1,5 @@
+<%= link_to 'Back', creatures_path %>
+<h3><%= @creature.name %></h3>
+<p><%= @creature.description %></p>
+<%= button_to "Delete", @creature, method: :delete %>
+<%= button_to "Update", "/creatures/#{@creature.id}/edit", method: :get %>

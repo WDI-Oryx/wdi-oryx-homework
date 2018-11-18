@@ -16,3 +16,6 @@
 //= require jquery
 //= require materialize
 //= require_tree .
+ $(document).ready(function(){
+     consle.log('jqury connected!');
+ })

@@ -1,0 +1,30 @@
+
+<h2>
+  <%= @country.name %>
+</h2>
+<h2>
+  <%= @country.capital %>
+</h2>
+<h2>
+  <%= @country.language %>
+</h2>
+<h2>
+  <%= @country.currency %>
+</h2>
+
+<div ">
+  <%= link_to "Edit Countryr", edit_country_path(@country) %><br>
+  <%= link_to "Delete Countryr", edit_country_path(@country), method: :delete %>
+</div>
+<p> All Citys in <%= @country.name %> : </p>
+<ul>
+  <%@country.citys.each do |city| %>
+      <li>
+      <%= city.name  %>
+      </li>
+  <% end %>
+</ul>
+
+
+
+

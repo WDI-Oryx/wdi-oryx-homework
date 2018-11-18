@@ -1,0 +1,20 @@
+<%= form_for @seller do |f| %>
+<div>
+<%= f.label :name, "Enter Your Name" %>
+<%= f.text_field :name %>
+</div>
+<div>
+<%= f.label :email, "Enter Your Email" %>
+<%= f.email_field :email %>
+</div>
+<div>
+<%= f.label :location  %>
+<%= f.text_field :location %>
+</div>
+<div>
+<%= f.label :rating, "Last year's ratings"  %>
+<%= f.number_field :rating, in: 1.0..5.0%>
+</div>
+<%= f.submit " Submit Request " %>
+
+<% end %>

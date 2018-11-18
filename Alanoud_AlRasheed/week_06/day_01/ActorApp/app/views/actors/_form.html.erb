@@ -1,0 +1,19 @@
+<%= form_for @actor do |f| %>
+  <div class="form">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="form">
+    <%= f.label :location, "Place of Birth" %>
+    <%= f.text_field :location %>
+  </div>
+  <div class="form">
+    <%= f.label :image %>
+    <%= f.url_field :image %>
+  </div>
+  <div class="form">
+    <%= f.label :dob, "Date of Birth" %>
+    <%= f.date_field :dob %>
+  </div>
+  <%= f.submit %>
+<% end %>

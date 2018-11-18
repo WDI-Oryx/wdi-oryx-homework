@@ -1,0 +1,14 @@
+<%= form_for @teacher do |f| %>
+
+<div>
+<%= f.label :name, "Teacher Name" %>
+<%= f.text_field :name %>
+</div>
+
+<div>
+<%= f.label :course_id, "Course Name" %>
+<%= f.collection_check_boxes :course_ids, Course.all, :id, :name %>
+</div>
+
+<%= f.submit %>
+<% end %>

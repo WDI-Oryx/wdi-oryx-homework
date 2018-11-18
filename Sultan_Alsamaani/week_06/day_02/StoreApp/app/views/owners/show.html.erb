@@ -1,0 +1,11 @@
+
+<h3> <%= @owner.name %> </h3>
+
+stores he have:
+<ul>
+<% @owner.stores.each do |store|%>
+<li>
+<%= link_to store.name, store_path(store) %>
+</li>
+<% end %>
+</ul>

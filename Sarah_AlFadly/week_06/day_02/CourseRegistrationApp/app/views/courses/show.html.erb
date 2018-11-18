@@ -1,0 +1,24 @@
+<h3><%= @course.name %></h3>
+<h3><%= @course.course_id %></h3>
+<h3><%= @course.department %></h3>
+
+<hr>
+
+<h3>Students who take this course</h3>
+<ul>
+<% @course.students.each do |student| %>
+<li><%= link_to(student.name, student_path(student)) %></li>
+<% end %>
+</ul>
+
+<h3>Teachers who teach this course</h3>
+<ul>
+<% @course.teachers.each do |teacher| %>
+<li><%= link_to teacher.name, teacher_path(teacher) %></li>
+<% end %>
+</ul>
+
+<hr>
+
+<p><%= link_to("Edit this course", edit_course_path(@course)) %></p>
+<p><%= link_to("Delete this course", course_path(@course), method: :delete) %></p>

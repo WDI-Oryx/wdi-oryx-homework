@@ -1,0 +1,11 @@
+
+<h2>All Developers</h2>
+
+<ul>
+  <% @developers.each do |developer| %>
+    <li>
+      <%= link_to(developer.name, developer_path(developer)) %>
+    
+    </li>
+  <% end %>
+</ul>

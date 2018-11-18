@@ -1,0 +1,10 @@
+
+<h2> All Courses </h2>
+
+<ul>
+<% @courses.each do |course|  %>
+    <li>
+       <%= link_to("#{course.name}", course_path(course)) %> 
+    </li>
+    <% end %>
+</ul>

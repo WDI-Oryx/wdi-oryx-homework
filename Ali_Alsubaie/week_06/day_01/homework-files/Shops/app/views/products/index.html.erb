@@ -1,0 +1,21 @@
+<h2>All Available Products</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Brand</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Shop</th>
+  </tr>
+  <% @products.each do |p| %>
+    <tr>
+      <td><%= p.name %></td>
+      <td><%= p.brand %></td>
+      <td><%= p.description %></td>
+      <td><%= p.price %></td>
+      <td><%= p.shop.name %></td>
+      <td><%= link_to 'Show Product', p %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,11 @@
+<h2>Recipes</h2>
+
+<% @recipes.each do |recipe| %>
+<div>
+<h3><%= link_to(recipe.name, recipe_path(recipe)) %></h3>
+</div>
+<!-- link to the show page for this particular author-->
+<!-- we can also use
+link_to(author.name, author)
+-->
+<%end %>

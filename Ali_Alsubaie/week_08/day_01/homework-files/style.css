@@ -26,6 +26,40 @@ nav {
 	align-items: center;
 }
 
+.my-alert {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.alert-container {
+	padding: 20px;
+	margin: 0;
+	border-radius: 50px;
+	text-align: center;
+	background-color: #fff;
+	transform: scale(0);
+	max-height: 100vh;
+	max-width: 500px;
+	overflow-y: auto;
+
+	-webkit-transition: transform 0.3s;
+	transition: transform 0.3s;
+}
+.alert-container::-webkit-scrollbar {
+	display: none;
+}
+
+.pop {
+	transform: scale(1);
+}
+
 .list-container {
 	padding: 20px;
 	display: grid;

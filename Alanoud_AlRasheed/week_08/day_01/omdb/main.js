@@ -1,5 +1,5 @@
 const baseURL = "http://www.omdbapi.com/";
-const titlePath = "&t=";
+const idPath = "&i=";
 const searchPath = "&s=";
 const api_key = "?apikey=ae2ec317";
 const method = "GET";
@@ -21,12 +21,25 @@ function turnResponseIntoObject(response) {
 function displayData(data) {
     filmDiv.innerHTML = '';
     if (data.Title) {
-        filmDiv.innerHTML = `${data.Title}`;
+        filmDiv.innerHTML = `<h2>${data.Title}</h2>
+        <img src='${data.Poster}'>
+        <p>Director: ${data.Director}</p>
+        <p>Rated: ${data.Rated}</p>
+        <p>Genre: ${data.Genre}</p>
+        `;
     } else {
         for (let film of data.Search) {
             filmDiv.innerHTML += `
-    <h2>${film.Title}</h2>
+    <h2 id="${film.imdbID}">${film.Title}</h2>
     `;
+        }
+        const titles = document.querySelectorAll("h2");
+        for (let title of titles) {
+            title.addEventListener("click", function () {
+                const titleText = title.getAttribute('id');
+                extra = idPath + titleText;
+                getMovies();
+            });
         }
     }
 }
@@ -45,9 +58,3 @@ form.addEventListener('submit', function (ev) {
 });
 
 
-filmDiv.addEventListener("click", function () {
-    const title = document.querySelector("h2");
-    const titleText = title.innerText;
-    extra = titlePath + titleText;
-    getMovies();
-});

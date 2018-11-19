@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+input#search {
+	background: none;
+	padding: 10px 30px;
+	border: 1px solid black;
+	outline: none;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+input#search::placeholder {
+	color: whitesmoke;
+}
+
+.container {
+	background-color: rgba(128, 128, 128, 0.543);
+	text-align: center;
+	border: 3px black solid;
+	margin: 100px 300px;
+	padding: 10px;
+}
+p {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

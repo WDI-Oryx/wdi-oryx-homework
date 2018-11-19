@@ -38,6 +38,6 @@ function getData(searchTerm) {
 }
 
 button.addEventListener("click", function(e) {
-  e.preventDefault();
+  // e.preventDefault();
   getData(input.value);
 });

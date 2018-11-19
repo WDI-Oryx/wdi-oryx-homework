@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<style>
+			#map {
+				width: 100%;
+				height: 400px;
+				background-color: grey;
+			}
+		</style>
+		<title>W07-D05 ISS API</title>
+	</head>
+	<body>
+		<h1>International Space Station</h1>
+		<p>
+			<strong>Current Location:</strong> Longitude:
+			<span class="longitude"></span>, Latitude: <span class="latitude"></span>
+		</p>
+
+		<p><strong>Current Time:</strong> <span class="time"></span></p>
+
+		<h3>Map:</h3>
+		<div id="map"></div>
+		<script src="main.js"></script>
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgG5P_udNjVB23qYYCH4UboOacVskDx0A&callback=initMap"
+		></script>
+	</body>
+</html>

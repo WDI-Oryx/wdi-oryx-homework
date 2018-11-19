@@ -12,10 +12,17 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require jquery
 //= require materialize
+//= require turbolinks
 //= require_tree .
- $(document).ready(function(){
-     consle.log('jqury connected!');
- })
+
+$(document).on('turbolinks:load', function(){
+  console.log('jquery connected!');
+
+  $('select').formSelect();
+
+  $('h3').on('click', function(){
+    console.log('click!');
+  })
+})

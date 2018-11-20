@@ -7,4 +7,16 @@
 <%= link_to 'Edit student Information', edit_student_path %>
 <%= link_to 'Remove student', student_path(@student), method: :delete %>
 
+<h3> Course List :</h3>
+
+<h4>
+ <ul>
+ <% @student.courses.each do |course| %>
+   <li>
+     <%= link_to("#{course.name}", course_path(course.id)) %>
+   </li>
+ <% end %>
+
+ </ul>
+</h4>
 

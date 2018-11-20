@@ -16,7 +16,7 @@ Given the array of transformers below, acomplish the following tasks:
 3. Write a function called `onlyVehicles` that uses `filter` to return a new array of transformers with only vehicle forms.
 
 ```js
-var transformers = [
+let transformers = [
   {
     name: 'Optimus Prime',
     form: 'Freightliner Truck',

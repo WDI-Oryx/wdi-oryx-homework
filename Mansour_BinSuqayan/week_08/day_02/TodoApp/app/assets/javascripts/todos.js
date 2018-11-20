@@ -19,7 +19,13 @@ function displayAllTodos(data) {
 }
 
 function getAllTodos() {
-  fetch("/todos")
+  const httpOptions = {
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    }
+  };
+  fetch("/todos", httpOptions)
     .then(responseToJSON)
     .then(displayAllTodos);
 }

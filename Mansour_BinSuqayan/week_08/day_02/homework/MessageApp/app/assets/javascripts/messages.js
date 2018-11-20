@@ -22,11 +22,31 @@ function displayData(data){
     for(let i of data){
         html += `<li>${i.content}</li>`;
     }
-    console.log(html);
     divMessages.innerHTML = html;
 }
 
 // fetch(url,{httpOptions})
-fetch(url,httpOptions)
-.then(turnResponseIntoObject)
-.then(displayData);
+function fetchData(){
+    fetch(url,httpOptions)
+    .then(turnResponseIntoObject)
+    .then(displayData);
+}
+
+
+function addMessgae(meg){
+    const html = `<li>${meg}</li>`;
+    const divMessages = document.querySelector("#all-messagesss");
+    divMessages.innerHTML += html;
+}
+
+window.onload = function(){
+    fetchData();
+    setInterval(fetchData,1000);
+    const form = document.querySelector("form");
+    const input = document.querySelector("#input");
+    form.addEventListener('submit',function(ev){
+        ev.preventDefault();
+        addMessgae(input.value);
+    });
+    
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Giphy API</title>
+	</head>
+	<body>
+		<nav>
+			<a href="/"> <h1>Giphy</h1> </a>
+			<form id="search">
+				<input autofocus type="text" id="input" placeholder="Search" />
+			</form>
+		</nav>
+		<main>
+			<div class="container to-hide"><h2>Try searching for something</h2></div>
+			<div class="container" hidden>
+				<h2>You searched for:</h2>
+				<p id="term">Some term to search for</p>
+			</div>
+			<div class="container" hidden>
+				<h2 id="result-title"></h2>
+				<img src="" id="results" />
+			</div>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+Message.destroy_all

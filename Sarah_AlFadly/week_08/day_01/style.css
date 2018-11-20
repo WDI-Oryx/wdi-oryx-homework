@@ -1,0 +1,16 @@
+input#search {
+    background: none;
+    padding: 5px 10px;
+    border: 4px solid black;
+    outline: none;
+    color: black;
+    font-family: monospace;
+}
+
+input#search::placeholder {
+    color: black;
+}
+
+.container {
+    text-align: center;
+}

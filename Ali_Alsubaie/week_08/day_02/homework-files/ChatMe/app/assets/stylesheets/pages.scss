@@ -1,0 +1,21 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.messages ul {
+	padding: 5px;
+	list-style: none;
+}
+.messages li {
+	padding: 10px;
+}
+.messages li button {
+	margin-right: 20px;
+}

@@ -56,7 +56,7 @@ robot3.reset();
 console.log(robot3.name);
 console.log(robot3.name);
 
-console.log(robot3.instructionCount());
+console.log(robot3.counter;
 => 5
 ```
 

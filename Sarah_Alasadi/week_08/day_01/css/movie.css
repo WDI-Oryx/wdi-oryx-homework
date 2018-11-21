@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    color: #448AFF;
+    font-size: 50%%;
+  }
+  
+  nav {
+    color: whitesmoke;
+    background-color: #E65100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px 30px;
+  }
+  
+  input#search {
+    background: none;
+    padding: 5px 10px;
+    border: 4px solid whitesmoke;
+    outline: none;
+    color: whitesmoke;
+    font-family: 'Ranga', cursive;
+  }
+  
+  input#search::placeholder {
+    color: whitesmoke;
+  }
+  
+  .container {
+    text-align: center;
+  }
+
+h2{
+    background-color: #448AFF;
+  color: whitesmoke;
+  display:inline;
+}
+h3{
+    color: #E65100;
+}

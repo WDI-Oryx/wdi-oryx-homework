@@ -1,0 +1,26 @@
+body {
+    background-color:yellow;
+	font-family: monospace;
+}
+ input#search {
+	padding: 10px 30px;
+	border: 4px bold black;
+	color: black;
+	font-size: 15px;
+}
+  .container {
+    background-color: white;
+    font-size: 30px;
+	text-align: center;
+	margin: 200px 340px;
+	padding: 100px;
+}
+input#search::placeholder { 
+	color: black;
+}
+
+button{
+    font-size: 30px;
+	font-family: Arial,sans-serif;
+
+}

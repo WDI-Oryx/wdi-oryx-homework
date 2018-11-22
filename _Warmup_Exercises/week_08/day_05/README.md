@@ -4,10 +4,14 @@
 
 The conjecture is that no matter what number you start with, you will always eventually reach 1.
 
+## History
+
 The Collatz conjecture is a conjecture in mathematics named after Lothar Collatz, who first proposed it in 1937.
 It's also known as the 3n + 1 conjecture, the Ulam conjecture, the Kakutani's problem, the Thwaites conjecture, 
 Hasse's problem or the Syracuse problem, the sequence of numbers that results is referred to as the hailstone numbers or 
 the wondrous numbers.
+
+## Problem
 
 The problem is defined as follows:
 ```

@@ -5,8 +5,8 @@ const container = document.querySelector(".container");
 const apikey = "f1002a52";
 const method = "GET";
 const baseURL = "http://www.omdbapi.com";
-const params = `?apikey=${apikey}&i=tt3896198`;
-const url = baseURL + params;
+const params = `?apikey=${apikey}&t=`;
+// const url = baseURL + params;
 
 const httpOptions = {
   method: method
@@ -22,6 +22,9 @@ function displayData(data) {
 }
 
 function getMovie() {
+  const title = document.querySelector("#search").value;
+  const url = baseURL + params + title;
+
   fetch(url, httpOptions)
     .then(r => r.json())
     .then(displayData);

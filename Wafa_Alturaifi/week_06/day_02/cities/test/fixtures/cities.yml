@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  capital: 
+  timezone: MyString
+  country_id: MyString
+  integer: MyString
+
+two:
+  name: MyString
+  capital: 
+  timezone: MyString
+  country_id: MyString
+  integer: MyString

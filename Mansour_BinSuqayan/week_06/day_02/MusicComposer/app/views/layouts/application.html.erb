@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicComposer</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= link_to "All Composers", composers_path %>
+  <%= link_to "Add a Composer", new_composer_path %>
+   || 
+   <%= link_to "All Composition",compositions_path %>
+   <%= link_to "Add a compostion",new_composition_path %>
+    <%= yield %>
+  </body>
+</html>

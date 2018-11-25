@@ -1,0 +1,13 @@
+<h1>Compositions#show</h1>
+Title:<%= @composition.title %><br>
+Description:<%= @composition.description %><br>
+Music type:<%= @composition.music_type %><br>
+By : <%= @composition.composer.name %><br>
+Tags :<br>
+ <% @composition.tags.pluck(:name).each do |tag| %>
+ <%= tag %>
+ <br>
+<% end%>
+<br>
+<%= link_to "Edit", edit_composition_path(@composition) %>
+<%= link_to "Delete",composition_path(@composition),method: :delete %>

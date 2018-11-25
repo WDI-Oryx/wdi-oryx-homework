@@ -71,8 +71,6 @@ GEM
     erubi (1.7.1)
     execjs (2.7.0)
     ffi (1.9.25)
-    gemojione (3.3.0)
-      json
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.1.1)
@@ -81,7 +79,6 @@ GEM
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
-    json (2.1.0)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -190,7 +187,6 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   chromedriver-helper
-  gemojione
   jbuilder (~> 2.5)
   pry-rails
   puma (~> 3.11)

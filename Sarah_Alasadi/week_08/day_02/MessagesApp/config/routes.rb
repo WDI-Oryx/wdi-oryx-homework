@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/app'
+  # get 'pages/app'
   # get 'messages/index'
   # get 'messages/show'
   # get 'messages/new'

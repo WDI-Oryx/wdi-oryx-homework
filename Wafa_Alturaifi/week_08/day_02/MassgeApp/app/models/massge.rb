@@ -1,0 +1,2 @@
+class Massge < ApplicationRecord
+end

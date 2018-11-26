@@ -1,0 +1,10 @@
+.container {
+  text-align: center;
+}
+
+#search {
+  width: 200px;
+}
+.nav-wrapper {
+  background-color: darkturquoise;
+}

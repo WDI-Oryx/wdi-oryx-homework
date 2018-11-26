@@ -1,0 +1,11 @@
+/* div {
+  display: flex;
+  flex-direction: column;
+  padding: 25vw;
+} */
+
+#search {
+  width: 200px;
+  height: 25px;
+  text-align: center;
+}

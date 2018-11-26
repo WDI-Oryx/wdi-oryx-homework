@@ -1,19 +1,20 @@
 import React from "react"
 import PropTypes from "prop-types"
 class WeatherResult extends React.Component {
-  constructor(){
+  constructor() {
     super();
   }
-  
-  
-  
-  
-  
-  render () {
+
+
+
+
+
+  render() {
     return (
       <div>
-        <h4>{this.props.country}</h4>
-        <p>{this.props.weather}</p>
+        <h4>{this.props.name}</h4>
+        <p>{this.props.temp}</p>
+        <p>{this.props.des}</p>
       </div>
     );
   }

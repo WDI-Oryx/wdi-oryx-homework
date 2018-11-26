@@ -1,0 +1,8 @@
+<h1>All Chefs: </h1>
+<% @chefs.each do |chef| %>
+<ul>
+<li>
+<%=link_to chef.name, chef_path(chef)  %>
+</li>
+</ul>
+<% end%>

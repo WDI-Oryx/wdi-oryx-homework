@@ -1,0 +1,16 @@
+<%= form_for @comment do |f| %>
+<div>
+<%= f.label :name %>
+<%= f.text_field :name %>
+</div>
+<div>
+<%= f.label :body %>
+<%= f.text_area :body %>
+</div>
+<div>
+<%= f.label :recipe_id, "The Recipe" %> <br>
+<%= f.collection_select :recipe_id, Recipe.all,:id, :title  %>
+</div>
+
+<%= f.submit %>
+<% end %>

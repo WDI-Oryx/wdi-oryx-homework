@@ -1,6 +1,0 @@
-<%= form_for @donut do |form| %>
-  Name: <%= form.text_field :name %>
-  Size: <%= form.select :size, ['small', 'medium', 'large']%>
-  Frosting Type: <%= form.text_field :frosting_type %>
-  <%= form.submit %>
-<% end %>

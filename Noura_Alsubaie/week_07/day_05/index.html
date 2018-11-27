@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Api </title>
+</head>
+<body>
+ 
+This Is Amazing!
+<script>    
+    const url = "http://api.open-notify.org/iss-now.json";
+        setInterval(function () {
+
+            fetch(url, { method: "GET", dataType: "JSON" })
+                .then(function (res) {
+                    return res.json();
+                })
+                .then(function (data) {
+
+
+                    const times = data.timestamp;
+                    const itude = data.iss_position;
+console.log(data)
+                    document.body.innerHTML =
+                    ` <p>
+                    timestamp : ${times}
+                    latitude : ${itude.latitude}
+                    longitude : ${itude.longitude}
+                    </p>`;
+                })
+
+        }, 1000);
+</script>
+</body>
+</html>

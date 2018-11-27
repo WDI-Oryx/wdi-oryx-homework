@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ArtApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= link_to "ALL ARTIESTS",artiests_path %>,
+  <%= link_to "ADD AN ARTIEST", new_artiest_path%>
+ **
+  <%= link_to "ALL PAINTINGS",paintings_path %>,
+  <%= link_to "ADD AN PAINTING",new_painting_path %>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+}
+nav {
+  height: 80px;
+  background-color: rgba(228, 172, 214, 0.479);
+  color: rgb(20, 72, 117);
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-size: 18px;
+}
+
+.block {
+  padding: 90px 490px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 25px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgba(20, 72, 117, 0.603);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 40%;
+  background-color: rgba(20, 72, 117, 0.473);
+  color: rgb(0, 0, 0);
+  padding: 14px 20px;
+  margin: 20px 95px;
+  border: none;
+  border-radius: 4px;
+}
+
+.container {
+  text-align: center;
+}

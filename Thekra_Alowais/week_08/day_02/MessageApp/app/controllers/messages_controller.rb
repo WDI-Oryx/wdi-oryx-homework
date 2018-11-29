@@ -7,7 +7,9 @@ class MessagesController < ApplicationController
   def index
     @messages = Message.all 
     # render json: @messages
+
  respond_to do |format|
+
       format.json {render json: @messages}
     end
   end

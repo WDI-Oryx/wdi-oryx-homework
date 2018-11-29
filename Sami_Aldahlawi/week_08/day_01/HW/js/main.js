@@ -18,6 +18,7 @@ function turnResponseIntoObject(response){
 }
 
 function displayData(data){
+    debugger;
     const html = `
     <div class="row">
     <div class="col s12"><p>s12</p></div>

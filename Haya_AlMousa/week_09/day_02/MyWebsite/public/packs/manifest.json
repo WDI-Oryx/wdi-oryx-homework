@@ -1,0 +1,8 @@
+{
+  "application.js": "/packs/application-c77140a6c15a4fc3018e.js",
+  "application.js.map": "/packs/application-c77140a6c15a4fc3018e.js.map",
+  "hello_react.js": "/packs/hello_react-2d706d139b9362904d49.js",
+  "hello_react.js.map": "/packs/hello_react-2d706d139b9362904d49.js.map",
+  "server_rendering.js": "/packs/server_rendering-ff44b011b871647304ac.js",
+  "server_rendering.js.map": "/packs/server_rendering-ff44b011b871647304ac.js.map"
+}

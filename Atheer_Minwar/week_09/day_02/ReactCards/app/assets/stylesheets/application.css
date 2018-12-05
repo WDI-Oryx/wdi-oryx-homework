@@ -1,0 +1,33 @@
+a.nav {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 50px;
+  padding: 5px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+a:hover {
+  background-color: lightseagreen;
+}
+nav {
+  background-color: #3f5cc1;
+  width: 100vw;
+  height: 30px;
+}
+
+.container {
+  margin: 10px;
+  padding: 10px;
+}
+
+.card {
+  padding: 2px 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  border-radius: 5px;
+}
+
+img {
+  width: 100%;
+}

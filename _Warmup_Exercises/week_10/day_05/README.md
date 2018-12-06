@@ -14,5 +14,8 @@ s2(4) = 10
 ```
 
 Use any language of your choice, well, maybe stick to JavaScript of Ruby, or not.
-
 Can you guess what the sum would be if n is infinity?
+
+
+## A better explanation of seq2 formula 
+https://betterexplained.com/articles/techniques-for-adding-the-numbers-1-to-100/
